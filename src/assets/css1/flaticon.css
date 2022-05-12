@@ -1,7 +1,8 @@
-/*
-Flaticon icon font: Flaticon
-Creation date: 19/06/2019 06:23
-*/
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/06/2019 06:23
+  	*/
+
 @font-face {
     font-family: "Flaticon";
     src: url("../fonts/Flaticon.eot");
@@ -13,18 +14,21 @@ Creation date: 19/06/2019 06:23
     font-weight: normal;
     font-style: normal;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: "Flaticon";
         src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
     }
 }
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
     font-family: Flaticon;
     font-size: 20px;
     font-style: normal;
 }
+
 .flaticon-cloud:before { content: "\f100"; }
 .flaticon-data:before { content: "\f101"; }
 .flaticon-vps:before { content: "\f102"; }

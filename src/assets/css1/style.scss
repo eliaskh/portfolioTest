@@ -110,6 +110,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: $font-size;
+    color: $paragraph-color;
 }
 :root {
     scroll-behavior: inherit;
@@ -855,77 +856,77 @@ Main Banner CSS
     .banner-image {
         position: relative;
 
-        img {
-            position: absolute;
+        // img {
+            // position: absolute;
 
-            &:nth-child(1) {
-                z-index: 3;
-                top: -130px;
-                left: -45px;
-            }
-            &:nth-child(2) {
-                right: 145px;
-                top: -287px;
-            }
-            &:nth-child(3) {
-                left: 25px;
-                top: -20px;
-            }
-            &:nth-child(4) {
-                right: 12%;
-                top: 118px;
-                z-index: 1;
-            }
-            &:nth-child(5) {
-                left: 28%;
-                top: -120px;
-                z-index: 2;
-            }
-            &:nth-child(6) {
-                right: 35%;
-                z-index: 1;
-                top: -150px;
-            }
-            &:nth-child(7) {
-                right: 20px;
-                top: -110px;
-            }
-            &:nth-child(8) {
-                right: 25px;
-                top: -140px;
-            }
-            &:nth-child(9) {
-                right: 30%;
-                z-index: 1;
-                top: -35px;
-            }
-            &:nth-child(10) {
-                left: 37%;
-                top: -28px;
-                z-index: 1;
-            }
-            &:nth-child(11) {
-                left: 37%;
-                top: -160px;
-                z-index: 1;
-            }
-            &:nth-child(12) {
-                left: 90px;
-                top: -110px;
-            }
-            &:nth-child(13) {
-                left: 56%;
-                top: -25px;
-                z-index: 2;
-            }
-            &:nth-child(14) {
-                right: 105px;
-                top: -28px;
-            }
-            &:last-child {
-                display: none;
-            }
-        }
+            // &:nth-child(1) {
+            //     z-index: 3;
+            //     top: -130px;
+            //     left: -45px;
+            // }
+            // &:nth-child(2) {
+            //     right: 145px;
+            //     top: -287px;
+            // }
+            // &:nth-child(3) {
+            //     left: 25px;
+            //     top: -20px;
+            // }
+            // &:nth-child(4) {
+            //     right: 12%;
+            //     top: 118px;
+            //     z-index: 1;
+            // }
+            // &:nth-child(5) {
+            //     left: 28%;
+            //     top: -120px;
+            //     z-index: 2;
+            // }
+            // &:nth-child(6) {
+            //     right: 35%;
+            //     z-index: 1;
+            //     top: -150px;
+            // }
+            // &:nth-child(7) {
+            //     right: 20px;
+            //     top: -110px;
+            // }
+            // &:nth-child(8) {
+            //     right: 25px;
+            //     top: -140px;
+            // }
+            // &:nth-child(9) {
+            //     right: 30%;
+            //     z-index: 1;
+            //     top: -35px;
+            // }
+            // &:nth-child(10) {
+            //     left: 37%;
+            //     top: -28px;
+            //     z-index: 1;
+            // }
+            // &:nth-child(11) {
+            //     left: 37%;
+            //     top: -160px;
+            //     z-index: 1;
+            // }
+            // &:nth-child(12) {
+            //     left: 90px;
+            //     top: -110px;
+            // }
+            // &:nth-child(13) {
+            //     left: 56%;
+            //     top: -25px;
+            //     z-index: 2;
+            // }
+            // &:nth-child(14) {
+            //     right: 105px;
+            //     top: -28px;
+            // }
+            // &:last-child {
+            //     display: none;
+            // }
+        // }
         &.single-banner-image {
             img {
                 display: block;
@@ -1218,11 +1219,15 @@ Boxes CSS
         text-align: center;
         width: 55px;
         height: 55px;
-        line-height: 55px;
+        line-height: 67px;
         background: #cdf1d8;
         border-radius: 50%;
         color: $light-green-color;
         transition: $transition;
+
+        i {
+            font-size: 25px;
+        }
     }
     h3 {
         font-size: 18px;
@@ -1565,85 +1570,15 @@ Services CSS
 }
 .services-right-image {
     position: relative;
+    text-align: center;
 
     img {
-        position: absolute;
-
-        &:nth-child(1) {
-            left: 22%;
-            top: -85px;
-            z-index: 1;
-        }
-        &:nth-child(2) {
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin: 0 auto;
-            top: -52px;
-        }
-        &:nth-child(3) {
-            left: 44%;
-            top: -33px;
-            z-index: 1;
-        }
-        &:nth-child(4) {
-            right: 38%;
-            z-index: 1;
-            top: -220px;
-        }
-        &:nth-child(5) {
-            z-index: 1;
-            right: 24%;
-            top: 8px;
-        }
-        &:nth-child(6) {
-            left: 29%;
-            top: 0;
-            z-index: 1;
-        }
-        &:nth-child(7) {
-            right: 44%;
-            top: -78px;
-            z-index: 1;
-        }
-        &:nth-child(8) {
-            right: 30%;
-            top: -134px;
-            z-index: 1;
-        }
-        &:nth-child(9) {
-            right: 31%;
-            top: -21px;
-            z-index: 1;
-        }
-        &:nth-child(10) {
-            right: 24%;
-            top: -80px;
-        }
-        &:nth-child(11) {
-            left: 27%;
-            top: -60px;
-            z-index: 2;
-        }
-        &:nth-child(12) {
-            right: 28%;
-            z-index: 1;
-            top: -54px;
-        }
-        &:nth-child(13) {
-            left: 31%;
-            top: -105px;
-            z-index: 1;
-        }
         &.bg-image {
             top: -262px;
             left: 0;
             right: 0;
             margin: 0 auto;
             text-align: center;
-        }
-        &:last-child {
-            display: none;
         }
     }
     &.single-right-image {
@@ -1663,60 +1598,15 @@ Services CSS
 }
 .services-left-image {
     position: relative;
+    text-align: center;
 
     img {
-        position: absolute;
-
-        &:nth-child(1) {
-            left: 15%;
-            top: -98px;
-        }
-        &:nth-child(2) {
-            left: 0;
-            top: -200px;
-            right: 0;
-            text-align: center;
-            margin: 0 auto;
-        }
-        &:nth-child(3) {
-            left: 36%;
-            z-index: 12;
-            top: -55px;
-        }
-        &:nth-child(4) {
-            left: 55px;
-            top: -38px;
-            z-index: 1;
-        }
-        &:nth-child(5) {
-            z-index: 3;
-            right: 26%;
-            top: -66px;
-        }
-        &:nth-child(6) {
-            right: 19%;
-            top: -41px;
-            z-index: 2;
-        }
-        &:nth-child(7) {
-            right: 97px;
-            top: 40px;
-            z-index: 1;
-        }
-        &:nth-child(8) {
-            right: 23%;
-            top: -175px;
-            z-index: 2;
-        }
         &.bg-image {
             top: -262px;
             left: 0;
             right: 0;
             margin: 0 auto;
             text-align: center;
-        }
-        &:last-child {
-            display: none;
         }
     }
     &.single-left-image {
@@ -1758,11 +1648,15 @@ Services CSS
         text-align: center;
         width: 55px;
         height: 55px;
-        line-height: 55px;
+        line-height: 67px;
         background: #cdf1d8;
         border-radius: 50%;
         color: $light-green-color;
         transition: $transition;
+
+        i {
+            font-size: 25px;
+        }
 
         &.bg-c679e3 {
             color: $purple-color;
@@ -2039,13 +1933,17 @@ Features CSS
         text-align: center;
         width: 55px;
         height: 55px;
-        line-height: 55px;
+        line-height: 67px;
         background: #cdf1d8;
         border-radius: 50%;
         color: $light-green-color;
         left: 20px;
         top: 30px;
         transition: $transition;
+
+        i {
+            font-size: 25px;
+        }
 
         &.bg-c679e3 {
             color: $purple-color;
@@ -2092,12 +1990,16 @@ Features CSS
         text-align: center;
         width: 55px;
         height: 55px;
-        line-height: 55px;
+        line-height: 67px;
         background: #cdf1d8;
         display: inline-block;
         border-radius: 50%;
         color: $light-green-color;
         transition: $transition;
+
+        i {
+            font-size: 25px
+        }
 
         &.bg-c679e3 {
             color: $purple-color;
@@ -2255,6 +2157,45 @@ Features Details CSS
     text-align: center;
 }
 
+.details-content {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+    img {
+        margin-bottom: 5px;
+    }
+    a {
+        color: $light-green-color;
+    }
+    ul, ol {
+        li {
+            line-height: 1.8;
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 /*================================================
 Team CSS
 =================================================*/
@@ -2320,6 +2261,9 @@ Team CSS
                     }
                     svg {
                         width: 19px;
+                    }
+                    i {
+                        font-size: 20px;
                     }
                 }
             }
@@ -2701,23 +2645,31 @@ Pricing CSS
             }
         }
     }
-    &.active-plan {
-        .pricing-header {
-            &::before {
-                opacity: 1;
-                visibility: visible;
-            }
-            h3 {
-                color: $white-color;
-            }
-        }
-        .btn-primary {
-            background: $purple-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-            &::after, &::before {
-                background: $light-green-color;
-                box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+}
+.pricing-area {
+    .row {
+        > div {
+            &:nth-child(2), &:nth-child(6), &:nth-child(8) {
+                .pricing-table {
+                    .pricing-header {
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        h3 {
+                            color: $white-color;
+                        }
+                    }
+                    .btn-primary {
+                        background: $purple-color;
+                        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+            
+                        &::after, &::before {
+                            background: $light-green-color;
+                            box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+                        }
+                    }
+                }
             }
         }
     }
@@ -3395,6 +3347,18 @@ Feedback CSS
         display: inline-block !important;
         border-radius: 50%;
         border: 3px solid #999999;
+    }
+    .client-info {
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        span {
+            display: block;
+            margin-top: 5px;
+            color: #c679e3;
+            font-size: 13px;
+        }
     }
     p {
         font-size: 16px;
@@ -8502,6 +8466,8 @@ ML Feedback CSS
         top: 50%;
         transform: translateY(-50%);
         text-align: center;
+        max-width: 115px;
+        margin: auto;
 
         img {
             border-radius: 5px;
@@ -8533,13 +8499,15 @@ ML Feedback CSS
     }
     .rating {
         margin-top: 10px;
-
-        svg {
-            color: #ff612f;
-            width: 18px;
-            margin-right: 2px;
+        .icon {
+            display: inline-block;
+            margin-right: 3px;
             &:last-child {
                 margin-right: 0;
+            }
+            i {
+                color: #ff612f;
+                font-size: 16px;
             }
         }
     }
@@ -9297,7 +9265,7 @@ Testimonials CSS
         position: relative;
         padding-left: 95px;
         margin-top: 25px;
-        max-width: 235px;
+        max-width: 265px;
         margin: {
             left: auto;
             right: auto;
@@ -9315,12 +9283,15 @@ Testimonials CSS
             transform: translateY(-50%);
         }
         .rating {    
-            svg {
-                color: #ff612f;
-                width: 16px;
+            .icon {
+                display: inline-block;
                 margin-right: 3px;
                 &:last-child {
                     margin-right: 0;
+                }
+                i {
+                    color: #ff612f;
+                    font-size: 16px;
                 }
             }
         }
