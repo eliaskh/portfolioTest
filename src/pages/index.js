@@ -20,7 +20,7 @@ const BigdataAnalytics = () => (
     <NavbarStyleFour />
     <MainBanner />
     <WhatWeDo />
-    <DiscoverArea />
+    // <DiscoverArea />
     <Services />
     <TeamStyleTwo />
     <BigdataFunFacts />
