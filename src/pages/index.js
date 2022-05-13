@@ -19,7 +19,7 @@ const BigdataAnalytics = () => (
     <SEO title="Home" />
     <NavbarStyleFour />
     <MainBanner />
-    <WhatWeDo />
+    {/* <WhatWeDo />
     // <DiscoverArea />
     <Services />
     <TeamStyleTwo />
@@ -27,7 +27,7 @@ const BigdataAnalytics = () => (
     <Feedback />
     <IndustriesWeServe />
     <BlogPost />
-    <NewsletterStyleTwo />
+    <NewsletterStyleTwo /> */}
     <Footer />
   </Layout>
 )
