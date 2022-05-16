@@ -59,44 +59,6 @@ const MainBannerElias = () => {
                 </p>
               </div>
             </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-banner-boxes">
-                <div className="icon">
-                  <Icon.Users />
-                </div>
-                <h3>אנליזה וקידום אתרים</h3>
-                <p>
-                  ניתוח מדויק של תנועת הגולשים באתר, היכרות עם התנהגותם באמצעות
-                  הכלים האנליטיים המתקדמים ביותר.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-banner-boxes">
-                <div className="icon">
-                  <Icon.Users />
-                </div>
-                <h3> חנויות אונליין</h3>
-                <p>
-                  עיצוב ובניית חנויות מקוונות באמצעות הפלטפורמות המובילות בשוק
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-banner-boxes">
-                <div className="icon">
-                  <Icon.Users />
-                </div>
-                <h3>פיתוח אפליקציות מובייל</h3>
-                <p>
-                  לפתח אפליקציות מובייל המבוססות על דרישות הלקוח, מטרותיו
-                  ותקציבו
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import MainBanner from "../components/BigdataAnalytics/MainBanner"
 import MainBannerElias from "../components/Elias/MainBannerElias"
 import WhatWeDo from "../components/BigdataAnalytics/WhatWeDo"
 import DiscoverArea from "../components/BigdataAnalytics/DiscoverArea"
-import Services from "../components/BigdataAnalytics/Services"
+import Services from "../components/DigitalAgency/OurServices"
 import TeamStyleTwo from "../components/Common/TeamStyleTwo"
 import BigdataFunFacts from "../components/BigdataAnalytics/BigdataFunFacts"
 import Feedback from "../components/BigdataAnalytics/Feedback"
@@ -20,16 +20,16 @@ const BigdataAnalytics = () => (
     <SEO title="Home" />
     <NavbarStyleFour />
     <MainBannerElias />
-    {/* <WhatWeDo /> */}
-    {/* <DiscoverArea />
+    {/* <WhatWeDo />
+    <DiscoverArea /> */}
     <Services />
-    <TeamStyleTwo />
+    {/* <TeamStyleTwo /> */}
     <BigdataFunFacts />
     <Feedback />
-    <IndustriesWeServe />
-    <BlogPost />
-    <NewsletterStyleTwo /> */}
-    {/* <Footer /> */}
+    {/* <IndustriesWeServe />
+    <BlogPost /> */}
+    <NewsletterStyleTwo />
+    <Footer />
   </Layout>
 )
 
