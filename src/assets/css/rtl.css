@@ -19,7 +19,8 @@ body {
   right: 0;
 }
 
-.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a svg {
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i,
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a svg {
   float: left;
 }
 
@@ -151,7 +152,8 @@ body {
   padding-left: 12px;
 }
 
-.services-content .box svg, .services-content .box i {
+.services-content .box svg,
+.services-content .box i {
   left: auto;
   right: 15px;
 }
@@ -255,11 +257,17 @@ body {
   right: 0;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button {
   text-align: right;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button:before {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button:before {
   margin-right: 0;
   margin-left: 12px;
 }
@@ -269,7 +277,11 @@ body {
   padding-right: 51px;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion-title i {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion-title
+  i {
   left: auto;
   right: 0;
 }
@@ -278,11 +290,17 @@ body {
   text-align: right;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button {
   text-align: right;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button:before {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button:before {
   margin-right: 0;
   margin-left: 12px;
 }
@@ -292,7 +310,11 @@ body {
   padding-right: 51px;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion-title i {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion-title
+  i {
   left: auto;
   right: 0;
 }
@@ -642,17 +664,20 @@ body {
   text-align: right;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label, .order-details .payment-method p [type="radio"]:not(:checked) + label {
+.order-details .payment-method p [type="radio"]:checked + label,
+.order-details .payment-method p [type="radio"]:not(:checked) + label {
   padding-left: 0;
   padding-right: 27px;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label::before, .order-details .payment-method p [type="radio"]:not(:checked) + label::before {
+.order-details .payment-method p [type="radio"]:checked + label::before,
+.order-details .payment-method p [type="radio"]:not(:checked) + label::before {
   left: auto;
   right: 0;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label::after, .order-details .payment-method p [type="radio"]:not(:checked) + label::after {
+.order-details .payment-method p [type="radio"]:checked + label::after,
+.order-details .payment-method p [type="radio"]:not(:checked) + label::after {
   left: auto;
   right: 3px;
 }
@@ -783,7 +808,8 @@ body {
   margin-left: 3px;
 }
 
-blockquote::after, .blockquote::after {
+blockquote::after,
+.blockquote::after {
   left: auto;
   right: 0;
 }
@@ -857,7 +883,8 @@ blockquote::after, .blockquote::after {
   padding-right: 0;
 }
 
-#contactForm #msgSubmit.text-danger, #contactForm #msgSubmit.text-success {
+#contactForm #msgSubmit.text-danger,
+#contactForm #msgSubmit.text-success {
   text-align: right !important;
 }
 
@@ -933,7 +960,11 @@ blockquote::after, .blockquote::after {
   margin-right: 0;
 }
 
-.single-blog-post-box .entry-post-content .entry-meta ul li:first-child::before {
+.single-blog-post-box
+  .entry-post-content
+  .entry-meta
+  ul
+  li:first-child::before {
   display: none;
 }
 
@@ -978,7 +1009,8 @@ blockquote::after, .blockquote::after {
 }
 
 /* LTR CSS */
-.owl-carousel, .bx-wrapper {
+.owl-carousel,
+.bx-wrapper {
   direction: ltr;
 }
 
@@ -986,11 +1018,12 @@ blockquote::after, .blockquote::after {
   direction: rtl;
 }
 
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
   float: left !important;
 }
 
-.slick-slider .slick-track, .slick-slider .slick-list {
+.slick-slider .slick-track,
+.slick-slider .slick-list {
   direction: ltr !important;
 }
 

@@ -25,7 +25,7 @@ const BigdataAnalytics = () => (
     <Services />
     {/* <TeamStyleTwo /> */}
     <BigdataFunFacts />
-    <Feedback />
+    {/* <Feedback /> */}
     {/* <IndustriesWeServe />
     <BlogPost /> */}
     <NewsletterStyleTwo />

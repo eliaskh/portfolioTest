@@ -111,12 +111,6 @@ const NavbarStyleFour = () => {
                 </li>
               </ul>
             </div>
-
-            <div className="others-option">
-              <Link to="/contact" className="btn btn-primary">
-                נשמח לשמוע ממך
-              </Link>
-            </div>
           </nav>
         </div>
       </div>
