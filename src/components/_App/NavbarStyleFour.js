@@ -96,7 +96,7 @@ const NavbarStyleFour = () => {
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >
-                    Home
+                    ראשי
                   </Link>
                 </li>
 
@@ -106,7 +106,16 @@ const NavbarStyleFour = () => {
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >
-                    About
+                    מי אנחנו
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/#"
+                    onClick={e => e.preventDefault()}
+                    className="nav-link"
+                  >
+                    תתקשר
                   </Link>
                 </li>
               </ul>
