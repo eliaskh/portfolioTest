@@ -3,6 +3,7 @@ import Layout from "../components/_App/layout"
 import SEO from "../components/_App/seo"
 import NavbarStyleFour from "../components/_App/NavbarStyleFour"
 import MainBanner from "../components/BigdataAnalytics/MainBanner"
+import MainBannerElias from "../components/Elias/MainBannerElias"
 import WhatWeDo from "../components/BigdataAnalytics/WhatWeDo"
 import DiscoverArea from "../components/BigdataAnalytics/DiscoverArea"
 import Services from "../components/BigdataAnalytics/Services"
@@ -18,9 +19,9 @@ const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
     <NavbarStyleFour />
-    <MainBanner />
-    {/* <WhatWeDo />
-    // <DiscoverArea />
+    <MainBannerElias />
+    {/* <WhatWeDo /> */}
+    {/* <DiscoverArea />
     <Services />
     <TeamStyleTwo />
     <BigdataFunFacts />

@@ -9,6 +9,7 @@ module.exports = {
     author: `@envy_theme`,
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-html-attributes",

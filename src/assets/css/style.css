@@ -87,6 +87,7 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,600|Poppins:400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 body {
   font-family: "Poppins", sans-serif;
@@ -112,7 +113,8 @@ a {
   outline: 0 !important;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #44ce6f;
   text-decoration: none;
 }
@@ -135,7 +137,18 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #0e314c;
   font-weight: 500;
 }
@@ -208,13 +221,14 @@ textarea.form-control {
   width: 15px;
   height: 15px;
   margin: 0 5px;
-  background: #D6D6D6;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background: #d6d6d6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
-.owl-theme-style.owl-theme .owl-dots .owl-dot:hover span, .owl-theme-style.owl-theme .owl-dots .owl-dot.active span {
+.owl-theme-style.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme-style.owl-theme .owl-dots .owl-dot.active span {
   background: #44ce6f;
 }
 
@@ -223,49 +237,60 @@ textarea.form-control {
   color: #ffffff;
   background-color: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   color: #ffffff;
   background: #0e314c;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus,
+.btn-primary:focus {
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary .show > .btn-primary.dropdown-toggle:focus {
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary .show > .btn-primary.dropdown-toggle {
   color: #ffffff;
   background: #0e314c;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
   color: #ffffff;
   background-color: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
   opacity: 1;
 }
 
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary:disabled:hover, .btn-primary:disabled:focus {
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary:disabled:hover,
+.btn-primary:disabled:focus {
   background: #0e314c;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
 .btn {
@@ -281,8 +306,9 @@ textarea.form-control {
   transition: 0.5s;
 }
 
-.btn::after, .btn::before {
-  content: '';
+.btn::after,
+.btn::before {
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;
@@ -303,7 +329,8 @@ textarea.form-control {
   border-radius: 0 4px 4px 0;
 }
 
-.btn:hover::after, .btn:hover::before {
+.btn:hover::after,
+.btn:hover::before {
   width: 50%;
 }
 
@@ -314,7 +341,7 @@ textarea.form-control {
   background-color: #44ce6f;
   padding: 13px 30px;
   -webkit-box-shadow: 5px 5px 5px #a6f5be;
-          box-shadow: 5px 5px 5px #a6f5be;
+  box-shadow: 5px 5px 5px #a6f5be;
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -331,24 +358,29 @@ textarea.form-control {
   background: #c679e3;
 }
 
-.btn.btn-secondary:not(:disabled):not(.disabled).active, .btn.btn-secondary:not(:disabled):not(.disabled):active, .show > .btn.btn-secondary.dropdown-toggle {
+.btn.btn-secondary:not(:disabled):not(.disabled).active,
+.btn.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn.btn-secondary.dropdown-toggle {
   color: #ffffff;
   background-color: #44ce6f;
   border-color: #44ce6f;
 }
 
-.btn.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn.btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn.btn-secondary.dropdown-toggle:focus {
+.btn.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn.btn-secondary.dropdown-toggle:focus {
   -webkit-box-shadow: 5px 5px 5px #e9caf5;
-          box-shadow: 5px 5px 5px #e9caf5;
+  box-shadow: 5px 5px 5px #e9caf5;
 }
 
 .btn.btn-secondary:focus {
   color: #ffffff;
 }
 
-.btn.btn-secondary:hover, .btn.btn-secondary:focus {
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
   -webkit-box-shadow: 5px 5px 5px #e9caf5;
-          box-shadow: 5px 5px 5px #e9caf5;
+  box-shadow: 5px 5px 5px #e9caf5;
 }
 
 /* Form control */
@@ -379,7 +411,7 @@ label {
   outline: 0;
   background: #ffffff;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   border-color: #44ce6f;
 }
 
@@ -411,7 +443,7 @@ label {
 }
 
 .section-title .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -2.7px;
@@ -420,13 +452,13 @@ label {
   border-radius: 50%;
   background: #44ce6f;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-name: MOVE-BG;
-          animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
 }
 
 .section-title .sub-title {
@@ -461,22 +493,22 @@ label {
 @-webkit-keyframes MOVE-BG {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
     -webkit-transform: translateX(88px);
-            transform: translateX(88px);
+    transform: translateX(88px);
   }
 }
 
 @keyframes MOVE-BG {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
     -webkit-transform: translateX(88px);
-            transform: translateX(88px);
+    transform: translateX(88px);
   }
 }
 
@@ -499,12 +531,12 @@ Preloader CSS
   background-color: #ffffff;
   margin: 0 auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-          animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
   position: absolute;
   right: 0;
   left: 0;
   -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
   top: 50%;
   margin-top: -75px;
 }
@@ -512,30 +544,30 @@ Preloader CSS
 @-webkit-keyframes sk-rotateplane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
 
 @keyframes sk-rotateplane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
 
@@ -549,14 +581,14 @@ Navbar CSS
   top: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding-top: 15px;
 }
 
 #header.headroom.is-sticky {
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   background-color: #ffffff !important;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -570,12 +602,12 @@ Navbar CSS
 
 #header.headroom--pinned {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 #header.headroom--unpinned {
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   opacity: 0;
   visibility: hidden;
 }
@@ -615,7 +647,9 @@ Navbar CSS
   margin-right: 14px;
 }
 
-.startp-nav nav .navbar-nav .nav-item a:hover, .startp-nav nav .navbar-nav .nav-item a:focus, .startp-nav nav .navbar-nav .nav-item a.active {
+.startp-nav nav .navbar-nav .nav-item a:hover,
+.startp-nav nav .navbar-nav .nav-item a:focus,
+.startp-nav nav .navbar-nav .nav-item a.active {
   color: #44ce6f;
 }
 
@@ -625,7 +659,7 @@ Navbar CSS
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
   background: #ffffff;
   position: absolute;
   border: none;
@@ -659,11 +693,14 @@ Navbar CSS
   color: #4a6f8a;
 }
 
-.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover,
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus,
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #44ce6f;
 }
 
-.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a svg, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a svg,
+.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
   float: right;
 }
 
@@ -679,7 +716,33 @@ Navbar CSS
   color: #4a6f8a;
 }
 
-.startp-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .startp-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+.startp-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li
+  .dropdown-menu
+  li
+  a:hover,
+.startp-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li
+  .dropdown-menu
+  li
+  a:focus,
+.startp-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li
+  .dropdown-menu
+  li
+  a.active {
   color: #44ce6f;
 }
 
@@ -741,25 +804,28 @@ Navbar CSS
   color: #0e314c !important;
 }
 
-.startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus {
+.startp-nav nav .others-option .btn.btn-light:hover,
+.startp-nav nav .others-option .btn.btn-light:focus {
   color: #ffffff;
   border-color: #44ce6f;
 }
 
-.startp-nav nav .others-option .btn.btn-light::after, .startp-nav nav .others-option .btn.btn-light::before {
+.startp-nav nav .others-option .btn.btn-light::after,
+.startp-nav nav .others-option .btn.btn-light::before {
   background: #44ce6f;
 }
 
 .startp-nav nav .others-option .btn.btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.startp-nav nav .others-option .btn.btn-primary::after, .startp-nav nav .others-option .btn.btn-primary::before {
+.startp-nav nav .others-option .btn.btn-primary::after,
+.startp-nav nav .others-option .btn.btn-primary::before {
   background: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .navbar-style-three .startp-nav {
@@ -771,7 +837,9 @@ Navbar CSS
   color: #ffffff;
 }
 
-.navbar-color-white .startp-nav nav .navbar-nav .nav-item a:hover, .navbar-color-white .startp-nav nav .navbar-nav .nav-item a:focus, .navbar-color-white .startp-nav nav .navbar-nav .nav-item a.active {
+.navbar-color-white .startp-nav nav .navbar-nav .nav-item a:hover,
+.navbar-color-white .startp-nav nav .navbar-nav .nav-item a:focus,
+.navbar-color-white .startp-nav nav .navbar-nav .nav-item a.active {
   color: #44ce6f;
 }
 
@@ -782,13 +850,14 @@ Navbar CSS
 .navbar-color-white .startp-nav nav .others-option .btn.btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.navbar-color-white .startp-nav nav .others-option .btn.btn-primary::after, .navbar-color-white .startp-nav nav .others-option .btn.btn-primary::before {
+.navbar-color-white .startp-nav nav .others-option .btn.btn-primary::after,
+.navbar-color-white .startp-nav nav .others-option .btn.btn-primary::before {
   background: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .navbar-color-white#header.headroom.is-sticky {
@@ -805,7 +874,7 @@ Navbar CSS
 .navbar-toggler:focus {
   outline: 0 !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar-toggler .icon-bar {
@@ -820,9 +889,9 @@ Navbar CSS
 
 .navbar-toggler .top-bar {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transform-origin: 10% 10%;
-          transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
   left: 4px;
   position: relative;
 }
@@ -834,16 +903,16 @@ Navbar CSS
 
 .navbar-toggler .bottom-bar {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -webkit-transform-origin: 10% 90%;
-          transform-origin: 10% 90%;
+  transform-origin: 10% 90%;
   left: 4px;
   position: relative;
 }
 
 .navbar-toggler.collapsed .top-bar {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
   left: 0;
 }
 
@@ -853,7 +922,7 @@ Navbar CSS
 
 .navbar-toggler.collapsed .bottom-bar {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
   left: 0;
 }
 
@@ -877,7 +946,8 @@ Main Banner CSS
   position: relative;
   height: 910px;
   z-index: 1;
-  background: transparent url(../../assets/images/banner-bg1.jpg) right top no-repeat;
+  background: transparent url(../../assets/images/banner-bg1.jpg) right top
+    no-repeat;
 }
 
 .main-banner .hero-content h1 {
@@ -893,7 +963,7 @@ Main Banner CSS
 .main-banner .banner-form {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   padding: 50px 30px;
   border-radius: 5px;
 }
@@ -906,7 +976,7 @@ Main Banner CSS
   display: block;
   width: 100%;
   -webkit-transform: unset;
-          transform: unset;
+  transform: unset;
   margin-top: 25px;
 }
 
@@ -1042,11 +1112,11 @@ Main Banner CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 20px;
   height: 2px;
   background: #44ce6f;
-  content: '';
+  content: "";
 }
 
 .hosting-main-banner .hosting-banner-content ul li:last-child {
@@ -1146,8 +1216,8 @@ Main Banner CSS
   z-index: -1;
   left: 30px;
   -webkit-animation: rotate3d 4s linear infinite;
-          animation: rotate3d 4s linear infinite;
-  opacity: .4;
+  animation: rotate3d 4s linear infinite;
+  opacity: 0.4;
 }
 
 .shape2 {
@@ -1163,7 +1233,7 @@ Main Banner CSS
   bottom: 15%;
   z-index: -1;
   -webkit-animation: animationFramesOne 15s infinite linear;
-          animation: animationFramesOne 15s infinite linear;
+  animation: animationFramesOne 15s infinite linear;
 }
 
 .shape4 {
@@ -1172,7 +1242,7 @@ Main Banner CSS
   bottom: 15%;
   z-index: -1;
   -webkit-animation: animationFramesOne 20s infinite linear;
-          animation: animationFramesOne 20s infinite linear;
+  animation: animationFramesOne 20s infinite linear;
 }
 
 .shape5 {
@@ -1181,8 +1251,8 @@ Main Banner CSS
   top: 10%;
   z-index: -1;
   -webkit-animation: movebounce 5s linear infinite;
-          animation: movebounce 5s linear infinite;
-  opacity: .2;
+  animation: movebounce 5s linear infinite;
+  opacity: 0.2;
 }
 
 .shape6 {
@@ -1198,7 +1268,7 @@ Main Banner CSS
   top: 15%;
   z-index: -1;
   -webkit-animation: animationFramesOne 20s infinite linear;
-          animation: animationFramesOne 20s infinite linear;
+  animation: animationFramesOne 20s infinite linear;
 }
 
 .shape8 {
@@ -1211,93 +1281,93 @@ Main Banner CSS
 @-webkit-keyframes movebounce {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes movebounce {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes moveleftbounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
   50% {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes moveleftbounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
   50% {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 .rotateme {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes rotateme {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotateme {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -1393,7 +1463,7 @@ Boxes CSS
   border-radius: 5px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
-          box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+  box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1424,7 +1494,7 @@ Boxes CSS
 }
 
 .single-box::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1473,7 +1543,7 @@ Boxes CSS
 
 .single-box:hover {
   -webkit-transform: translateY(-9px);
-          transform: translateY(-9px);
+  transform: translateY(-9px);
   border-color: transparent;
 }
 
@@ -1487,7 +1557,9 @@ Boxes CSS
   color: #44ce6f;
 }
 
-.single-box:hover h3, .single-box:hover p, .single-box:hover a {
+.single-box:hover h3,
+.single-box:hover p,
+.single-box:hover a {
   color: #ffffff;
 }
 
@@ -1533,7 +1605,8 @@ About CSS
 Why Choose US CSS
 =================================================*/
 .why-choose-us {
-  background: transparent url(../../assets/images/banner-bg1.jpg) right top no-repeat;
+  background: transparent url(../../assets/images/banner-bg1.jpg) right top
+    no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -1600,7 +1673,7 @@ Why Choose US CSS
   border-radius: 5px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 30px rgba(56, 46, 46, 0.1);
-          box-shadow: 0 0 30px rgba(56, 46, 46, 0.1);
+  box-shadow: 0 0 30px rgba(56, 46, 46, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 30px;
@@ -1629,7 +1702,7 @@ Why Choose US CSS
 }
 
 .single-why-choose-us::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1651,7 +1724,7 @@ Why Choose US CSS
 
 .single-why-choose-us:hover {
   -webkit-transform: translateY(-9px);
-          transform: translateY(-9px);
+  transform: translateY(-9px);
   border-color: transparent;
 }
 
@@ -1664,7 +1737,8 @@ Why Choose US CSS
   color: #ffffff;
 }
 
-.single-why-choose-us:hover h3, .single-why-choose-us:hover p {
+.single-why-choose-us:hover h3,
+.single-why-choose-us:hover p {
   color: #ffffff;
 }
 
@@ -1711,12 +1785,12 @@ Services CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   margin-top: 20px;
 }
 
 .services-content .box::before {
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   height: 100%;
@@ -1746,7 +1820,7 @@ Services CSS
 .services-content .box:hover {
   color: #ffffff;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .services-content .box:hover::before {
@@ -1995,8 +2069,9 @@ Services CSS
   background: rgba(235, 107, 61, 0.3);
 }
 
-.single-services-box::before, .single-services-box::after {
-  content: '';
+.single-services-box::before,
+.single-services-box::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 4px;
@@ -2018,9 +2093,9 @@ Services CSS
 
 .single-services-box:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-services-box:hover .icon {
@@ -2036,7 +2111,8 @@ Services CSS
   background: #eb6b3d;
 }
 
-.single-services-box:hover::after, .single-services-box:hover::before {
+.single-services-box:hover::after,
+.single-services-box:hover::before {
   opacity: 1;
   visibility: visible;
   width: 50%;
@@ -2074,7 +2150,7 @@ Bigdata Services CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: auto;
 }
 
@@ -2125,7 +2201,7 @@ Bigdata Services CSS
 
 .single-services-box-item:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .col-lg-4:nth-child(2) .single-services-box-item .icon {
@@ -2165,17 +2241,23 @@ Services Details CSS
 
 .services-details-desc .services-details-accordion .accordion .accordion__item {
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   background: #ffffff;
   margin-bottom: 10px;
   border: none;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__item:last-child {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__item:last-child {
   margin-bottom: 0;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
@@ -2186,7 +2268,11 @@ Services Details CSS
   font-weight: 500;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button i {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button
+  i {
   position: absolute;
   left: 0;
   top: 0;
@@ -2197,25 +2283,39 @@ Services Details CSS
   color: #ffffff;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button i::before {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button
+  i::before {
   position: absolute;
   left: 0;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button.active {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button.active {
   border-bottom-color: #e1e1e1;
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__button.active i::before {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__button.active
+  i::before {
   content: "\f10f";
 }
 
-.services-details-desc .services-details-accordion .accordion .accordion__panel {
+.services-details-desc
+  .services-details-accordion
+  .accordion
+  .accordion__panel {
   padding: 15px 15px;
   border-top: 1px solid #e1e1e1;
 }
@@ -2280,9 +2380,9 @@ Features CSS
 
 .single-features:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-features:hover .icon {
@@ -2337,8 +2437,9 @@ Features CSS
   background: rgba(235, 107, 61, 0.3);
 }
 
-.single-hosting-features::before, .single-hosting-features::after {
-  content: '';
+.single-hosting-features::before,
+.single-hosting-features::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 4px;
@@ -2360,9 +2461,9 @@ Features CSS
 
 .single-hosting-features:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-hosting-features:hover .icon {
@@ -2378,7 +2479,8 @@ Features CSS
   background: #eb6b3d;
 }
 
-.single-hosting-features:hover::after, .single-hosting-features:hover::before {
+.single-hosting-features:hover::after,
+.single-hosting-features:hover::before {
   opacity: 1;
   visibility: visible;
   width: 50%;
@@ -2412,7 +2514,7 @@ Features Details CSS
   left: 0;
   top: 6px;
   position: absolute;
-  content: '';
+  content: "";
 }
 
 .features-details-desc .features-details-list li:last-child {
@@ -2428,17 +2530,23 @@ Features Details CSS
 
 .features-details-desc .features-details-accordion .accordion .accordion__item {
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   background: #ffffff;
   margin-bottom: 10px;
   border: none;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__item:last-child {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__item:last-child {
   margin-bottom: 0;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
@@ -2449,7 +2557,11 @@ Features Details CSS
   font-weight: 500;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button i {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button
+  i {
   position: absolute;
   left: 0;
   top: 0;
@@ -2460,25 +2572,39 @@ Features Details CSS
   color: #ffffff;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button i::before {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button
+  i::before {
   position: absolute;
   left: 0;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button.active {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button.active {
   border-bottom-color: #e1e1e1;
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__button.active i::before {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__button.active
+  i::before {
   content: "\f10f";
 }
 
-.features-details-desc .features-details-accordion .accordion .accordion__panel {
+.features-details-desc
+  .features-details-accordion
+  .accordion
+  .accordion__panel {
   padding: 15px 15px;
   border-top: 1px solid #e1e1e1;
 }
@@ -2522,7 +2648,7 @@ Team CSS
 }
 
 .single-team .team-image::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -2556,7 +2682,7 @@ Team CSS
 
 .single-team .team-content ul li a:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   color: #44ce6f;
 }
 
@@ -2594,7 +2720,7 @@ Team CSS
 
 .single-team:hover {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-team:hover .team-image::before {
@@ -2625,7 +2751,7 @@ Works CSS
 }
 
 .single-works::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2693,7 +2819,7 @@ Works CSS
 }
 
 .single-works:hover::before {
-  opacity: .9;
+  opacity: 0.9;
   visibility: visible;
   z-index: 1;
 }
@@ -2775,19 +2901,21 @@ Fun Facts CSS
   margin-top: -27px;
 }
 
-.contact-cta-box .btn::before, .contact-cta-box .btn::after {
+.contact-cta-box .btn::before,
+.contact-cta-box .btn::after {
   background: #44ce6f;
 }
 
 .contact-cta-box .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.contact-cta-box .btn-primary:hover, .contact-cta-box .btn-primary:focus {
+.contact-cta-box .btn-primary:hover,
+.contact-cta-box .btn-primary:focus {
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .funfacts-area.bg-image {
@@ -2800,7 +2928,7 @@ Fun Facts CSS
 }
 
 .funfacts-area.bg-image::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -2860,7 +2988,7 @@ Pricing CSS
 .pricing-table {
   background: #ffffff;
   -webkit-box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding-bottom: 35px;
   -webkit-transition: 0.5s;
@@ -2885,7 +3013,7 @@ Pricing CSS
 }
 
 .pricing-table .pricing-header::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2950,7 +3078,7 @@ Pricing CSS
 
 .pricing-table:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .pricing-table:hover .pricing-header::before {
@@ -2974,19 +3102,20 @@ Pricing CSS
 .pricing-table.active-plan .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.pricing-table.active-plan .btn-primary::after, .pricing-table.active-plan .btn-primary::before {
+.pricing-table.active-plan .btn-primary::after,
+.pricing-table.active-plan .btn-primary::before {
   background: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .single-pricing-table {
   background: #ffffff;
   -webkit-box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding: 35px;
   -webkit-transition: 0.5s;
@@ -3052,13 +3181,14 @@ Pricing CSS
 .single-pricing-table.active-plan .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.single-pricing-table.active-plan .btn-primary::after, .single-pricing-table.active-plan .btn-primary::before {
+.single-pricing-table.active-plan .btn-primary::after,
+.single-pricing-table.active-plan .btn-primary::before {
   background: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .tab .tabs_item {
@@ -3070,8 +3200,24 @@ Pricing CSS
 }
 
 .tab .tabs_item:nth-child(2) .pricing-box {
-  background: -webkit-gradient(linear, left bottom, right top, from(#fffcff), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#d5fefd));
-  background: linear-gradient(to right top, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#fffcff),
+    color-stop(#fbfaff),
+    color-stop(#effbff),
+    color-stop(#e0fdff),
+    to(#d5fefd)
+  );
+  background: linear-gradient(
+    to right top,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
 }
 
 .pricing-tab .tabs {
@@ -3083,8 +3229,24 @@ Pricing CSS
 
 .pricing-tab .tabs li {
   display: inline-block;
-  background: -webkit-gradient(linear, right top, left bottom, from(#fffcff), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#d5fefd));
-  background: linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#fffcff),
+    color-stop(#fbfaff),
+    color-stop(#effbff),
+    color-stop(#e0fdff),
+    to(#d5fefd)
+  );
+  background: linear-gradient(
+    to left bottom,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
   padding: 10px 30px 9.5px;
   cursor: pointer;
   margin-left: -2px;
@@ -3095,8 +3257,24 @@ Pricing CSS
 
 .pricing-tab .tabs li:hover {
   color: #0e314c;
-  background: -webkit-gradient(linear, right top, left bottom, from(#fffcff), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#d5fefd));
-  background: linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#fffcff),
+    color-stop(#fbfaff),
+    color-stop(#effbff),
+    color-stop(#e0fdff),
+    to(#d5fefd)
+  );
+  background: linear-gradient(
+    to left bottom,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
 }
 
 .pricing-tab .tabs li.current {
@@ -3121,8 +3299,24 @@ Pricing CSS
 }
 
 .pricing-box {
-  background: -webkit-gradient(linear, right top, left bottom, from(#fffcff), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#d5fefd));
-  background: linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#fffcff),
+    color-stop(#fbfaff),
+    color-stop(#effbff),
+    color-stop(#e0fdff),
+    to(#d5fefd)
+  );
+  background: linear-gradient(
+    to left bottom,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
   text-align: center;
   padding: 30px;
   -webkit-transition: 0.5s;
@@ -3164,15 +3358,31 @@ Pricing CSS
 
 .pricing-box .buy-btn .btn {
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   -webkit-transform: unset !important;
-          transform: unset !important;
+  transform: unset !important;
 }
 
 .pricing-box .buy-btn .btn-primary {
   border-radius: 30px;
-  background: -webkit-gradient(linear, left bottom, right top, from(#a3a3a3), color-stop(#9a9a9a), color-stop(#909090), color-stop(#878787), to(#7e7e7e));
-  background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#a3a3a3),
+    color-stop(#9a9a9a),
+    color-stop(#909090),
+    color-stop(#878787),
+    to(#7e7e7e)
+  );
+  background: linear-gradient(
+    to right top,
+    #a3a3a3,
+    #9a9a9a,
+    #909090,
+    #878787,
+    #7e7e7e
+  );
   text-transform: capitalize;
   padding: 11px 30px;
   font-weight: 500;
@@ -3190,12 +3400,37 @@ Pricing CSS
   display: none;
 }
 
-.pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled).active, .pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled):active, .pricing-box .buy-btn .btn-primary .show > .pricing-box .buy-btn .btn-primary.dropdown-toggle {
-  background: -webkit-gradient(linear, left bottom, right top, from(#a3a3a3), color-stop(#9a9a9a), color-stop(#909090), color-stop(#878787), to(#7e7e7e));
-  background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
+.pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled).active,
+.pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled):active,
+.pricing-box
+  .buy-btn
+  .btn-primary
+  .show
+  > .pricing-box
+  .buy-btn
+  .btn-primary.dropdown-toggle {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#a3a3a3),
+    color-stop(#9a9a9a),
+    color-stop(#909090),
+    color-stop(#878787),
+    to(#7e7e7e)
+  );
+  background: linear-gradient(
+    to right top,
+    #a3a3a3,
+    #9a9a9a,
+    #909090,
+    #878787,
+    #7e7e7e
+  );
 }
 
-.pricing-box .buy-btn .btn-primary:hover::after, .pricing-box .buy-btn .btn-primary:focus::after {
+.pricing-box .buy-btn .btn-primary:hover::after,
+.pricing-box .buy-btn .btn-primary:focus::after {
   opacity: 0;
   visibility: hidden;
 }
@@ -3225,7 +3460,7 @@ Pricing CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 20px;
 }
 
@@ -3247,7 +3482,7 @@ Domain Search CSS
 
 .domain-search-content form {
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   overflow: hidden;
   border-radius: 30px;
@@ -3279,12 +3514,12 @@ Domain Search CSS
 
 .domain-search-content form .domain-select .form-select:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .domain-search-content form button {
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   float: left;
   width: 22%;
   height: 55px;
@@ -3302,7 +3537,8 @@ Domain Search CSS
   transition: 0.5s;
 }
 
-.domain-search-content form button:hover, .domain-search-content form button:focus {
+.domain-search-content form button:hover,
+.domain-search-content form button:focus {
   background-color: #c679e3;
 }
 
@@ -3391,7 +3627,7 @@ Feedback CSS
 }
 
 .feedback-slides .client-feedback .single-feedback::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -25px;
@@ -3401,7 +3637,7 @@ Feedback CSS
   right: 0;
   margin: 0 auto;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .feedback-slides .client-thumbnails {
@@ -3427,7 +3663,8 @@ Feedback CSS
   width: 70px;
 }
 
-.feedback-slides .client-thumbnails .item:hover .img-fill img, .feedback-slides .client-thumbnails .item.slick-center .img-fill img {
+.feedback-slides .client-thumbnails .item:hover .img-fill img,
+.feedback-slides .client-thumbnails .item.slick-center .img-fill img {
   opacity: 1;
 }
 
@@ -3435,14 +3672,15 @@ Feedback CSS
   opacity: 1;
 }
 
-.client-thumbnails .next-arrow, .client-thumbnails .prev-arrow {
+.client-thumbnails .next-arrow,
+.client-thumbnails .prev-arrow {
   position: absolute;
   width: 40px;
   height: 40px;
   cursor: pointer;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background: transparent;
   color: #5e5e5e;
   border: 2px solid #5e5e5e;
@@ -3454,8 +3692,9 @@ Feedback CSS
   transition: 0.5s;
 }
 
-.client-thumbnails .next-arrow::before, .client-thumbnails .prev-arrow::before {
-  content: '';
+.client-thumbnails .next-arrow::before,
+.client-thumbnails .prev-arrow::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -3469,17 +3708,20 @@ Feedback CSS
   border-radius: 50%;
 }
 
-.client-thumbnails .next-arrow:hover, .client-thumbnails .prev-arrow:hover {
+.client-thumbnails .next-arrow:hover,
+.client-thumbnails .prev-arrow:hover {
   color: #ffffff;
   border-color: #44ce6f;
 }
 
-.client-thumbnails .next-arrow:hover::before, .client-thumbnails .prev-arrow:hover::before {
+.client-thumbnails .next-arrow:hover::before,
+.client-thumbnails .prev-arrow:hover::before {
   opacity: 1;
   visibility: visible;
 }
 
-.client-thumbnails .next-arrow svg, .client-thumbnails .prev-arrow svg {
+.client-thumbnails .next-arrow svg,
+.client-thumbnails .prev-arrow svg {
   width: 18px;
   height: 18px;
   position: relative;
@@ -3507,7 +3749,7 @@ Feedback CSS
   top: -30px;
   width: 260px;
   height: 260px;
-  content: '';
+  content: "";
   z-index: -1;
   background-image: url(../../assets/images/layer.png);
 }
@@ -3518,7 +3760,7 @@ Feedback CSS
   bottom: -30px;
   width: 260px;
   height: 260px;
-  content: '';
+  content: "";
   z-index: -1;
   background-image: url(../../assets/images/layer.png);
 }
@@ -3534,14 +3776,14 @@ Feedback CSS
   width: 18px;
   height: 18px;
   background: transparent !important;
-  border: 2px solid #D6D6D6;
+  border: 2px solid #d6d6d6;
   position: relative;
   margin: 0 3px;
 }
 
 .testimonials-slides.owl-theme .owl-dots .owl-dot span::before {
-  background: #D6D6D6;
-  content: '';
+  background: #d6d6d6;
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -3552,16 +3794,18 @@ Feedback CSS
   border-radius: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span, .testimonials-slides.owl-theme .owl-dots .owl-dot.active span {
+.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span,
+.testimonials-slides.owl-theme .owl-dots .owl-dot.active span {
   border-color: #44ce6f;
 }
 
-.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span::before, .testimonials-slides.owl-theme .owl-dots .owl-dot.active span::before {
+.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span::before,
+.testimonials-slides.owl-theme .owl-dots .owl-dot.active span::before {
   background: #44ce6f;
 }
 
@@ -3637,12 +3881,13 @@ Feedback CSS
   height: 15px;
   margin: 0 5px;
   background: #d6d6d6;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
-.agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot:hover span, .agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot.active span {
+.agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot:hover span,
+.agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot.active span {
   background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 }
 
@@ -3711,7 +3956,7 @@ Feedback CSS
 }
 
 .single-feedback-box .feedback-desc::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 35px;
   bottom: -12px;
@@ -3720,7 +3965,7 @@ Feedback CSS
   z-index: -1;
   background: #ffffff;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .single-feedback-box::before {
@@ -3760,7 +4005,7 @@ Feedback CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -3801,20 +4046,22 @@ Ready To Talk CSS
   font-size: 16px;
 }
 
-.ready-to-talk .btn::before, .ready-to-talk .btn::after {
+.ready-to-talk .btn::before,
+.ready-to-talk .btn::after {
   background: #ffffff;
 }
 
 .ready-to-talk .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
 }
 
-.ready-to-talk .btn-primary:hover, .ready-to-talk .btn-primary:focus {
+.ready-to-talk .btn-primary:hover,
+.ready-to-talk .btn-primary:focus {
   color: #0e314c;
   -webkit-box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
 }
 
 .ready-to-talk span a {
@@ -3874,7 +4121,7 @@ Big Data Analytics Banner CSS
 }
 
 .single-banner-boxes::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -3989,7 +4236,7 @@ What We Do CSS
   right: 0;
   top: 40%;
   -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
 .single-what-we-do-box .icon i::before {
@@ -4059,7 +4306,7 @@ Discover CSS
 
 .discover-content .btn-primary {
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   margin-top: 15px;
   background-color: #ffffff;
   color: #0e314c;
@@ -4074,7 +4321,7 @@ Discover CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -4083,7 +4330,7 @@ Discover CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -4111,7 +4358,7 @@ Partner CSS
   padding-right: 30px;
   padding-bottom: 30px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   border-radius: 3px;
   margin-top: 25px;
 }
@@ -4183,7 +4430,7 @@ Industries Serve CSS
   top: 50%;
   line-height: 1;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   color: #c3c3c9;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -4198,7 +4445,7 @@ Industries Serve CSS
   top: 0;
   width: 0;
   height: 100%;
-  content: '';
+  content: "";
   z-index: -1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -4319,7 +4566,7 @@ Blog CSS
 
 .single-blog-post:hover {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-blog-post:hover .blog-post-content {
@@ -4342,8 +4589,24 @@ Blog CSS
 }
 
 .single-blog-post-box .entry-post-content {
-  background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
-  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#d5fefd),
+    color-stop(#e0fdff),
+    color-stop(#effbff),
+    color-stop(#fbfaff),
+    to(#fffcff)
+  );
+  background: linear-gradient(
+    to right top,
+    #d5fefd,
+    #e0fdff,
+    #effbff,
+    #fbfaff,
+    #fffcff
+  );
   padding: 20px;
 }
 
@@ -4366,12 +4629,12 @@ Blog CSS
 }
 
 .single-blog-post-box .entry-post-content .entry-meta ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -7px;
   top: 50%;
   -webkit-transform: rotate(14deg) translateY(-50%);
-          transform: rotate(14deg) translateY(-50%);
+  transform: rotate(14deg) translateY(-50%);
   background: #6084a4;
   width: 1px;
   height: 13px;
@@ -4444,7 +4707,7 @@ Blog CSS
 }
 
 .single-blog-item .post-content .post-meta li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   right: -20px;
@@ -4477,12 +4740,13 @@ Blog CSS
   height: 15px;
   margin: 0 5px;
   background: #d6d6d6;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
-.blog-slides.owl-theme .owl-dots .owl-dot:hover span, .blog-slides.owl-theme .owl-dots .owl-dot.active span {
+.blog-slides.owl-theme .owl-dots .owl-dot:hover span,
+.blog-slides.owl-theme .owl-dots .owl-dot.active span {
   background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 }
 
@@ -4507,13 +4771,29 @@ Blog CSS
 .single-blog-post-item .post-content {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
-  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#d5fefd),
+    color-stop(#e0fdff),
+    color-stop(#effbff),
+    color-stop(#fbfaff),
+    to(#fffcff)
+  );
+  background: linear-gradient(
+    to right top,
+    #d5fefd,
+    #e0fdff,
+    #effbff,
+    #fbfaff,
+    #fffcff
+  );
   position: relative;
   border-radius: 5px;
   padding: 30px 25px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
   margin-left: 15px;
   margin-right: 15px;
   margin-top: -30px;
@@ -4543,7 +4823,7 @@ Blog CSS
 }
 
 .single-blog-post-item .post-content .post-meta li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -10px;
   top: 4px;
@@ -4551,7 +4831,7 @@ Blog CSS
   background-color: #6084a4;
   width: 1px;
   -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .single-blog-post-item .post-content .post-meta li:last-child {
@@ -4600,17 +4880,17 @@ Blog CSS
 
 .single-blog-post-item:hover .post-content {
   -webkit-transform: translateY(-22px);
-          transform: translateY(-22px);
+  transform: translateY(-22px);
 }
 
 .single-blog-post-item:hover .post-content .post-meta {
   -webkit-transform: translateY(-12px);
-          transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 .single-blog-post-item:hover .post-content h3 {
   -webkit-transform: translateY(-12px);
-          transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 .single-blog-post-item:hover .post-content .read-more-btn {
@@ -4642,7 +4922,7 @@ Shop CSS
 
 .woocommerce-topbar .woocommerce-topbar-ordering .form-select:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .single-products {
@@ -4720,7 +5000,7 @@ Shop CSS
   width: 100%;
   height: 100%;
   background: gray;
-  content: '';
+  content: "";
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1;
@@ -4738,7 +5018,7 @@ Shop CSS
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
@@ -4761,7 +5041,8 @@ Shop CSS
   width: 20px;
 }
 
-.single-products .products-image ul li a:hover, .single-products .products-image ul li a:focus {
+.single-products .products-image ul li a:hover,
+.single-products .products-image ul li a:focus {
   background-color: #44ce6f;
   color: #ffffff;
 }
@@ -4774,31 +5055,37 @@ Shop CSS
   margin-right: -15px;
 }
 
-.single-products:hover .products-content .add-to-cart-btn, .single-products:focus .products-content .add-to-cart-btn {
+.single-products:hover .products-content .add-to-cart-btn,
+.single-products:focus .products-content .add-to-cart-btn {
   background-color: #0e314c;
   color: #ffffff;
 }
 
-.single-products:hover .products-image img, .single-products:focus .products-image img {
+.single-products:hover .products-image img,
+.single-products:focus .products-image img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.single-products:hover .products-image::before, .single-products:focus .products-image::before {
-  opacity: .40;
+.single-products:hover .products-image::before,
+.single-products:focus .products-image::before {
+  opacity: 0.4;
   visibility: visible;
 }
 
-.single-products:hover .products-image ul, .single-products:focus .products-image ul {
+.single-products:hover .products-image ul,
+.single-products:focus .products-image ul {
   opacity: 1;
   visibility: visible;
 }
 
-.single-products:hover .products-image ul li a:nth-child(1), .single-products:focus .products-image ul li a:nth-child(1) {
+.single-products:hover .products-image ul li a:nth-child(1),
+.single-products:focus .products-image ul li a:nth-child(1) {
   margin-left: 0;
 }
 
-.single-products:hover .products-image ul li a:nth-child(3), .single-products:focus .products-image ul li a:nth-child(3) {
+.single-products:hover .products-image ul li a:nth-child(3),
+.single-products:focus .products-image ul li a:nth-child(3) {
   margin-right: 0;
 }
 
@@ -4833,12 +5120,14 @@ Shop CSS
   transition: 0.5s;
 }
 
-#productsModalCenter .modal-content button.close:hover, #productsModalCenter .modal-content button.close:focus {
+#productsModalCenter .modal-content button.close:hover,
+#productsModalCenter .modal-content button.close:focus {
   background-color: #44ce6f;
   color: #ffffff;
 }
 
-#productsModalCenter .modal-content button.close:hover span, #productsModalCenter .modal-content button.close:focus span {
+#productsModalCenter .modal-content button.close:hover span,
+#productsModalCenter .modal-content button.close:focus span {
   color: #ffffff;
 }
 
@@ -4873,7 +5162,12 @@ Shop CSS
   margin-right: 8px;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter {
   max-width: 110px;
   min-width: 110px;
   text-align: center;
@@ -4881,7 +5175,13 @@ Shop CSS
   position: relative;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter span {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  span {
   position: absolute;
   top: 0;
   background-color: transparent;
@@ -4895,23 +5195,54 @@ Shop CSS
   padding: 0;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter span.minus-btn {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  span.minus-btn {
   left: 0;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter span.plus-btn {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  span.plus-btn {
   right: 0;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter span svg {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  span
+  svg {
   width: 20px;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter span:hover {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  span:hover {
   color: #44ce6f;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter input {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  input {
   height: 47px;
   color: #0e314c;
   outline: 0;
@@ -4924,19 +5255,43 @@ Shop CSS
   font-weight: 500;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter input::-webkit-input-placeholder {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  input::-webkit-input-placeholder {
   color: #0e314c;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter input:-ms-input-placeholder {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  input:-ms-input-placeholder {
   color: #0e314c;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter input::-ms-input-placeholder {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  input::-ms-input-placeholder {
   color: #0e314c;
 }
 
-#productsModalCenter .modal-content .products-content form .quantity .input-counter input::placeholder {
+#productsModalCenter
+  .modal-content
+  .products-content
+  form
+  .quantity
+  .input-counter
+  input::placeholder {
   color: #0e314c;
 }
 
@@ -4954,7 +5309,8 @@ Shop CSS
   transition: 0.5s;
 }
 
-#productsModalCenter .modal-content .products-content form button:hover, #productsModalCenter .modal-content .products-content form button:focus {
+#productsModalCenter .modal-content .products-content form button:hover,
+#productsModalCenter .modal-content .products-content form button:focus {
   background-color: #c679e3;
   color: #ffffff;
 }
@@ -4975,7 +5331,7 @@ Shop Details CSS
   width: 100%;
 }
 
-.products-details-image.owl-theme .owl-nav [class*='owl-'] {
+.products-details-image.owl-theme .owl-nav [class*="owl-"] {
   color: #0e314c;
   font-size: 45px;
   margin: 0;
@@ -4991,15 +5347,15 @@ Shop Details CSS
   left: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.products-details-image.owl-theme .owl-nav [class*='owl-'].owl-next {
+.products-details-image.owl-theme .owl-nav [class*="owl-"].owl-next {
   left: auto;
   right: 15px;
 }
 
-.products-details-image.owl-theme:hover .owl-nav [class*='owl-'] {
+.products-details-image.owl-theme:hover .owl-nav [class*="owl-"] {
   opacity: 1;
   visibility: visible;
 }
@@ -5113,7 +5469,11 @@ Shop Details CSS
   font-weight: 500;
 }
 
-.products-details form .quantity .input-counter input::-webkit-input-placeholder {
+.products-details
+  form
+  .quantity
+  .input-counter
+  input::-webkit-input-placeholder {
   color: #0e314c;
 }
 
@@ -5143,7 +5503,8 @@ Shop Details CSS
   transition: 0.5s;
 }
 
-.products-details form button:hover, .products-details form button:focus {
+.products-details form button:hover,
+.products-details form button:focus {
   background-color: #c679e3;
   color: #ffffff;
 }
@@ -5165,7 +5526,8 @@ Shop Details CSS
   line-height: 45px;
 }
 
-.products-details form .add-to-wishlist-btn:hover, .products-details form .add-to-wishlist-btn:focus {
+.products-details form .add-to-wishlist-btn:hover,
+.products-details form .add-to-wishlist-btn:focus {
   background-color: #c679e3;
   color: #ffffff;
   border-color: #c679e3;
@@ -5178,13 +5540,14 @@ Shop Details CSS
 .products-details form .buy-btn .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.products-details form .buy-btn .btn-primary::after, .products-details form .buy-btn .btn-primary::before {
+.products-details form .buy-btn .btn-primary::after,
+.products-details form .buy-btn .btn-primary::before {
   background: #44ce6f;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
 .products-details .custom-payment-options {
@@ -5246,32 +5609,32 @@ Shop Details CSS
 }
 
 .products-details .products-share-social ul li a.twitter {
-  border-color: #38A1F3;
-  color: #38A1F3;
+  border-color: #38a1f3;
+  color: #38a1f3;
 }
 
 .products-details .products-share-social ul li a.twitter:hover {
-  background: #38A1F3;
+  background: #38a1f3;
   color: #ffffff;
 }
 
 .products-details .products-share-social ul li a.linkedin {
-  border-color: #0077B5;
-  color: #0077B5;
+  border-color: #0077b5;
+  color: #0077b5;
 }
 
 .products-details .products-share-social ul li a.linkedin:hover {
-  background: #0077B5;
+  background: #0077b5;
   color: #ffffff;
 }
 
 .products-details .products-share-social ul li a.instagram {
-  border-color: #231F20;
-  color: #231F20;
+  border-color: #231f20;
+  color: #231f20;
 }
 
 .products-details .products-share-social ul li a.instagram:hover {
-  background: #231F20;
+  background: #231f20;
   color: #ffffff;
 }
 
@@ -5302,13 +5665,17 @@ Shop Details CSS
   font-weight: 500;
 }
 
-.products-details-tabs .react-tabs__tab-list li.active, .products-details-tabs .react-tabs__tab-list li.react-tabs__tab--selected {
+.products-details-tabs .react-tabs__tab-list li.active,
+.products-details-tabs .react-tabs__tab-list li.react-tabs__tab--selected {
   background-color: #ffffff;
   position: relative;
 }
 
-.products-details-tabs .react-tabs__tab-list li.active::before, .products-details-tabs .react-tabs__tab-list li.react-tabs__tab--selected::before {
-  content: '';
+.products-details-tabs .react-tabs__tab-list li.active::before,
+.products-details-tabs
+  .react-tabs__tab-list
+  li.react-tabs__tab--selected::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 4px;
@@ -5341,7 +5708,10 @@ Shop Details CSS
   color: #6084a4;
 }
 
-.products-details-tabs .react-tabs__tab-panel .additional-information li:last-child {
+.products-details-tabs
+  .react-tabs__tab-panel
+  .additional-information
+  li:last-child {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -5362,7 +5732,11 @@ Shop Details CSS
   margin-bottom: 0;
 }
 
-.products-details-tabs .react-tabs__tab-panel .products-reviews .review-form .form-control {
+.products-details-tabs
+  .react-tabs__tab-panel
+  .products-reviews
+  .review-form
+  .form-control {
   background: transparent;
 }
 
@@ -5377,22 +5751,22 @@ Shop Details CSS
 @-webkit-keyframes scaleup {
   from {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scaleup {
   from {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -5520,19 +5894,43 @@ Cart CSS
   font-weight: 500;
 }
 
-.cart-table table tbody tr td.product-quantity .input-counter input::-webkit-input-placeholder {
+.cart-table
+  table
+  tbody
+  tr
+  td.product-quantity
+  .input-counter
+  input::-webkit-input-placeholder {
   color: #0e314c;
 }
 
-.cart-table table tbody tr td.product-quantity .input-counter input:-ms-input-placeholder {
+.cart-table
+  table
+  tbody
+  tr
+  td.product-quantity
+  .input-counter
+  input:-ms-input-placeholder {
   color: #0e314c;
 }
 
-.cart-table table tbody tr td.product-quantity .input-counter input::-ms-input-placeholder {
+.cart-table
+  table
+  tbody
+  tr
+  td.product-quantity
+  .input-counter
+  input::-ms-input-placeholder {
   color: #0e314c;
 }
 
-.cart-table table tbody tr td.product-quantity .input-counter input::placeholder {
+.cart-table
+  table
+  tbody
+  tr
+  td.product-quantity
+  .input-counter
+  input::placeholder {
   color: #0e314c;
 }
 
@@ -5544,11 +5942,17 @@ Cart CSS
   background-color: #eaedff;
 }
 
-.cart-buttons .btn-light:hover, .cart-buttons .btn-light:focus {
+.cart-buttons .btn-light:hover,
+.cart-buttons .btn-light:focus {
   color: #ffffff;
 }
 
-.cart-buttons .btn-light:hover:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:hover:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:hover .show > .btn-light.dropdown-toggle, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:focus .show > .btn-light.dropdown-toggle {
+.cart-buttons .btn-light:hover:not(:disabled):not(.disabled).active,
+.cart-buttons .btn-light:hover:not(:disabled):not(.disabled):active,
+.cart-buttons .btn-light:hover .show > .btn-light.dropdown-toggle,
+.cart-buttons .btn-light:focus:not(:disabled):not(.disabled).active,
+.cart-buttons .btn-light:focus:not(:disabled):not(.disabled):active,
+.cart-buttons .btn-light:focus .show > .btn-light.dropdown-toggle {
   color: #ffffff;
 }
 
@@ -5561,7 +5965,7 @@ Cart CSS
   padding: 40px;
   max-width: 600px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   margin: 45px auto 0;
 }
@@ -5602,7 +6006,7 @@ Checkout CSS
 =================================================*/
 .user-actions {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 18px 25px 15px;
   margin-bottom: 35px;
@@ -5626,7 +6030,8 @@ Checkout CSS
   color: #0e314c;
 }
 
-.user-actions span a:hover, .user-actions span a:focus {
+.user-actions span a:hover,
+.user-actions span a:focus {
   color: #44ce6f;
 }
 
@@ -5637,7 +6042,7 @@ Checkout CSS
 
 .billing-details {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 25px;
   border-radius: 5px;
@@ -5693,7 +6098,7 @@ Checkout CSS
 
 .order-details {
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 25px;
   border-radius: 5px;
@@ -5728,7 +6133,9 @@ Checkout CSS
   color: #44ce6f;
 }
 
-.order-details .order-table table tbody tr td.order-subtotal span, .order-details .order-table table tbody tr td.order-shipping span, .order-details .order-table table tbody tr td.total-price span {
+.order-details .order-table table tbody tr td.order-subtotal span,
+.order-details .order-table table tbody tr td.order-shipping span,
+.order-details .order-table table tbody tr td.total-price span {
   color: #0e314c;
   font-weight: 500;
 }
@@ -5743,11 +6150,13 @@ Checkout CSS
   font-size: 14px;
 }
 
-.order-details .payment-method p [type="radio"]:checked, .order-details .payment-method p [type="radio"]:not(:checked) {
+.order-details .payment-method p [type="radio"]:checked,
+.order-details .payment-method p [type="radio"]:not(:checked) {
   display: none;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label, .order-details .payment-method p [type="radio"]:not(:checked) + label {
+.order-details .payment-method p [type="radio"]:checked + label,
+.order-details .payment-method p [type="radio"]:not(:checked) + label {
   padding-left: 27px;
   cursor: pointer;
   display: block;
@@ -5757,8 +6166,9 @@ Checkout CSS
   font-weight: 500;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label::before, .order-details .payment-method p [type="radio"]:not(:checked) + label::before {
-  content: '';
+.order-details .payment-method p [type="radio"]:checked + label::before,
+.order-details .payment-method p [type="radio"]:not(:checked) + label::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 4px;
@@ -5769,8 +6179,9 @@ Checkout CSS
   background: #ffffff;
 }
 
-.order-details .payment-method p [type="radio"]:checked + label::after, .order-details .payment-method p [type="radio"]:not(:checked) + label::after {
-  content: '';
+.order-details .payment-method p [type="radio"]:checked + label::after,
+.order-details .payment-method p [type="radio"]:not(:checked) + label::after {
+  content: "";
   width: 12px;
   height: 12px;
   background: #44ce6f;
@@ -5786,14 +6197,14 @@ Checkout CSS
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .order-details .payment-method p [type="radio"]:checked + label::after {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .order-details .btn.order-btn {
@@ -5807,7 +6218,8 @@ Page Title CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(../../assets/images/banner-bg1.jpg) right top no-repeat;
+  background: transparent url(../../assets/images/banner-bg1.jpg) right top
+    no-repeat;
   padding-top: 190px;
   padding-bottom: 100px;
   text-align: center;
@@ -5824,7 +6236,7 @@ FAQ CSS
 =================================================*/
 .faq-accordion {
   -webkit-box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
   padding: 60px;
   background: #ffffff;
   border-radius: 10px;
@@ -5839,7 +6251,7 @@ FAQ CSS
 
 .faq-accordion .accordion .accordion__item {
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   background: #ffffff;
   margin-bottom: 15px;
   border: none;
@@ -5877,7 +6289,7 @@ FAQ CSS
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
 }
 
@@ -5897,7 +6309,7 @@ FAQ CSS
 .faq-contact {
   margin-top: 45px;
   -webkit-box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
   padding: 60px;
   border-radius: 4px;
   background: #ffffff;
@@ -5933,14 +6345,15 @@ Pagination CSS
   border: none;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 10px 0 #d8dde6;
-          box-shadow: 0 2px 10px 0 #d8dde6;
+  box-shadow: 0 2px 10px 0 #d8dde6;
 }
 
-.pagination-area ul .page-item .page-link:hover, .pagination-area ul .page-item .page-link:focus {
+.pagination-area ul .page-item .page-link:hover,
+.pagination-area ul .page-item .page-link:focus {
   color: #ffffff;
   background-color: #44ce6f;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .pagination-area ul .page-item .page-link svg {
@@ -5994,7 +6407,7 @@ Blog Details CSS
 }
 
 .blog-details-desc .article-content .entry-meta ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   right: -15px;
@@ -6011,7 +6424,11 @@ Blog Details CSS
   display: none;
 }
 
-.blog-details-desc .article-content h1, .blog-details-desc .article-content h2, .blog-details-desc .article-content h3, .blog-details-desc .article-content h4, .blog-details-desc .article-content h5 {
+.blog-details-desc .article-content h1,
+.blog-details-desc .article-content h2,
+.blog-details-desc .article-content h3,
+.blog-details-desc .article-content h4,
+.blog-details-desc .article-content h5 {
   margin-bottom: 15px;
 }
 
@@ -6052,7 +6469,7 @@ Blog Details CSS
 .blog-details-desc .article-content .block-gallery.columns-3 li {
   -ms-flex: 0 0 33.3333%;
   -webkit-box-flex: 0;
-          flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
   max-width: 33.3333%;
   padding-right: 10px;
   padding-left: 10px;
@@ -6118,7 +6535,8 @@ Blog Details CSS
   font-size: 20px;
 }
 
-.comments-area ol, .comments-area ul {
+.comments-area ol,
+.comments-area ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -6189,7 +6607,7 @@ Blog Details CSS
 }
 
 .comments-area .comment-metadata {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
   color: #6084a4;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -6214,7 +6632,10 @@ Blog Details CSS
   font-size: 20px;
 }
 
-.comments-area .comment-respond .comment-reply-title #cancel-comment-reply-link {
+.comments-area
+  .comment-respond
+  .comment-reply-title
+  #cancel-comment-reply-link {
   display: inline-block;
 }
 
@@ -6244,7 +6665,19 @@ Blog Details CSS
   font-size: 14px;
 }
 
-.comments-area .comment-respond input[type="date"], .comments-area .comment-respond input[type="time"], .comments-area .comment-respond input[type="datetime-local"], .comments-area .comment-respond input[type="week"], .comments-area .comment-respond input[type="month"], .comments-area .comment-respond input[type="text"], .comments-area .comment-respond input[type="email"], .comments-area .comment-respond input[type="url"], .comments-area .comment-respond input[type="password"], .comments-area .comment-respond input[type="search"], .comments-area .comment-respond input[type="tel"], .comments-area .comment-respond input[type="number"], .comments-area .comment-respond textarea {
+.comments-area .comment-respond input[type="date"],
+.comments-area .comment-respond input[type="time"],
+.comments-area .comment-respond input[type="datetime-local"],
+.comments-area .comment-respond input[type="week"],
+.comments-area .comment-respond input[type="month"],
+.comments-area .comment-respond input[type="text"],
+.comments-area .comment-respond input[type="email"],
+.comments-area .comment-respond input[type="url"],
+.comments-area .comment-respond input[type="password"],
+.comments-area .comment-respond input[type="search"],
+.comments-area .comment-respond input[type="tel"],
+.comments-area .comment-respond input[type="number"],
+.comments-area .comment-respond textarea {
   display: block;
   width: 100%;
   background-color: #ffffff;
@@ -6255,7 +6688,19 @@ Blog Details CSS
   transition: 0.5s;
 }
 
-.comments-area .comment-respond input[type="date"]:focus, .comments-area .comment-respond input[type="time"]:focus, .comments-area .comment-respond input[type="datetime-local"]:focus, .comments-area .comment-respond input[type="week"]:focus, .comments-area .comment-respond input[type="month"]:focus, .comments-area .comment-respond input[type="text"]:focus, .comments-area .comment-respond input[type="email"]:focus, .comments-area .comment-respond input[type="url"]:focus, .comments-area .comment-respond input[type="password"]:focus, .comments-area .comment-respond input[type="search"]:focus, .comments-area .comment-respond input[type="tel"]:focus, .comments-area .comment-respond input[type="number"]:focus, .comments-area .comment-respond textarea:focus {
+.comments-area .comment-respond input[type="date"]:focus,
+.comments-area .comment-respond input[type="time"]:focus,
+.comments-area .comment-respond input[type="datetime-local"]:focus,
+.comments-area .comment-respond input[type="week"]:focus,
+.comments-area .comment-respond input[type="month"]:focus,
+.comments-area .comment-respond input[type="text"]:focus,
+.comments-area .comment-respond input[type="email"]:focus,
+.comments-area .comment-respond input[type="url"]:focus,
+.comments-area .comment-respond input[type="password"]:focus,
+.comments-area .comment-respond input[type="search"]:focus,
+.comments-area .comment-respond input[type="tel"]:focus,
+.comments-area .comment-respond input[type="number"]:focus,
+.comments-area .comment-respond textarea:focus {
   border-color: #44ce6f;
 }
 
@@ -6323,11 +6768,12 @@ Blog Details CSS
   font-size: 14px;
 }
 
-.comments-area .comment-respond .form-submit input:hover, .comments-area .comment-respond .form-submit input:focus {
+.comments-area .comment-respond .form-submit input:hover,
+.comments-area .comment-respond .form-submit input:focus {
   color: #ffffff;
   background-color: #c679e3;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .startp-post-navigation {
@@ -6346,7 +6792,7 @@ Blog Details CSS
 .prev-link-wrapper {
   -ms-flex: 0 0 50%;
   -webkit-box-flex: 0;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
   padding-right: 15px;
 }
@@ -6393,7 +6839,7 @@ Blog Details CSS
 
 .prev-link-wrapper .image-prev::after {
   display: block;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
@@ -6412,7 +6858,7 @@ Blog Details CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   margin: 0 auto;
   text-align: center;
@@ -6451,7 +6897,7 @@ Blog Details CSS
 .next-link-wrapper {
   -ms-flex: 0 0 50%;
   -webkit-box-flex: 0;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
   text-align: right;
   padding-left: 15px;
@@ -6499,7 +6945,7 @@ Blog Details CSS
 
 .next-link-wrapper .image-next::after {
   display: block;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
@@ -6518,7 +6964,7 @@ Blog Details CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   margin: 0 auto;
   text-align: center;
@@ -6554,7 +7000,8 @@ Blog Details CSS
   font-size: 14px;
 }
 
-blockquote, .blockquote {
+blockquote,
+.blockquote {
   overflow: hidden;
   background-color: #fafafa;
   padding: 50px !important;
@@ -6564,7 +7011,8 @@ blockquote, .blockquote {
   margin-top: 20px;
 }
 
-blockquote p, .blockquote p {
+blockquote p,
+.blockquote p {
   color: #0e314c;
   line-height: 1.6;
   margin-bottom: 0;
@@ -6573,12 +7021,14 @@ blockquote p, .blockquote p {
   font-size: 20px !important;
 }
 
-blockquote cite, .blockquote cite {
+blockquote cite,
+.blockquote cite {
   display: none;
 }
 
-blockquote::after, .blockquote::after {
-  content: '';
+blockquote::after,
+.blockquote::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -6614,7 +7064,7 @@ Sidebar Widget CSS
 }
 
 .widget-area .widget .widget-title::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #44ce6f;
   bottom: -1px;
@@ -6625,7 +7075,7 @@ Sidebar Widget CSS
 
 .widget-area .widget_search {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
   background-color: #ffffff;
   padding: 15px;
 }
@@ -6680,7 +7130,7 @@ Sidebar Widget CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   left: 0;
   width: 20px;
@@ -6695,7 +7145,7 @@ Sidebar Widget CSS
 
 .widget-area .widget_author {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
   background-color: #ffffff;
   padding: 30px;
   text-align: center;
@@ -6838,7 +7288,7 @@ Sidebar Widget CSS
   position: absolute;
   height: 7px;
   width: 7px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
 }
@@ -6884,7 +7334,7 @@ Sidebar Widget CSS
   position: absolute;
   height: 7px;
   width: 7px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
 }
@@ -6921,7 +7371,7 @@ Sidebar Widget CSS
   background: #44ce6f;
   height: 7px;
   width: 7px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -6959,7 +7409,7 @@ Sidebar Widget CSS
   background: #44ce6f;
   height: 7px;
   width: 7px;
-  content: '';
+  content: "";
   left: 0;
   top: 6px;
   position: absolute;
@@ -7001,7 +7451,7 @@ Sidebar Widget CSS
   background: #44ce6f;
   height: 7px;
   width: 7px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -7027,7 +7477,8 @@ Sidebar Widget CSS
   margin-right: 8px;
 }
 
-.widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
+.widget-area .tagcloud a:hover,
+.widget-area .tagcloud a:focus {
   color: #ffffff;
   background-color: #44ce6f;
   border-color: #44ce6f;
@@ -7044,7 +7495,7 @@ Project Details CSS
 }
 
 .project-details-image::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -7053,8 +7504,8 @@ Project Details CSS
   background: #0e314c;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .project-details-image a {
@@ -7114,14 +7565,25 @@ Project Details CSS
   color: #6084a4;
 }
 
-.project-details-desc .project-details-information .single-info-box ul li a svg {
+.project-details-desc
+  .project-details-information
+  .single-info-box
+  ul
+  li
+  a
+  svg {
   width: 18px;
 }
 
-.project-details-desc .project-details-information .single-info-box ul li a:hover {
+.project-details-desc
+  .project-details-information
+  .single-info-box
+  ul
+  li
+  a:hover {
   color: #44ce6f;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*================================================
@@ -7129,10 +7591,10 @@ Contact CSS
 =================================================*/
 .contact-info-box {
   text-align: center;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 30px;
 }
@@ -7146,8 +7608,8 @@ Contact CSS
   border-radius: 50%;
   font-size: 30px;
   color: #44ce6f;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .contact-info-box h3 {
@@ -7169,7 +7631,7 @@ Contact CSS
 
 .contact-info-box:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .contact-info-box:hover .icon {
@@ -7194,7 +7656,8 @@ Contact CSS
   margin-top: 10px;
 }
 
-#contactForm #msgSubmit.text-danger, #contactForm #msgSubmit.text-success {
+#contactForm #msgSubmit.text-danger,
+#contactForm #msgSubmit.text-success {
   margin: 20px 0 0;
 }
 
@@ -7219,8 +7682,8 @@ Coming Soon CSS
   top: 0;
   width: 100%;
   height: 100%;
-  content: '';
-  opacity: .8;
+  content: "";
+  opacity: 0.8;
 }
 
 .coming-soon-area .social-list {
@@ -7277,7 +7740,8 @@ Coming Soon CSS
   background-color: #c13584;
 }
 
-.coming-soon-area .social-list li a:hover, .coming-soon-area .social-list li a:focus {
+.coming-soon-area .social-list li a:hover,
+.coming-soon-area .social-list li a:focus {
   background-color: #44ce6f;
 }
 
@@ -7312,13 +7776,15 @@ Coming Soon CSS
   width: 100%;
   height: 56px;
   border: none;
-  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
-          box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 5px rgba(255, 255, 255, 0.3);
   border-radius: 40px;
   padding: 15px 25px;
   font-size: 16px;
   outline: 0 !important;
-  background: #F1F2F3;
+  background: #f1f2f3;
 }
 
 .coming-soon-content form .submit-btn {
@@ -7340,7 +7806,8 @@ Coming Soon CSS
   font-weight: 500;
 }
 
-.coming-soon-content form .submit-btn:hover, .coming-soon-content form .submit-btn:focus {
+.coming-soon-content form .submit-btn:hover,
+.coming-soon-content form .submit-btn:focus {
   background-color: #c679e3;
 }
 
@@ -7352,7 +7819,7 @@ Coming Soon CSS
   height: 110px;
   color: #c679e3;
   -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
   margin: 0 10px;
   padding-top: 18px;
   font-size: 35px;
@@ -7392,7 +7859,7 @@ Coming Soon CSS
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: url(../../assets/images/oops-bg.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7458,16 +7925,18 @@ CTA CSS
 .cta-right-content .buy-btn .btn-primary {
   background: #c679e3;
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 
-.cta-right-content .buy-btn .btn-primary::after, .cta-right-content .buy-btn .btn-primary::before {
+.cta-right-content .buy-btn .btn-primary::after,
+.cta-right-content .buy-btn .btn-primary::before {
   background: #ffffff;
   -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-          box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 
-.cta-right-content .buy-btn .btn-primary:hover, .cta-right-content .buy-btn .btn-primary:focus {
+.cta-right-content .buy-btn .btn-primary:hover,
+.cta-right-content .buy-btn .btn-primary:focus {
   color: #44ce6f;
 }
 
@@ -7556,7 +8025,8 @@ Repair Partner CSS
   visibility: hidden;
 }
 
-.single-repair-partner a:hover img:last-child, .single-repair-partner a:focus img:last-child {
+.single-repair-partner a:hover img:last-child,
+.single-repair-partner a:focus img:last-child {
   opacity: 1;
   visibility: visible;
   top: 0;
@@ -7600,7 +8070,7 @@ Repair About CSS
 .repair-about-content ul li {
   -ms-flex: 0 0 50%;
   -webkit-box-flex: 0;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
   width: 100%;
   margin-top: 25px;
@@ -7619,7 +8089,7 @@ Repair About CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .repair-about-content ul li span svg {
@@ -7632,7 +8102,7 @@ Repair About CSS
 }
 
 .repair-about-content ul li span::before {
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   height: 100%;
@@ -7647,18 +8117,21 @@ Repair About CSS
   transition: 0.5s;
 }
 
-.repair-about-content ul li span:hover, .repair-about-content ul li span:focus {
+.repair-about-content ul li span:hover,
+.repair-about-content ul li span:focus {
   color: #ffffff;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-.repair-about-content ul li span:hover::before, .repair-about-content ul li span:focus::before {
+.repair-about-content ul li span:hover::before,
+.repair-about-content ul li span:focus::before {
   opacity: 1;
   visibility: visible;
 }
 
-.repair-about-content ul li span:hover svg, .repair-about-content ul li span:focus svg {
+.repair-about-content ul li span:hover svg,
+.repair-about-content ul li span:focus svg {
   color: #ffffff;
 }
 
@@ -7682,7 +8155,7 @@ Repair About CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   text-align: center;
   z-index: 2;
@@ -7752,7 +8225,7 @@ Repair Services CSS
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -7767,7 +8240,7 @@ Repair Services CSS
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -7826,30 +8299,36 @@ Repair Services CSS
   width: 15px;
 }
 
-.single-repair-services:hover::before, .single-repair-services:focus::before {
+.single-repair-services:hover::before,
+.single-repair-services:focus::before {
   opacity: 0;
   visibility: hidden;
 }
 
-.single-repair-services:hover::after, .single-repair-services:focus::after {
-  opacity: .85;
+.single-repair-services:hover::after,
+.single-repair-services:focus::after {
+  opacity: 0.85;
   visibility: visible;
 }
 
-.single-repair-services:hover h3, .single-repair-services:focus h3 {
+.single-repair-services:hover h3,
+.single-repair-services:focus h3 {
   color: #ffffff;
 }
 
-.single-repair-services:hover p, .single-repair-services:focus p {
+.single-repair-services:hover p,
+.single-repair-services:focus p {
   color: #ffffff;
 }
 
-.single-repair-services:hover .icon, .single-repair-services:focus .icon {
+.single-repair-services:hover .icon,
+.single-repair-services:focus .icon {
   border-color: #ffffff;
   color: #ffffff;
 }
 
-.single-repair-services:hover a, .single-repair-services:focus a {
+.single-repair-services:hover a,
+.single-repair-services:focus a {
   background-color: #ffffff;
   color: #44ce6f;
 }
@@ -7877,7 +8356,7 @@ Repair CTA CSS
 
 .cta-repair-content p {
   color: #ffffff;
-  opacity: .95;
+  opacity: 0.95;
   margin-bottom: 25px;
 }
 
@@ -7930,11 +8409,11 @@ Repair Why Choose Us CSS
 
 .repair-why-choose-us .section-title p {
   color: #ffffff;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .repair-why-choose-us::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -7992,15 +8471,31 @@ Repair Why Choose Us CSS
 }
 
 .single-repair-box .icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: -1;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#1fa2ff), color-stop(#00c0ff), color-stop(#00d9f2), color-stop(#53eedd), to(#a6ffcb));
-  background: linear-gradient(to right bottom, #1fa2ff, #00c0ff, #00d9f2, #53eedd, #a6ffcb);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#1fa2ff),
+    color-stop(#00c0ff),
+    color-stop(#00d9f2),
+    color-stop(#53eedd),
+    to(#a6ffcb)
+  );
+  background: linear-gradient(
+    to right bottom,
+    #1fa2ff,
+    #00c0ff,
+    #00d9f2,
+    #53eedd,
+    #a6ffcb
+  );
   border-radius: 50%;
   margin: 6px;
   -webkit-transition: 0.5s;
@@ -8015,12 +8510,12 @@ Repair Why Choose Us CSS
   position: absolute;
   top: 58%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
   color: #4457c3;
-  opacity: .04;
+  opacity: 0.04;
   z-index: -1;
   text-align: center;
 }
@@ -8029,11 +8524,13 @@ Repair Why Choose Us CSS
   font-size: 200px;
 }
 
-.single-repair-box:hover, .single-repair-box:focus {
+.single-repair-box:hover,
+.single-repair-box:focus {
   border-color: #44ce6f;
 }
 
-.single-repair-box:hover a, .single-repair-box:focus a {
+.single-repair-box:hover a,
+.single-repair-box:focus a {
   background-color: #44ce6f;
   color: #ffffff;
 }
@@ -8090,7 +8587,7 @@ Repair Feedback CSS
 }
 
 .single-repair-feedback::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -25px;
@@ -8100,7 +8597,7 @@ Repair Feedback CSS
   right: 0;
   margin: 0 auto;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .single-repair-feedback::after {
@@ -8152,7 +8649,7 @@ IoT Main Banner CSS
   right: 30px;
   top: 56%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .iot-banner-image img:first-child {
@@ -8177,38 +8674,38 @@ IoT Main Banner CSS
   left: 67%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   pointer-events: none;
   border-radius: 50%;
   z-index: -2;
 }
 
 .animate-border span:nth-child(1) {
-  -webkit-animation: 4.2s ease-out .5s infinite normal none running pulsei;
-          animation: 4.2s ease-out .5s infinite normal none running pulsei;
+  -webkit-animation: 4.2s ease-out 0.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 0.5s infinite normal none running pulsei;
 }
 
 .animate-border span:nth-child(2) {
   -webkit-animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
-          animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 1.5s infinite normal none running pulsei;
 }
 
 .animate-border span:nth-child(3) {
   -webkit-animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
-          animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 2.5s infinite normal none running pulsei;
 }
 
 .animate-border span:nth-child(4) {
   -webkit-animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
-          animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
+  animation: 4.2s ease-out 3.5s infinite normal none running pulsei;
 }
 
 @-webkit-keyframes pulsei {
   0% {
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     border: 1.5px solid #b3eaf8;
     opacity: 1;
     width: 5%;
@@ -8216,7 +8713,7 @@ IoT Main Banner CSS
   }
   100% {
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 0;
     width: 50%;
     border: 1.5px solid #b3eaf8;
@@ -8227,7 +8724,7 @@ IoT Main Banner CSS
 @keyframes pulsei {
   0% {
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     border: 1.5px solid #b3eaf8;
     opacity: 1;
     width: 5%;
@@ -8235,7 +8732,7 @@ IoT Main Banner CSS
   }
   100% {
     -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 0;
     width: 50%;
     border: 1.5px solid #b3eaf8;
@@ -8277,7 +8774,8 @@ IoT Partner CSS
   visibility: hidden;
 }
 
-.single-iot-partner a:hover img:last-child, .single-iot-partner a:focus img:last-child {
+.single-iot-partner a:hover img:last-child,
+.single-iot-partner a:focus img:last-child {
   opacity: 1;
   visibility: visible;
   top: 0;
@@ -8300,7 +8798,7 @@ Iot Services CSS
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -8356,25 +8854,30 @@ Iot Services CSS
   width: 15px;
 }
 
-.single-iot-services:hover::after, .single-iot-services:focus::after {
+.single-iot-services:hover::after,
+.single-iot-services:focus::after {
   opacity: 1;
   visibility: visible;
 }
 
-.single-iot-services:hover h3, .single-iot-services:focus h3 {
+.single-iot-services:hover h3,
+.single-iot-services:focus h3 {
   color: #ffffff;
 }
 
-.single-iot-services:hover p, .single-iot-services:focus p {
+.single-iot-services:hover p,
+.single-iot-services:focus p {
   color: #ffffff;
 }
 
-.single-iot-services:hover .icon, .single-iot-services:focus .icon {
+.single-iot-services:hover .icon,
+.single-iot-services:focus .icon {
   border-color: #ffffff;
   color: #ffffff;
 }
 
-.single-iot-services:hover a, .single-iot-services:focus a {
+.single-iot-services:hover a,
+.single-iot-services:focus a {
   background-color: #ffffff;
   color: #44ce6f;
 }
@@ -8403,7 +8906,7 @@ IoT CTA CSS
 
 .cta-iot-content p {
   color: #ffffff;
-  opacity: .95;
+  opacity: 0.95;
   margin-bottom: 25px;
 }
 
@@ -8459,11 +8962,11 @@ IoT Why Choose Us CSS
 
 .iot-why-choose-us .section-title p {
   color: #ffffff;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .iot-why-choose-us::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -8520,7 +9023,7 @@ IoT Why Choose Us CSS
 }
 
 .single-iot-box .icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -8542,11 +9045,13 @@ IoT Why Choose Us CSS
   width: 45px;
 }
 
-.single-iot-box:hover, .single-iot-box:focus {
+.single-iot-box:hover,
+.single-iot-box:focus {
   border-color: #44ce6f;
 }
 
-.single-iot-box:hover a, .single-iot-box:focus a {
+.single-iot-box:hover a,
+.single-iot-box:focus a {
   background-color: #44ce6f;
   color: #ffffff;
 }
@@ -8719,7 +9224,8 @@ ML Partner CSS
   visibility: hidden;
 }
 
-.single-ml-partner a:hover img:last-child, .single-ml-partner a:focus img:last-child {
+.single-ml-partner a:hover img:last-child,
+.single-ml-partner a:focus img:last-child {
   opacity: 1;
   visibility: visible;
   top: 0;
@@ -8758,16 +9264,16 @@ Our Solutions CSS
 }
 
 .single-solutions-box .icon::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: -1;
   background: #f0fdfe;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.09);
   border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
   width: 60px;
   height: 60px;
@@ -8779,7 +9285,7 @@ Our Solutions CSS
 }
 
 .single-solutions-box::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -8787,8 +9293,24 @@ Our Solutions CSS
   width: 100%;
   border-radius: 5px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
-  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#d5fefd),
+    color-stop(#e0fdff),
+    color-stop(#effbff),
+    color-stop(#fbfaff),
+    to(#fffcff)
+  );
+  background: linear-gradient(
+    to right top,
+    #d5fefd,
+    #e0fdff,
+    #effbff,
+    #fbfaff,
+    #fffcff
+  );
 }
 
 .single-solutions-box .learn-more-btn {
@@ -8810,14 +9332,14 @@ Our Solutions CSS
 
 .single-solutions-box:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .single-solutions-box:hover .icon img {
   -webkit-transform: rotateY(-360deg);
-          transform: rotateY(-360deg);
+  transform: rotateY(-360deg);
 }
 
 /*================================================
@@ -8864,7 +9386,7 @@ ML About CSS
 }
 
 .ml-about-content .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -2.7px;
@@ -8873,13 +9395,13 @@ ML About CSS
   border-radius: 50%;
   background: #44ce6f;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-name: MOVE-BG;
-          animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
 }
 
 .ml-about-content p {
@@ -8897,8 +9419,24 @@ ML Services CSS
   padding-bottom: 50px;
   position: relative;
   z-index: 1;
-  background: -webkit-gradient(linear, right top, left bottom, from(#fffcff), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#d5fefd));
-  background: linear-gradient(to left bottom, #fffcff, #fbfaff, #effbff, #e0fdff, #d5fefd);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#fffcff),
+    color-stop(#fbfaff),
+    color-stop(#effbff),
+    color-stop(#e0fdff),
+    to(#d5fefd)
+  );
+  background: linear-gradient(
+    to left bottom,
+    #fffcff,
+    #fbfaff,
+    #effbff,
+    #e0fdff,
+    #d5fefd
+  );
 }
 
 .single-ml-services-box {
@@ -8926,7 +9464,7 @@ ML Services CSS
 }
 
 .single-ml-services-box::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -15px;
   bottom: -15px;
@@ -8935,7 +9473,7 @@ ML Services CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background: #44ce6f;
   visibility: hidden;
   opacity: 0;
@@ -8950,15 +9488,31 @@ ML Services CSS
 ML Feedback CSS
 =================================================*/
 .ml-feedback-area {
-  background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
-  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#d5fefd),
+    color-stop(#e0fdff),
+    color-stop(#effbff),
+    color-stop(#fbfaff),
+    to(#fffcff)
+  );
+  background: linear-gradient(
+    to right top,
+    #d5fefd,
+    #e0fdff,
+    #effbff,
+    #fbfaff,
+    #fffcff
+  );
   position: relative;
   z-index: 1;
 }
 
 .single-ml-feedback-item {
   -webkit-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
   margin-bottom: 45px;
   background-color: #ffffff;
   position: relative;
@@ -8971,7 +9525,7 @@ ML Feedback CSS
   left: 60px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
 }
 
@@ -9017,7 +9571,7 @@ ML Feedback CSS
 }
 
 .single-ml-feedback-item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -9026,7 +9580,7 @@ ML Feedback CSS
   bottom: -15px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
   z-index: -1;
   margin-left: 30px;
   margin-right: 30px;
@@ -9071,22 +9625,24 @@ ML Feedback CSS
   bottom: 0;
   background-color: #44ce6f;
   margin: 2px;
-  content: '';
+  content: "";
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 50%;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
-.ml-feedback-slides.owl-theme .owl-dots .owl-dot:hover span, .ml-feedback-slides.owl-theme .owl-dots .owl-dot.active span {
+.ml-feedback-slides.owl-theme .owl-dots .owl-dot:hover span,
+.ml-feedback-slides.owl-theme .owl-dots .owl-dot.active span {
   border-color: #44ce6f;
   background-color: transparent;
 }
 
-.ml-feedback-slides.owl-theme .owl-dots .owl-dot:hover span::before, .ml-feedback-slides.owl-theme .owl-dots .owl-dot.active span::before {
+.ml-feedback-slides.owl-theme .owl-dots .owl-dot:hover span::before,
+.ml-feedback-slides.owl-theme .owl-dots .owl-dot.active span::before {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 /*================================================
@@ -9099,15 +9655,31 @@ Free Trial CSS
 }
 
 .free-trial-area::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   z-index: -1;
   position: absolute;
   left: -30%;
   top: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#d5fefd), color-stop(#e1fdff), color-stop(#effdff), color-stop(#fafdff), to(#ffffff));
-  background: linear-gradient(to right, #d5fefd, #e1fdff, #effdff, #fafdff, #ffffff);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#d5fefd),
+    color-stop(#e1fdff),
+    color-stop(#effdff),
+    color-stop(#fafdff),
+    to(#ffffff)
+  );
+  background: linear-gradient(
+    to right,
+    #d5fefd,
+    #e1fdff,
+    #effdff,
+    #fafdff,
+    #ffffff
+  );
 }
 
 .free-trial-area .shape6 {
@@ -9237,7 +9809,7 @@ Newsletter CSS
 }
 
 .newsletter-area::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   width: 65%;
@@ -9287,7 +9859,9 @@ Newsletter CSS
   padding-top: 2px;
 }
 
-.newsletter-content .newsletter-form .input-newsletter::-webkit-input-placeholder {
+.newsletter-content
+  .newsletter-form
+  .input-newsletter::-webkit-input-placeholder {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #ffffff;
@@ -9311,15 +9885,21 @@ Newsletter CSS
   color: #ffffff;
 }
 
-.newsletter-content .newsletter-form .input-newsletter:focus::-webkit-input-placeholder {
+.newsletter-content
+  .newsletter-form
+  .input-newsletter:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.newsletter-content .newsletter-form .input-newsletter:focus:-ms-input-placeholder {
+.newsletter-content
+  .newsletter-form
+  .input-newsletter:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.newsletter-content .newsletter-form .input-newsletter:focus::-ms-input-placeholder {
+.newsletter-content
+  .newsletter-form
+  .input-newsletter:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -9355,7 +9935,7 @@ Newsletter CSS
 }
 
 .newsletter-content::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -9400,7 +9980,7 @@ ML Projects CSS
   border-radius: 5px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);
   background-color: #ffffff;
 }
 
@@ -9416,9 +9996,9 @@ ML Projects CSS
   top: 20px;
   right: 20px;
   -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all .4s ease-out 0s;
-  transition: all .4s ease-out 0s;
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -9430,19 +10010,20 @@ ML Projects CSS
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.single-ml-projects-box .plus-icon a span::before, .single-ml-projects-box .plus-icon a span::after {
+.single-ml-projects-box .plus-icon a span::before,
+.single-ml-projects-box .plus-icon a span::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 100%;
   background-color: #ffffff;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .single-ml-projects-box .plus-icon a span::after {
@@ -9451,7 +10032,7 @@ ML Projects CSS
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .single-ml-projects-box .plus-icon a:hover {
@@ -9460,7 +10041,7 @@ ML Projects CSS
 
 .single-ml-projects-box:hover .plus-icon a {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .ml-projects-slides.owl-theme .owl-dots {
@@ -9472,12 +10053,28 @@ ML Projects CSS
 }
 
 .ml-projects-slides.owl-theme .owl-dots::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: -30px;
-  background: -webkit-gradient(linear, right top, left bottom, from(#dee4f3), color-stop(#e7eaf6), color-stop(#f0f1f9), color-stop(#f8f8fc), to(#ffffff));
-  background: linear-gradient(to left bottom, #dee4f3, #e7eaf6, #f0f1f9, #f8f8fc, #ffffff);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#dee4f3),
+    color-stop(#e7eaf6),
+    color-stop(#f0f1f9),
+    color-stop(#f8f8fc),
+    to(#ffffff)
+  );
+  background: linear-gradient(
+    to left bottom,
+    #dee4f3,
+    #e7eaf6,
+    #f0f1f9,
+    #f8f8fc,
+    #ffffff
+  );
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   width: 80px;
   height: 70px;
@@ -9504,22 +10101,24 @@ ML Projects CSS
   bottom: 0;
   background-color: #44ce6f;
   margin: 2px;
-  content: '';
+  content: "";
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 50%;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
-.ml-projects-slides.owl-theme .owl-dots .owl-dot:hover span, .ml-projects-slides.owl-theme .owl-dots .owl-dot.active span {
+.ml-projects-slides.owl-theme .owl-dots .owl-dot:hover span,
+.ml-projects-slides.owl-theme .owl-dots .owl-dot.active span {
   border-color: #44ce6f;
   background-color: transparent;
 }
 
-.ml-projects-slides.owl-theme .owl-dots .owl-dot:hover span::before, .ml-projects-slides.owl-theme .owl-dots .owl-dot.active span::before {
+.ml-projects-slides.owl-theme .owl-dots .owl-dot:hover span::before,
+.ml-projects-slides.owl-theme .owl-dots .owl-dot.active span::before {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 /*================================================
@@ -9710,7 +10309,7 @@ Agency About CSS
 }
 
 .agency-about-content .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -2.7px;
@@ -9719,13 +10318,13 @@ Agency About CSS
   border-radius: 50%;
   background: #44ce6f;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-name: MOVE-BG;
-          animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
 }
 
 .agency-about-content p {
@@ -9749,8 +10348,24 @@ Agency Services CSS
 .agency-services-area {
   position: relative;
   z-index: 1;
-  background: -webkit-gradient(linear, left bottom, left top, from(#d5fefd), color-stop(#e1fdff), color-stop(#effdff), color-stop(#fafdff), to(#ffffff));
-  background: linear-gradient(to top, #d5fefd, #e1fdff, #effdff, #fafdff, #ffffff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#d5fefd),
+    color-stop(#e1fdff),
+    color-stop(#effdff),
+    color-stop(#fafdff),
+    to(#ffffff)
+  );
+  background: linear-gradient(
+    to top,
+    #d5fefd,
+    #e1fdff,
+    #effdff,
+    #fafdff,
+    #ffffff
+  );
 }
 
 .agency-services-box {
@@ -9770,7 +10385,7 @@ Agency Services CSS
   border-radius: 7px;
   padding: 25px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
   margin-left: 15px;
   margin-right: 15px;
   margin-top: -30px;
@@ -9794,7 +10409,7 @@ Agency Services CSS
   transition: 0.5s;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -22px;
   opacity: 0;
   visibility: hidden;
@@ -9815,12 +10430,12 @@ Agency Services CSS
 
 .agency-services-box:hover .content {
   -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 .agency-services-box:hover .content h3 {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .agency-services-box:hover .content .read-more-btn {
@@ -9833,7 +10448,7 @@ Testimonials CSS
 =================================================*/
 .single-testimonials-item {
   -webkit-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.04);
   margin-bottom: 45px;
   background-color: #ffffff;
   position: relative;
@@ -9869,7 +10484,7 @@ Testimonials CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .single-testimonials-item .client-info .rating svg {
@@ -9896,7 +10511,7 @@ Testimonials CSS
 }
 
 .single-testimonials-item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -9905,7 +10520,7 @@ Testimonials CSS
   bottom: -15px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
   z-index: -1;
   margin-left: 30px;
   margin-right: 30px;
@@ -9934,7 +10549,7 @@ Testimonials CSS
   top: 12%;
   left: 10%;
   -webkit-animation: movebounce 9s linear infinite;
-          animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite;
 }
 
 .user-shape2 {
@@ -9942,7 +10557,7 @@ Testimonials CSS
   z-index: -1;
   left: 7%;
   -webkit-animation: moveleftbounce 7s linear infinite;
-          animation: moveleftbounce 7s linear infinite;
+  animation: moveleftbounce 7s linear infinite;
   top: 47%;
 }
 
@@ -9952,7 +10567,7 @@ Testimonials CSS
   bottom: 12%;
   left: 15%;
   -webkit-animation: movebounce 5s linear infinite;
-          animation: movebounce 5s linear infinite;
+  animation: movebounce 5s linear infinite;
 }
 
 .user-shape4 {
@@ -9961,7 +10576,7 @@ Testimonials CSS
   top: 12%;
   right: 10%;
   -webkit-animation: movebounce 9s linear infinite;
-          animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite;
 }
 
 .user-shape5 {
@@ -9970,7 +10585,7 @@ Testimonials CSS
   right: 7%;
   top: 45%;
   -webkit-animation: moveleftbounce 7s linear infinite;
-          animation: moveleftbounce 7s linear infinite;
+  animation: moveleftbounce 7s linear infinite;
 }
 
 .user-shape6 {
@@ -9979,7 +10594,7 @@ Testimonials CSS
   bottom: 12%;
   right: 15%;
   -webkit-animation: movebounce 5s linear infinite;
-          animation: movebounce 5s linear infinite;
+  animation: movebounce 5s linear infinite;
 }
 
 .shape9 {
@@ -9991,7 +10606,7 @@ Testimonials CSS
 
 .shape9 img {
   -webkit-animation: movebounce 5s linear infinite;
-          animation: movebounce 5s linear infinite;
+  animation: movebounce 5s linear infinite;
 }
 
 /*================================================
@@ -10020,12 +10635,18 @@ Agency CTA CSS
 /*btn-gradient*/
 .btn-gradient {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ee0979), to(#ff6a00));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #ee0979),
+    to(#ff6a00)
+  );
   background: linear-gradient(90deg, #ee0979 0, #ff6a00 100%);
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   -webkit-transform: unset !important;
-          transform: unset !important;
+  transform: unset !important;
 }
 
 .btn-gradient::after {
@@ -10041,43 +10662,71 @@ Agency CTA CSS
   border-radius: 4px;
 }
 
-.btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {
+.btn-gradient:hover,
+.btn-gradient:focus,
+.btn-gradient:active {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ee0979), to(#ff6a00));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #ee0979),
+    to(#ff6a00)
+  );
   background: linear-gradient(90deg, #ee0979 0, #ff6a00 100%);
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
 }
 
-.btn-gradient:hover::before, .btn-gradient:focus::before, .btn-gradient:active::before {
+.btn-gradient:hover::before,
+.btn-gradient:focus::before,
+.btn-gradient:active::before {
   opacity: 1;
   visibility: visible;
   width: 100%;
 }
 
-.btn-gradient:not(:disabled):not(.disabled).active, .btn-gradient:not(:disabled):not(.disabled):active, .btn-gradient .show > .btn-primary.dropdown-toggle {
+.btn-gradient:not(:disabled):not(.disabled).active,
+.btn-gradient:not(:disabled):not(.disabled):active,
+.btn-gradient .show > .btn-primary.dropdown-toggle {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ee0979), to(#ff6a00));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #ee0979),
+    to(#ff6a00)
+  );
   background: linear-gradient(90deg, #ee0979 0, #ff6a00 100%);
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
 }
 
-.btn-gradient:not(:disabled):not(.disabled).active::before, .btn-gradient:not(:disabled):not(.disabled):active::before, .btn-gradient .show > .btn-primary.dropdown-toggle::before {
+.btn-gradient:not(:disabled):not(.disabled).active::before,
+.btn-gradient:not(:disabled):not(.disabled):active::before,
+.btn-gradient .show > .btn-primary.dropdown-toggle::before {
   opacity: 1;
   visibility: visible;
   width: 100%;
 }
 
-.btn-gradient.disabled, .btn-gradient:disabled {
+.btn-gradient.disabled,
+.btn-gradient:disabled {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ee0979), to(#ff6a00));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #ee0979),
+    to(#ff6a00)
+  );
   background: linear-gradient(90deg, #ee0979 0, #ff6a00 100%);
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
 }
 
-.btn-gradient.disabled::before, .btn-gradient:disabled::before {
+.btn-gradient.disabled::before,
+.btn-gradient:disabled::before {
   opacity: 1;
   visibility: visible;
   width: 100%;
@@ -10119,7 +10768,7 @@ Agency Portfolio Main Banner CSS
   display: block;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: #6084a4;
   margin-bottom: 10px;
 }
@@ -10150,7 +10799,7 @@ Agency Portfolio Main Banner CSS
   transition: 0.5s;
 }
 
-.agency-portfolio-home-slides.owl-theme .owl-nav [class*='owl-'] {
+.agency-portfolio-home-slides.owl-theme .owl-nav [class*="owl-"] {
   margin: 0;
   background-color: #e1e1e1;
   color: #0e314c;
@@ -10163,19 +10812,19 @@ Agency Portfolio Main Banner CSS
   top: 50%;
   border-radius: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 30px;
   padding: 0;
 }
 
-.agency-portfolio-home-slides.owl-theme .owl-nav [class*='owl-']:hover {
+.agency-portfolio-home-slides.owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: #44ce6f;
   color: #ffffff;
 }
 
-.agency-portfolio-home-slides.owl-theme .owl-nav [class*='owl-'].owl-next {
+.agency-portfolio-home-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
   left: auto;
   right: 40px;
 }
@@ -10218,7 +10867,7 @@ Our Latest Projects CSS
   left: -3%;
   top: 60%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -10226,7 +10875,7 @@ Our Latest Projects CSS
   transition: 0.5s;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   padding: 25px;
   margin-top: 20px;
 }
@@ -10268,7 +10917,8 @@ Our Latest Projects CSS
   font-weight: 600;
 }
 
-.shorting-menu button:hover, .shorting-menu button.active {
+.shorting-menu button:hover,
+.shorting-menu button.active {
   color: #0e314c;
 }
 
@@ -10416,7 +11066,7 @@ Footer CSS
   text-align: center;
   z-index: -1;
   bottom: 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .single-footer-widget.pl-5 {
@@ -10519,32 +11169,32 @@ Footer CSS
 }
 
 .single-footer-widget ul.social-links li a.twitter {
-  border-color: #38A1F3;
-  color: #38A1F3;
+  border-color: #38a1f3;
+  color: #38a1f3;
 }
 
 .single-footer-widget ul.social-links li a.twitter:hover {
-  background: #38A1F3;
+  background: #38a1f3;
   color: #ffffff;
 }
 
 .single-footer-widget ul.social-links li a.linkedin {
-  border-color: #0077B5;
-  color: #0077B5;
+  border-color: #0077b5;
+  color: #0077b5;
 }
 
 .single-footer-widget ul.social-links li a.linkedin:hover {
-  background: #0077B5;
+  background: #0077b5;
   color: #ffffff;
 }
 
 .single-footer-widget ul.social-links li a.instagram {
-  border-color: #231F20;
-  color: #231F20;
+  border-color: #231f20;
+  color: #231f20;
 }
 
 .single-footer-widget ul.social-links li a.instagram:hover {
-  background: #231F20;
+  background: #231f20;
   color: #ffffff;
 }
 
@@ -10595,7 +11245,12 @@ Go Top CSS
   right: 0;
 }
 
-.main-text-area h1, .main-text-area h2, .main-text-area h3, .main-text-area h4, .main-text-area h5, .main-text-area h6 {
+.main-text-area h1,
+.main-text-area h2,
+.main-text-area h3,
+.main-text-area h4,
+.main-text-area h5,
+.main-text-area h6 {
   margin-bottom: 15px;
 }
 
@@ -10605,7 +11260,7 @@ Go Top CSS
   max-width: 500px;
   width: 100%;
   -webkit-box-shadow: 0px 0px 10px #eee;
-          box-shadow: 0px 0px 10px #eee;
+  box-shadow: 0px 0px 10px #eee;
   margin: auto;
   padding: 40px 30px;
   border-radius: 10px;
@@ -10646,7 +11301,8 @@ Go Top CSS
   display: inline-block;
 }
 
-.auth-form .foot ul li a i, .auth-form .foot ul li a svg {
+.auth-form .foot ul li a i,
+.auth-form .foot ul li a svg {
   border: 1px solid #edf2f9;
   width: 35px;
   height: 35px;
