@@ -8,7 +8,9 @@ const MainBannerElias = () => {
       <div className="container">
         <div className="bigdata-analytics-content">
           <h1>שירותי פיתוח ועיצוב תוכנה</h1>
-          <p>הדרך הבטוחה מרעיון למוצר מוגמר ברשת</p>
+          <h3 style={{ color: "white" }}>
+            הדרך הבטוחה מרעיון למוצר מוגמר ברשת
+          </h3>
 
           <Link to="/contact" className="btn btn-primary">
             Get Started
@@ -24,10 +26,10 @@ const MainBannerElias = () => {
                 <div className="icon">
                   <Icon.Server />
                 </div>
-                <h3>Analyze Your Data</h3>
+                <h3>עיצוב גרפי</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
+                  יצירת כל מיני עיצובים גרפים, כמו פליירים,לוגו, כרטיסי ביקור,
+                  ברושור, חוברת, קטלוג ועוד
                 </p>
               </div>
             </div>
@@ -37,10 +39,10 @@ const MainBannerElias = () => {
                 <div className="icon">
                   <Icon.Code />
                 </div>
-                <h3>Customized Plan</h3>
+                <h3>בניית אתרים</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
+                  לפתח יישומי אינטרנט מותאמים אישית, יעילים ככל האפשר למטרות
+                  העסקיות של הלקוח
                 </p>
               </div>
             </div>
@@ -50,10 +52,48 @@ const MainBannerElias = () => {
                 <div className="icon">
                   <Icon.Users />
                 </div>
-                <h3>Implement Solution</h3>
+                <h3>עיצוב חווית משתמש</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
+                  בניית דגם אינטראקטיבי ועיצוב ממשק משתמש אטרקטיבי ויזואלי
+                  וידידותי למשתמש
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-banner-boxes">
+                <div className="icon">
+                  <Icon.Users />
+                </div>
+                <h3>אנליזה וקידום אתרים</h3>
+                <p>
+                  ניתוח מדויק של תנועת הגולשים באתר, היכרות עם התנהגותם באמצעות
+                  הכלים האנליטיים המתקדמים ביותר.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-banner-boxes">
+                <div className="icon">
+                  <Icon.Users />
+                </div>
+                <h3> חנויות אונליין</h3>
+                <p>
+                  עיצוב ובניית חנויות מקוונות באמצעות הפלטפורמות המובילות בשוק
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-banner-boxes">
+                <div className="icon">
+                  <Icon.Users />
+                </div>
+                <h3>פיתוח אפליקציות מובייל</h3>
+                <p>
+                  לפתח אפליקציות מובייל המבוססות על דרישות הלקוח, מטרותיו
+                  ותקציבו
                 </p>
               </div>
             </div>
