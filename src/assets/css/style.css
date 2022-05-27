@@ -87,10 +87,15 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,600|Poppins:400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Secular One", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -98,6 +103,17 @@ body {
 
 :root {
   scroll-behavior: inherit;
+}
+
+.light-theme {
+  --clr-bgc: #fff;
+  --clr-font: #000;
+  --clr-primary: #ff002b;
+}
+.dark-theme {
+  --clr-bgc: #191919;
+  --clr-font: #fff;
+  --clr-primary: #025597;
 }
 
 img {

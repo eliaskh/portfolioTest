@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 import { graphql, useStaticQuery } from "gatsby"
+import DarkModeToggle from "react-dark-mode-toggle"
+import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
 
 const query = graphql`
   {
@@ -24,7 +26,7 @@ const query = graphql`
   }
 `
 
-const NavbarStyleFour = () => {
+const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
   const data = useStaticQuery(query)
   const {
     strapiSiteLogo: { blackLogo, whiteLogo },
@@ -117,6 +119,41 @@ const NavbarStyleFour = () => {
                   >
                     תתקשר
                   </Link>
+                </li>
+                <li>
+                  {isDarkoMode ? (
+                    <>
+                      <>
+                        <li className="nav-item">
+                          <BsMoonFill
+                            style={{
+                              color: "white",
+                              marginTop: "3px",
+                              marginRight: "7px",
+                              cursor: "pointer",
+                            }}
+                            size="17px"
+                            onClick={toggleTheme}
+                          />
+                        </li>
+                      </>
+                    </>
+                  ) : (
+                    <>
+                      <li className="nav-item">
+                        <BsFillSunFill
+                          style={{
+                            color: "white",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="20px"
+                          onClick={toggleTheme}
+                        />
+                      </li>
+                    </>
+                  )}
                 </li>
               </ul>
             </div>
