@@ -23,7 +23,7 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
           {showTitle ? (
             <>
               <div className="titleSherotem">
-                <h1>השירותים שלנו</h1>
+                <h1> !השירותים שלנו</h1>
                 <p>
                   אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
                   מהרעיון והניסוח העיקרי של אסטרטגיית המוצר,
