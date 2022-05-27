@@ -5,6 +5,7 @@
   "version": "1.3.0",
   "author": "EnvyTheme.com",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
     "@loadable/component": "^5.15.2",
     "@material-ui/core": "^4.12.4",
     "animate.css": "^4.1.1",
