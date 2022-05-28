@@ -3,12 +3,12 @@ import styled from "styled-components"
 import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
 import circle from "../../assets/images/Elias/cri.svg"
 import Brainstorm from "../../assets/images/Elias/new.png"
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs"
 import { device } from "../../Style"
 import { words } from "../../Style"
-import { bool } from "prop-types"
+import { isMobile } from "react-device-detect"
 function ServiceLight2({ title1, title2, design, imageRow, about }) {
-  const style1 = { color: "white", fontSize: "3rem" }
+  const style1 = { color: "var(--clr-font)", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {
@@ -25,9 +25,20 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
               <img src={imageRow} alt="" className="image" />
             </div>
 
-            <div className="arrow">
-              <BsArrowLeft style={style1} />
-            </div>
+            {isMobile ? (
+              <>
+                <div className="arrow">
+                  <BsArrowDown style={style1} />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="arrow">
+                  <BsArrowLeft style={style1} />
+                </div>
+              </>
+            )}
+
             <div className="text">
               <h1 className="title">{title1}</h1>
               <h1 className="title1">{title2}</h1>
@@ -96,9 +107,19 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
                 </>
               )}
             </div>
-            <div className="arrow">
-              <BsArrowRight style={style1} />
-            </div>
+            {isMobile ? (
+              <>
+                <div className="arrow">
+                  <BsArrowDown style={style1} />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="arrow">
+                  <BsArrowLeft style={style1} />
+                </div>
+              </>
+            )}
 
             <div className="image1">
               <img src={imageRow} alt="" className="image" />
@@ -154,8 +175,15 @@ const Cover = styled.div`
       height: auto;
       padding: 1rem;
     }
+    .image {
+      order: 1;
+    }
+    .arrow {
+      order: 2;
+    }
     .text {
       padding: 1rem;
+      order: 3;
     }
     .title {
       font-size: 3.5rem;
@@ -186,8 +214,15 @@ const Cover = styled.div`
       height: auto;
       padding: 6rem;
     }
+    .image1 {
+      order: 3;
+    }
+    .arrow {
+      order: 2;
+    }
     .text {
       padding: 4rem;
+      order: 1;
     }
     .title {
       font-size: 3.5rem;

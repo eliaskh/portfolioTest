@@ -19,7 +19,7 @@ import IndustriesWeServe from "../components/BigdataAnalytics/IndustriesWeServe"
 import BlogPost from "../components/BigdataAnalytics/BlogPost"
 import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
 import Footer from "../components/_App/Footer"
-import image1 from "../assets/images/Elias/new.png"
+import image1 from "../assets/images/Elias/img1regular.jpg"
 import image2 from "../assets/images/Elias/Untitled-1.png"
 
 const BigdataAnalytics = () => (

@@ -3,12 +3,14 @@ import styled from "styled-components"
 import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
 import circle from "../../assets/images/Elias/cri.svg"
 import Brainstorm from "../../assets/images/Elias/new.png"
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs"
+import { isMobile } from "react-device-detect"
+
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { bool } from "prop-types"
 function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
-  const style1 = { color: "white", fontSize: "3rem" }
+  const style1 = { color: "white", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {
@@ -39,9 +41,20 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
               <img src={imageRow} alt="" className="image" />
             </div>
 
-            <div className="arrow">
-              <BsArrowLeft style={style1} />
-            </div>
+            {isMobile ? (
+              <>
+                <div className="arrow">
+                  <BsArrowDown style={style1} />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="arrow">
+                  <BsArrowLeft style={style1} />
+                </div>
+              </>
+            )}
+
             <div className="text">
               <h1 className="title">{title1}</h1>
               <h1 className="title1">{title2}</h1>
@@ -106,9 +119,19 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
                 <></>
               )}
             </div>
-            <div className="arrow">
-              <BsArrowRight style={style1} />
-            </div>
+            {isMobile ? (
+              <>
+                <div className="arrow">
+                  <BsArrowDown style={style1} />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="arrow">
+                  <BsArrowLeft style={style1} />
+                </div>
+              </>
+            )}
 
             <div className="image1">
               <img src={Brainstorm} alt="" className="image" />
@@ -140,6 +163,7 @@ const Cover = styled.div`
   }
   .image {
     height: 450px;
+    border-radius: 10px;
   }
   .image1 {
     justify-self: center;
