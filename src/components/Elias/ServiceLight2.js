@@ -8,7 +8,7 @@ import { device } from "../../Style"
 import { words } from "../../Style"
 import { isMobile } from "react-device-detect"
 function ServiceLight2({ title1, title2, design, imageRow, about }) {
-  const style1 = { color: "var(--clr-font)", fontSize: "3rem" }
+  const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {
@@ -25,7 +25,7 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
               <img src={imageRow} alt="" className="image" />
             </div>
 
-            {isMobile ? (
+            {/* {isMobile ? (
               <>
                 <div className="arrow">
                   <BsArrowDown style={style1} />
@@ -37,7 +37,7 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
                   <BsArrowLeft style={style1} />
                 </div>
               </>
-            )}
+            )} */}
 
             <div className="text">
               <h1 className="title">{title1}</h1>
@@ -107,7 +107,7 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
                 </>
               )}
             </div>
-            {isMobile ? (
+            {/* {isMobile ? (
               <>
                 <div className="arrow">
                   <BsArrowDown style={style1} />
@@ -119,7 +119,7 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
                   <BsArrowLeft style={style1} />
                 </div>
               </>
-            )}
+            )} */}
 
             <div className="image1">
               <img src={imageRow} alt="" className="image" />
@@ -143,14 +143,15 @@ const Cover = styled.div`
 
   .wrapper {
     display: grid;
-    height: 100vh;
+    height: 80vh;
     /* padding: 10rem; */
     background-color: var(--clr-bgc);
   }
   .wrapperWhite {
   }
   .image {
-    height: 450px;
+    height: 80vh;
+    width: 100vw;
   }
   .image1 {
     justify-self: center;
@@ -173,17 +174,17 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      padding: 1rem;
+      /* padding: 1rem; */
     }
     .image {
       order: 1;
+      height: auto;
+      width: 100vw;
     }
-    .arrow {
-      order: 2;
-    }
+
     .text {
       padding: 1rem;
-      order: 3;
+      order: 2;
     }
     .title {
       font-size: 3.5rem;
@@ -212,16 +213,16 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      padding: 6rem;
+      /* padding: 6rem; */
     }
-    .image1 {
-      order: 3;
-    }
-    .arrow {
+    .image {
       order: 2;
+      height: 80vh;
+      width: 100vw;
     }
+
     .text {
-      padding: 4rem;
+      padding: 1rem;
       order: 1;
     }
     .title {
@@ -249,13 +250,20 @@ const Cover = styled.div`
   }
   @media ${device.laptop} {
     .wrapper {
-      grid-template-columns: 1fr 30px 1fr;
+      grid-template-columns: 1fr 1fr;
       height: auto;
-      padding: 6rem;
+      /* padding: 6rem; */
+    }
+    .image {
+      order: 2;
+      height: 80vh;
+      width: 100vw;
     }
     .text {
-      padding: 7rem;
+      padding: 1rem;
+      order: 1;
     }
+
     .title {
       font-size: 3.5rem;
       color: var(--clr-font);

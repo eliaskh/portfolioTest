@@ -41,7 +41,7 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
               <img src={imageRow} alt="" className="image" />
             </div>
 
-            {isMobile ? (
+            {/* {isMobile ? (
               <>
                 <div className="arrow">
                   <BsArrowDown style={style1} />
@@ -53,7 +53,7 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
                   <BsArrowLeft style={style1} />
                 </div>
               </>
-            )}
+            )} */}
 
             <div className="text">
               <h1 className="title">{title1}</h1>
@@ -119,7 +119,7 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
                 <></>
               )}
             </div>
-            {isMobile ? (
+            {/* {isMobile ? (
               <>
                 <div className="arrow">
                   <BsArrowDown style={style1} />
@@ -131,7 +131,7 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
                   <BsArrowLeft style={style1} />
                 </div>
               </>
-            )}
+            )} */}
 
             <div className="image1">
               <img src={Brainstorm} alt="" className="image" />
@@ -155,16 +155,13 @@ const Cover = styled.div`
 
   .wrapper {
     display: grid;
-    height: 100vh;
+    height: 80vh;
     /* padding: 10rem; */
     background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
   }
   .wrapperWhite {
   }
-  .image {
-    height: 450px;
-    border-radius: 10px;
-  }
+
   .image1 {
     justify-self: center;
     align-self: center;
@@ -205,12 +202,18 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      padding: 1rem;
+      /* padding: 1rem; */
+    }
+    .image {
+      height: auto;
+      width: 100vw;
+      /* border-radius: 10px; */
     }
     .text {
       padding: 1rem;
     }
     .title {
+      margin-top: 1rem;
       font-size: 3.5rem;
       color: white;
       text-align: center;
@@ -237,12 +240,18 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      padding: 6rem;
+      /* padding: 6rem; */
+    }
+    .image {
+      height: 80vh;
+      width: 100vw;
+      /* border-radius: 10px; */
     }
     .text {
-      padding: 4rem;
+      padding: 1rem;
     }
     .title {
+      margin-top: 1rem;
       font-size: 3.5rem;
       color: white;
       text-align: right !important;
@@ -267,14 +276,20 @@ const Cover = styled.div`
   }
   @media ${device.laptop} {
     .wrapper {
-      grid-template-columns: 1fr 30px 1fr;
+      grid-template-columns: 1fr 1fr;
       height: auto;
-      padding: 6rem;
+      /* padding: 6rem; */
+    }
+    .image {
+      height: 80vh;
+      width: 100vw;
+      /* border-radius: 10px; */
     }
     .text {
-      padding: 7rem;
+      padding: 1rem;
     }
     .title {
+      margin-top: 1rem;
       font-size: 3.5rem;
       color: white;
       text-align: right !important;
