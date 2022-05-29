@@ -4,6 +4,7 @@ import * as Icon from "react-feather"
 import { graphql, useStaticQuery } from "gatsby"
 import DarkModeToggle from "react-dark-mode-toggle"
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
+import logo from "../../assets/images/Elias/logo.png"
 
 const query = graphql`
   {
@@ -70,8 +71,8 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              {/* <img src={whiteLogo.childImageSharp.fluid.src} alt="Logo" /> */}
-              <h1 style={{ color: "white" }}>Creativelab</h1>
+              <img src={logo} alt="Logo" style={{ height: "40px" }} />
+              {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
             </Link>
 
             <button

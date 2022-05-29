@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: "gatsby-plugin-html-attributes",
       options: {

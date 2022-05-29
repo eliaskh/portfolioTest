@@ -3,19 +3,17 @@ import styled from "styled-components"
 import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
 import circle from "../../assets/images/Elias/cri.svg"
 import Brainstorm from "../../assets/images/Elias/new.png"
-// import image1 from "im1.jpg"
 import {
   BsArrowLeft,
   BsArrowRight,
   BsArrowDown,
   BsThreeDotsVertical,
 } from "react-icons/bs"
-import { isMobile } from "react-device-detect"
 
 import { device } from "../../Style"
 import { words } from "../../Style"
-import { bool } from "prop-types"
-// import image1 from "../../assets/images/Elias/im1.jpg"
+
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 function Servie2({
   title1,
   title2,

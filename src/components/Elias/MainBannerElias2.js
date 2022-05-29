@@ -3,6 +3,7 @@ import styled from "styled-components"
 import image1 from "../../assets/images/Elias/bg-image-11.jpg"
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
+import { Link } from "gatsby"
 
 function MainBannerElias2() {
   return (
@@ -32,6 +33,7 @@ function MainBannerElias2() {
                 השירותים שלנו
               </div>
             </Button1>
+
             <Button>
               <div style={{ fontSize: "20px", fontWeight: "bold" }}>
                 צור קשר
