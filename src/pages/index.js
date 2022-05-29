@@ -24,7 +24,8 @@ import image2 from "../assets/images/Elias/im2.jpg"
 import image3 from "../assets/images/Elias/im3.jpg"
 import image4 from "../assets/images/Elias/im4.jpg"
 import image5 from "../assets/images/Elias/im5.jpg"
-import image6 from "../assets/images/Elias/im6.jpg"
+import image6 from "../assets/images/Elias/wow.jpg"
+
 const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />

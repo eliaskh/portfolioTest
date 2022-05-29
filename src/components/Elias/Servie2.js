@@ -3,6 +3,7 @@ import styled from "styled-components"
 import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
 import circle from "../../assets/images/Elias/cri.svg"
 import Brainstorm from "../../assets/images/Elias/new.png"
+// import image1 from "im1.jpg"
 import {
   BsArrowLeft,
   BsArrowRight,
@@ -10,10 +11,11 @@ import {
   BsThreeDotsVertical,
 } from "react-icons/bs"
 import { isMobile } from "react-device-detect"
-
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { bool } from "prop-types"
+// import image1 from "../../assets/images/Elias/im1.jpg"
 function Servie2({
   title1,
   title2,
@@ -26,7 +28,8 @@ function Servie2({
 }) {
   const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
-
+  const image = getImage(image1)
+  const image1 = "im1.jpg"
   const handelShowMore = () => {
     if (showMore) {
       setShowMore(false)
@@ -50,6 +53,13 @@ function Servie2({
       <div className="wrapper">
         <div className="image1">
           <img src={imageRow} alt="" className="image" />
+          {/* <StaticImage src={`"${image1}"`} className="image" /> */}
+          {/* <StaticImage src={`"${image1}"`} className="image" /> */}
+
+          {/* <GatsbyImage image={image} alt="elias" /> */}
+          {/* <StaticImage
+            src={`../../assets/images/Elias/${imageRow}`}
+          ></StaticImage> */}
         </div>
 
         <div className="text">
