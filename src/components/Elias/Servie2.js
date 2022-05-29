@@ -65,9 +65,7 @@ function Servie2({
 
             <h1 className="title">{title1}</h1>
             <h1 className="title1">{title2}</h1>
-            <p className="description" style={{ width: "200px!important;" }}>
-              {about}
-            </p>
+            <p className="description">{about}</p>
 
             {showMore ? (
               <>

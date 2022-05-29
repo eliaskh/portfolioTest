@@ -139,7 +139,7 @@ const BigdataAnalytics = () => (
     {/* <IndustriesWeServe />
     <BlogPost /> */}
     {/* <NewsletterStyleTwo /> */}
-    {/* <Footer /> */}
+    <Footer />
   </Layout>
 )
 
