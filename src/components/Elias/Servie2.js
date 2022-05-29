@@ -11,7 +11,7 @@ import {
   BsThreeDotsVertical,
 } from "react-icons/bs"
 import { isMobile } from "react-device-detect"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { bool } from "prop-types"
@@ -28,8 +28,7 @@ function Servie2({
 }) {
   const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
-  const image = getImage(image1)
-  const image1 = "im1.jpg"
+
   const handelShowMore = () => {
     if (showMore) {
       setShowMore(false)
