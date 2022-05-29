@@ -71,11 +71,11 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={logo} alt="Logo1" style={{ height: "40px" }} />
+              <img src={logo} alt="Logo" style={{ height: "50px" }} />
               {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
             </Link>
 
-            {/* <button
+            <button
               onClick={toggleNavbar}
               className={classTwo}
               type="button"
@@ -88,40 +88,9 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               <span className="icon-bar top-bar"></span>
               <span className="icon-bar middle-bar"></span>
               <span className="icon-bar bottom-bar"></span>
-            </button> */}
-            {isDarkoMode ? (
-              <>
-                <>
-                  <BsMoonFill
-                    className={classTwo}
-                    style={{
-                      color: "white",
-                      marginTop: "3px",
-                      marginRight: "7px",
-                      cursor: "pointer",
-                    }}
-                    size="17px"
-                    onClick={toggleTheme}
-                  />
-                </>
-              </>
-            ) : (
-              <>
-                <BsFillSunFill
-                  className={classTwo}
-                  style={{
-                    color: "white",
-                    marginTop: "3px",
-                    marginRight: "7px",
-                    cursor: "pointer",
-                  }}
-                  size="20px"
-                  onClick={toggleTheme}
-                />
-              </>
-            )}
+            </button>
 
-            {/* <div className={classOne} id="navbarSupportedContent">
+            <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
@@ -152,9 +121,43 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                     תתקשר
                   </Link>
                 </li>
-                <li></li>
+                <li>
+                  {isDarkoMode ? (
+                    <>
+                      <>
+                        <li className="nav-item">
+                          <BsMoonFill
+                            style={{
+                              color: "white",
+                              marginTop: "3px",
+                              marginRight: "7px",
+                              cursor: "pointer",
+                            }}
+                            size="17px"
+                            onClick={toggleTheme}
+                          />
+                        </li>
+                      </>
+                    </>
+                  ) : (
+                    <>
+                      <li className="nav-item">
+                        <BsFillSunFill
+                          style={{
+                            color: "white",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="20px"
+                          onClick={toggleTheme}
+                        />
+                      </li>
+                    </>
+                  )}
+                </li>
               </ul>
-            </div> */}
+            </div>
           </nav>
         </div>
       </div>
