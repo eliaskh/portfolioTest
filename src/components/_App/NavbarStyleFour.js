@@ -71,7 +71,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={logo} alt="Logo" style={{ height: "40px" }} />
+              <img src={logo} alt="Logo1" style={{ height: "40px" }} />
               {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
             </Link>
 
