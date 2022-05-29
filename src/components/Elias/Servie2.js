@@ -3,14 +3,28 @@ import styled from "styled-components"
 import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
 import circle from "../../assets/images/Elias/cri.svg"
 import Brainstorm from "../../assets/images/Elias/new.png"
-import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs"
+import {
+  BsArrowLeft,
+  BsArrowRight,
+  BsArrowDown,
+  BsThreeDotsVertical,
+} from "react-icons/bs"
 import { isMobile } from "react-device-detect"
 
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { bool } from "prop-types"
-function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
-  const style1 = { color: "white", fontSize: "4rem" }
+function Servie2({
+  title1,
+  title2,
+  design,
+  imageRow,
+  about,
+  showTitle,
+  number,
+  description,
+}) {
+  const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {
@@ -20,125 +34,53 @@ function Servie2({ title1, title2, design, imageRow, about, showTitle }) {
   }
   return (
     <Cover>
-      {design == "first" ? (
+      {showTitle ? (
         <>
-          {showTitle ? (
-            <>
-              <div className="titleSherotem">
-                <h1> השירותים שלנו</h1>
-                <p>
-                  אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
-                  מהרעיון והניסוח העיקרי של אסטרטגיית המוצר,
-                </p>
-              </div>
-            </>
-          ) : (
-            <></>
-          )}
-
-          <div className="wrapper">
-            <div className="image1">
-              <img src={imageRow} alt="" className="image" />
-            </div>
-
-            {/* {isMobile ? (
-              <>
-                <div className="arrow">
-                  <BsArrowDown style={style1} />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="arrow">
-                  <BsArrowLeft style={style1} />
-                </div>
-              </>
-            )} */}
-
-            <div className="text">
-              <h1 className="title">{title1}</h1>
-              <h1 className="title1">{title2}</h1>
-              <p className="description" style={{ width: "200px!important;" }}>
-                {about}
-              </p>
-
-              {showMore ? (
-                <>
-                  <div className="description">
-                    <p style={{ color: "white" }}>
-                      בניית אתרים מקצועית נעשה בכמה שלבים ובעזרת כמה בעלי מקצוע.
-                      מרגע קבלת הרעיון מהלקוח, מחקר השוק , מי הם הלקוחות
-                      הפוטנציאליים, תכנון, עיצוב ופיתוח. פיתוח מוצר דיגיטלי
-                      מצליח הוא תהליך מורכב הדורש בחירה של הטכנולוגיה מתאימה,
-                      יישום פתרונות חדשניים ומעקב אחר תהליכים. המפגש הראשון הוא
-                      עם מנהל הפרויקטים שלנו שינסה לחקור ולהבין את סוג האתר,
-                      מטרתו וקהל היעד. השלב של האיפיון הוא אבן היסוד של פיתוח
-                      האתר.
-                    </p>
-                  </div>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.moreInfo}</Button>
-                  </div>
-                </>
-              )}
-            </div>
+          <div className="titleSherotem">
+            <h1> השירותים שלנו</h1>
+            <p>
+              אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
+              מהרעיון והניסוח העיקרי של אסטרטגיית המוצר,
+            </p>
           </div>
         </>
       ) : (
-        <>
-          <div className="wrapper">
-            <div className="text">
-              <h1 className="title">{title1}</h1>
-              <h1 className="title1">{title2}</h1>
-              <p className="description">{about}</p>
-              {showMore ? (
-                <>
-                  <div className="description">
-                    <p style={{ color: "white" }}>
-                      בניית אתרים מקצועית נעשה בכמה שלבים ובעזרת כמה בעלי מקצוע.
-                      מרגע קבלת הרעיון מהלקוח, מחקר השוק , מי הם הלקוחות
-                      הפוטנציאליים, תכנון, עיצוב ופיתוח. פיתוח מוצר דיגיטלי
-                      מצליח הוא תהליך מורכב הדורש בחירה של הטכנולוגיה מתאימה,
-                      יישום פתרונות חדשניים ומעקב אחר תהליכים. המפגש הראשון הוא
-                      עם מנהל הפרויקטים שלנו שינסה לחקור ולהבין את סוג האתר,
-                      מטרתו וקהל היעד. השלב של האיפיון הוא אבן היסוד של פיתוח
-                      האתר.
-                    </p>
-                  </div>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                  </div>
-                </>
-              ) : (
-                <></>
-              )}
-            </div>
-            {/* {isMobile ? (
+        <></>
+      )}
+      <div className="wrapper">
+        <div className="image1">
+          <img src={imageRow} alt="" className="image" />
+        </div>
+
+        <div className="text">
+          <div>
+            <div className="number">{number}</div>
+
+            <h1 className="title">{title1}</h1>
+            <h1 className="title1">{title2}</h1>
+            <p className="description" style={{ width: "200px!important;" }}>
+              {about}
+            </p>
+
+            {showMore ? (
               <>
-                <div className="arrow">
-                  <BsArrowDown style={style1} />
+                <div className="description">
+                  <p style={{ color: "white" }}>{description}</p>
+                </div>
+                <div className="btn1">
+                  <Button onClick={handelShowMore}>{words.lessInfo}</Button>
                 </div>
               </>
             ) : (
               <>
-                <div className="arrow">
-                  <BsArrowLeft style={style1} />
+                <div className="btn1">
+                  <Button onClick={handelShowMore}>{words.moreInfo}</Button>
                 </div>
               </>
-            )} */}
-
-            <div className="image1">
-              <img src={Brainstorm} alt="" className="image" />
-            </div>
+            )}
           </div>
-        </>
-      )}
+        </div>
+      </div>
     </Cover>
   )
 }
@@ -156,10 +98,17 @@ const Cover = styled.div`
   .wrapper {
     display: grid;
     height: 80vh;
+
     /* padding: 10rem; */
     background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
   }
   .wrapperWhite {
+  }
+  .number {
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
   }
 
   .image1 {
@@ -209,8 +158,12 @@ const Cover = styled.div`
       width: 100vw;
       /* border-radius: 10px; */
     }
+    .image1 {
+      order: 2;
+    }
     .text {
-      padding: 1rem;
+      order: 1;
+      padding: 3rem;
     }
     .title {
       margin-top: 1rem;
@@ -247,8 +200,12 @@ const Cover = styled.div`
       width: 100vw;
       /* border-radius: 10px; */
     }
+    .image1 {
+      order: 1;
+    }
     .text {
       padding: 1rem;
+      order: 2;
     }
     .title {
       margin-top: 1rem;
@@ -285,8 +242,12 @@ const Cover = styled.div`
       width: 100vw;
       /* border-radius: 10px; */
     }
+    .image1 {
+      order: 1;
+    }
     .text {
       padding: 1rem;
+      order: 2;
     }
     .title {
       margin-top: 1rem;

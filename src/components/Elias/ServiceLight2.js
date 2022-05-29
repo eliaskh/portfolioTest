@@ -7,7 +7,15 @@ import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs"
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { isMobile } from "react-device-detect"
-function ServiceLight2({ title1, title2, design, imageRow, about }) {
+function ServiceLight2({
+  title1,
+  title2,
+  design,
+  imageRow,
+  about,
+  number,
+  description,
+}) {
   const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
 
@@ -25,21 +33,8 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
               <img src={imageRow} alt="" className="image" />
             </div>
 
-            {/* {isMobile ? (
-              <>
-                <div className="arrow">
-                  <BsArrowDown style={style1} />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="arrow">
-                  <BsArrowLeft style={style1} />
-                </div>
-              </>
-            )} */}
-
             <div className="text">
+              <div className="number">{number}</div>
               <h1 className="title">{title1}</h1>
               <h1 className="title1">{title2}</h1>
               <p className="description" style={{ width: "200px!important;" }}>
@@ -49,16 +44,7 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
               {showMore ? (
                 <>
                   <div className="description">
-                    <p style={{ color: "white" }}>
-                      בניית אתרים מקצועית נעשה בכמה שלבים ובעזרת כמה בעלי מקצוע.
-                      מרגע קבלת הרעיון מהלקוח, מחקר השוק , מי הם הלקוחות
-                      הפוטנציאליים, תכנון, עיצוב ופיתוח. פיתוח מוצר דיגיטלי
-                      מצליח הוא תהליך מורכב הדורש בחירה של הטכנולוגיה מתאימה,
-                      יישום פתרונות חדשניים ומעקב אחר תהליכים. המפגש הראשון הוא
-                      עם מנהל הפרויקטים שלנו שינסה לחקור ולהבין את סוג האתר,
-                      מטרתו וקהל היעד. השלב של האיפיון הוא אבן היסוד של פיתוח
-                      האתר.
-                    </p>
+                    <p style={{ color: "white" }}>{description}</p>
                   </div>
                   <div className="btn1">
                     <Button onClick={handelShowMore}>{words.lessInfo}</Button>
@@ -78,22 +64,14 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
         <>
           <div className="wrapper">
             <div className="text">
+              <div className="number">{number}</div>
               <h1 className="title">{title1}</h1>
               <h1 className="title1">{title2}</h1>
               <p className="description">{about}</p>
               {showMore ? (
                 <>
                   <div className="description">
-                    <p style={{ color: "var(--clr-font)" }}>
-                      בניית אתרים מקצועית נעשה בכמה שלבים ובעזרת כמה בעלי מקצוע.
-                      מרגע קבלת הרעיון מהלקוח, מחקר השוק , מי הם הלקוחות
-                      הפוטנציאליים, תכנון, עיצוב ופיתוח. פיתוח מוצר דיגיטלי
-                      מצליח הוא תהליך מורכב הדורש בחירה של הטכנולוגיה מתאימה,
-                      יישום פתרונות חדשניים ומעקב אחר תהליכים. המפגש הראשון הוא
-                      עם מנהל הפרויקטים שלנו שינסה לחקור ולהבין את סוג האתר,
-                      מטרתו וקהל היעד. השלב של האיפיון הוא אבן היסוד של פיתוח
-                      האתר.
-                    </p>
+                    <p style={{ color: "var(--clr-font)" }}>{description}</p>
                   </div>
                   <div className="btn1">
                     <Button onClick={handelShowMore}>{words.lessInfo}</Button>
@@ -107,19 +85,6 @@ function ServiceLight2({ title1, title2, design, imageRow, about }) {
                 </>
               )}
             </div>
-            {/* {isMobile ? (
-              <>
-                <div className="arrow">
-                  <BsArrowDown style={style1} />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="arrow">
-                  <BsArrowLeft style={style1} />
-                </div>
-              </>
-            )} */}
 
             <div className="image1">
               <img src={imageRow} alt="" className="image" />
@@ -158,6 +123,12 @@ const Cover = styled.div`
     align-self: center;
     /* width: 20rem; */
   }
+  .number {
+    font-size: 2.5rem;
+    color: var(--clr-font);
+    display: flex;
+    justify-content: center;
+  }
   .arrow {
     justify-self: center;
     align-self: center;
@@ -177,14 +148,14 @@ const Cover = styled.div`
       /* padding: 1rem; */
     }
     .image {
-      order: 1;
+      /* order: 1; */
       height: auto;
       width: 100vw;
     }
 
     .text {
-      padding: 1rem;
-      order: 2;
+      padding: 3rem;
+      /* order: 2; */
     }
     .title {
       font-size: 3.5rem;
@@ -216,14 +187,14 @@ const Cover = styled.div`
       /* padding: 6rem; */
     }
     .image {
-      order: 2;
+      /* order: 2; */
       height: 80vh;
       width: 100vw;
     }
 
     .text {
       padding: 1rem;
-      order: 1;
+      /* order: 1; */
     }
     .title {
       font-size: 3.5rem;
@@ -255,13 +226,13 @@ const Cover = styled.div`
       /* padding: 6rem; */
     }
     .image {
-      order: 2;
+      /* order: 2; */
       height: 80vh;
       width: 100vw;
     }
     .text {
       padding: 1rem;
-      order: 1;
+      /* order: 1; */
     }
 
     .title {
