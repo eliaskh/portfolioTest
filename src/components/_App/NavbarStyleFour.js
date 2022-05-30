@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import DarkModeToggle from "react-dark-mode-toggle"
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
 import logo from "../../assets/images/Elias/logo.png"
+import styled from "styled-components"
 
 const query = graphql`
   {
@@ -71,7 +72,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={logo} alt="Logo" style={{ height: "50px" }} />
+              <img src={logo} alt="Logo" style={{ height: "40px" }} />
               {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
             </Link>
 
@@ -89,41 +90,47 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               <span className="icon-bar middle-bar"></span>
               <span className="icon-bar bottom-bar"></span>
             </button> */}
-            {isDarkoMode ? (
-              <>
-                <>
-                  <BsMoonFill
-                    className={classTwo}
-                    style={{
-                      color: "white",
-                      marginTop: "3px",
-                      marginRight: "7px",
-                      cursor: "pointer",
-                    }}
-                    size="17px"
-                    onClick={toggleTheme}
-                  />
-                </>
-              </>
-            ) : (
-              <>
-                <BsFillSunFill
-                  className={classTwo}
-                  style={{
-                    color: "white",
-                    marginTop: "3px",
-                    marginRight: "7px",
-                    cursor: "pointer",
-                  }}
-                  size="20px"
-                  onClick={toggleTheme}
-                />
-              </>
-            )}
 
+            <Darkbtn>
+              {isDarkoMode ? (
+                <>
+                  <>
+                    <div className="maniBtn">
+                      <BsMoonFill
+                        className={classTwo}
+                        style={{
+                          color: "white",
+                          marginTop: "3px",
+                          marginRight: "7px",
+                          cursor: "pointer",
+                        }}
+                        size="30px"
+                        onClick={toggleTheme}
+                      />
+                    </div>
+                  </>
+                </>
+              ) : (
+                <>
+                  <div className="maniBtn">
+                    <BsFillSunFill
+                      className={classTwo}
+                      style={{
+                        color: "white",
+                        marginTop: "3px",
+                        marginRight: "7px",
+                        cursor: "pointer",
+                      }}
+                      size="30px"
+                      onClick={toggleTheme}
+                    />
+                  </div>
+                </>
+              )}
+            </Darkbtn>
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     to="/#"
                     activeClassName="active"
@@ -151,6 +158,38 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                   >
                     תתקשר
                   </Link>
+                </li> */}
+
+                <li className="nav-item">
+                  {isDarkoMode ? (
+                    <>
+                      <>
+                        <BsMoonFill
+                          style={{
+                            color: "white",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="20px"
+                          onClick={toggleTheme}
+                        />
+                      </>
+                    </>
+                  ) : (
+                    <>
+                      <BsFillSunFill
+                        style={{
+                          color: "white",
+                          marginTop: "3px",
+                          marginRight: "7px",
+                          cursor: "pointer",
+                        }}
+                        size="23px"
+                        onClick={toggleTheme}
+                      />
+                    </>
+                  )}
                 </li>
               </ul>
             </div>
@@ -160,5 +199,11 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
     </header>
   )
 }
+
+const Darkbtn = styled.div`
+  .maniBtn {
+    margin-left: 10px;
+  }
+`
 
 export default NavbarStyleFour

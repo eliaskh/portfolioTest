@@ -19,6 +19,7 @@ import IndustriesWeServe from "../components/BigdataAnalytics/IndustriesWeServe"
 import BlogPost from "../components/BigdataAnalytics/BlogPost"
 import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
 import Footer from "../components/_App/Footer"
+import Ourwork from "../components/Elias/Ourwork"
 import image1 from "../assets/images/Elias/im1.jpg"
 import image2 from "../assets/images/Elias/im2.jpg"
 import image3 from "../assets/images/Elias/im3.jpg"
@@ -130,6 +131,7 @@ const BigdataAnalytics = () => (
                     הפרויקטים שלנו שינסה לחקור ולהבין את סוג האתר, מטרתו וקהל
                     היעד. השלב של האיפיון הוא אבן היסוד של פיתוח האתר."
     />
+    <Ourwork />
     {/* <WhatWeDo />
     <DiscoverArea /> */}
     {/* <Services /> */}

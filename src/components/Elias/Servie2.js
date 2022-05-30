@@ -141,7 +141,7 @@ const Cover = styled.div`
     background-color: var(--clr-bgc);
   }
   .titleSherotem > h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--clr-font);
     text-align: center;
   }
@@ -168,11 +168,11 @@ const Cover = styled.div`
     }
     .text {
       order: 1;
-      padding: 3rem;
+      padding: 2rem;
     }
     .title {
       margin-top: 1rem;
-      font-size: 3.5rem;
+      font-size: 2rem;
       color: white;
       text-align: center;
     }
@@ -214,7 +214,7 @@ const Cover = styled.div`
     }
     .title {
       margin-top: 1rem;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: white;
       text-align: right !important;
     }
@@ -256,7 +256,7 @@ const Cover = styled.div`
     }
     .title {
       margin-top: 1rem;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: white;
       text-align: right !important;
     }

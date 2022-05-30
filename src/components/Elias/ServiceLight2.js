@@ -158,7 +158,7 @@ const Cover = styled.div`
       /* order: 2; */
     }
     .title {
-      font-size: 3.5rem;
+      font-size: 2rem;
       color: var(--clr-font);
       text-align: center;
     }
@@ -197,7 +197,7 @@ const Cover = styled.div`
       /* order: 1; */
     }
     .title {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: var(--clr-font);
       text-align: right !important;
     }
@@ -236,7 +236,7 @@ const Cover = styled.div`
     }
 
     .title {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: var(--clr-font);
       text-align: right !important;
     }

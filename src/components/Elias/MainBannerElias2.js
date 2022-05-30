@@ -103,7 +103,7 @@ const Cover = styled.div`
       gap: 1rem;
     }
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     .Typewriter {
       font-size: 3rem;
@@ -116,7 +116,7 @@ const Cover = styled.div`
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
     }
     .Typewriter {
       font-size: 4rem;
