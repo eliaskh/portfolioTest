@@ -105,7 +105,10 @@ const Cover = styled.div`
     height: 80vh;
 
     /* padding: 10rem; */
-    background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
+    /* background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%); */
+    /* background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
+    background-image: var(--clr-Gradient);
   }
   .wrapperWhite {
   }

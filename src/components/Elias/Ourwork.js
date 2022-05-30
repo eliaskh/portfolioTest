@@ -31,11 +31,9 @@ function Ourwork() {
           dir="rtl"
           slidesPerView={1}
           spaceBetween={10}
-          navigation={true}
+          //   navigation={true}
           loop={true}
-          pagination={{
-            type: "progressbar",
-          }}
+          pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
           breakpoints={{
             640: {
@@ -100,8 +98,10 @@ const Cover = styled.div`
     margin-top: 0rem;
     /* margin-bottom: 5rem; */
     padding-bottom: 5rem;
+    /* background-color: #0093e9; */
+    background-image: var(--clr-Gradient);
 
-    background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
+    /* background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%); */
   }
   .swiper-pagination-progressbar-fill {
     height: 10px !important;
