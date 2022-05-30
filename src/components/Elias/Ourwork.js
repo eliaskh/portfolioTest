@@ -12,6 +12,11 @@ import img2 from "../../assets/images/Elias/new4.jpg"
 import img3 from "../../assets/images/Elias/new5.jpg"
 import img4 from "../../assets/images/Elias/new8.jpg"
 import img5 from "../../assets/images/Elias/mg3n.jpg"
+import pngtest from "../../assets/images/Elias/01.png"
+import pngtest1 from "../../assets/images/Elias/03-Recovered.png"
+import pngtest2 from "../../assets/images/Elias/222.09366b8a.png"
+import pngtest3 from "../../assets/images/Elias/03.png"
+import pngtest4 from "../../assets/images/Elias/wow.png"
 function Ourwork() {
   const [showInfo, setShowInfo] = useState(true)
   const taggleInfo = () => {
@@ -51,7 +56,7 @@ function Ourwork() {
           }}
         >
           <SwiperSlide>
-            <img src={img1} className="imgSlider" />
+            <img src={pngtest} className="imgSlider" />
 
             {/* <div className="more">
               <div className="black">
@@ -68,16 +73,16 @@ function Ourwork() {
             {/* <Button onClick={taggleInfo}>Information</Button> */}
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img2} className="imgSlider" />
+            <img src={pngtest1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img3} className="imgSlider" />
+            <img src={pngtest2} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img4} className="imgSlider" />
+            <img src={pngtest3} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img5} className="imgSlider" />
+            <img src={pngtest4} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -144,7 +149,7 @@ const Cover = styled.div`
     text-align: right !important;
   }
   .imgSlider {
-    height: 400px !important;
+    height: 100% !important;
   }
 `
 export default Ourwork
