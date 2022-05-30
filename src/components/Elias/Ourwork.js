@@ -7,7 +7,11 @@ import "swiper/css/pagination"
 import { Navigation, Pagination } from "swiper"
 import { StaticImage } from "gatsby-plugin-image"
 import { device } from "../../Style"
-
+import img1 from "../../assets/images/Elias/new3.jpg"
+import img2 from "../../assets/images/Elias/new4.jpg"
+import img3 from "../../assets/images/Elias/new5.jpg"
+import img4 from "../../assets/images/Elias/new8.jpg"
+import img5 from "../../assets/images/Elias/mg3n.jpg"
 function Ourwork() {
   const [showInfo, setShowInfo] = useState(true)
   const taggleInfo = () => {
@@ -33,7 +37,6 @@ function Ourwork() {
             type: "progressbar",
           }}
           modules={[Navigation, Pagination]}
-          className="mySwiper"
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -50,11 +53,7 @@ function Ourwork() {
           }}
         >
           <SwiperSlide>
-            <StaticImage
-              src="../../assets/images/Elias/new4.jpg"
-              onClick={taggleInfo}
-              className="imgSlider"
-            ></StaticImage>
+            <img src={img1} className="imgSlider" />
 
             {/* <div className="more">
               <div className="black">
@@ -71,28 +70,16 @@ function Ourwork() {
             {/* <Button onClick={taggleInfo}>Information</Button> */}
           </SwiperSlide>
           <SwiperSlide>
-            <StaticImage
-              src="../../assets/images/Elias/new3.jpg"
-              className="imgSlider"
-            ></StaticImage>
+            <img src={img2} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <StaticImage
-              src="../../assets/images/Elias/new5.jpg"
-              className="imgSlider"
-            ></StaticImage>
+            <img src={img3} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <StaticImage
-              src="../../assets/images/Elias/new8.jpg"
-              className="imgSlider"
-            ></StaticImage>
+            <img src={img4} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <StaticImage
-              src="../../assets/images/Elias/mg3n.jpg"
-              className="imgSlider"
-            ></StaticImage>
+            <img src={img5} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -72,7 +72,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={logo} alt="Logo" style={{ height: "40px" }} />
+              <img src={logo} alt="Logo" style={{ height: "35px" }} />
               {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
             </Link>
 
@@ -104,7 +104,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                           marginRight: "7px",
                           cursor: "pointer",
                         }}
-                        size="30px"
+                        size="25px"
                         onClick={toggleTheme}
                       />
                     </div>
@@ -121,7 +121,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                         marginRight: "7px",
                         cursor: "pointer",
                       }}
-                      size="30px"
+                      size="25px"
                       onClick={toggleTheme}
                     />
                   </div>
