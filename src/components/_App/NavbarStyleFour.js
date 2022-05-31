@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 import * as Icon from "react-feather"
 import { graphql, useStaticQuery } from "gatsby"
 import DarkModeToggle from "react-dark-mode-toggle"
-import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
-import logo from "../../assets/images/Elias/logo.png"
+import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
+import logoLight from "../../assets/images/Elias/logo.png"
+import logoDark from "../../assets/images/Elias/logoLight.png"
 import styled from "styled-components"
 
 const query = graphql`
@@ -60,23 +61,37 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
     : "navbar-toggler navbar-toggler-right"
 
   return (
-    <header
-      id="header"
-      className="headroom navbar-color-white navbar-style-four"
-    >
-      <div className="startp-nav">
-        <div className="container">
-          <nav className="navbar navbar-expand-md navbar-light">
-            <Link
-              to="/bigdata-analytics"
-              onClick={toggleNavbar}
-              className="navbar-brand"
-            >
-              <img src={logo} alt="Logo" style={{ height: "35px" }} />
-              {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
-            </Link>
+    <Head>
+      <header
+        id="header"
+        className="headroom navbar-color-white navbar-style-four"
+      >
+        <div className="startp-nav">
+          <div className="container">
+            <nav className="navbar navbar-expand-md navbar-light">
+              <Link
+                to="/bigdata-analytics"
+                onClick={toggleNavbar}
+                className="navbar-brand"
+              >
+                {isDarkoMode ? (
+                  <>
+                    <img
+                      src={logoLight}
+                      alt="Logo"
+                      style={{ height: "35px" }}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <img src={logoDark} alt="Logo" style={{ height: "35px" }} />
+                  </>
+                )}
 
-            {/* <button
+                {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
+              </Link>
+
+              {/* <button
               onClick={toggleNavbar}
               className={classTwo}
               type="button"
@@ -91,15 +106,32 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               <span className="icon-bar bottom-bar"></span>
             </button> */}
 
-            <Darkbtn>
-              {isDarkoMode ? (
-                <>
+              <Darkbtn>
+                {isDarkoMode ? (
+                  <>
+                    <>
+                      <div className="maniBtn">
+                        <BsMoonFill
+                          className={classTwo}
+                          style={{
+                            color: "white",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="20px"
+                          onClick={toggleTheme}
+                        />
+                      </div>
+                    </>
+                  </>
+                ) : (
                   <>
                     <div className="maniBtn">
-                      <BsMoonFill
+                      <BsSun
                         className={classTwo}
                         style={{
-                          color: "white",
+                          color: "black",
                           marginTop: "3px",
                           marginRight: "7px",
                           cursor: "pointer",
@@ -109,28 +141,11 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                       />
                     </div>
                   </>
-                </>
-              ) : (
-                <>
-                  <div className="maniBtn">
-                    <BsFillSunFill
-                      className={classTwo}
-                      style={{
-                        color: "white",
-                        marginTop: "3px",
-                        marginRight: "7px",
-                        cursor: "pointer",
-                      }}
-                      size="25px"
-                      onClick={toggleTheme}
-                    />
-                  </div>
-                </>
-              )}
-            </Darkbtn>
-            <div className={classOne} id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto">
-                {/* <li className="nav-item">
+                )}
+              </Darkbtn>
+              <div className={classOne} id="navbarSupportedContent">
+                <ul className="navbar-nav ms-auto">
+                  {/* <li className="nav-item">
                   <Link
                     to="/#"
                     activeClassName="active"
@@ -160,46 +175,51 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                   </Link>
                 </li> */}
 
-                <li className="nav-item">
-                  {isDarkoMode ? (
-                    <>
+                  <li className="nav-item">
+                    {isDarkoMode ? (
                       <>
-                        <BsMoonFill
+                        <>
+                          <BsMoonFill
+                            style={{
+                              color: "white",
+                              marginTop: "3px",
+                              marginRight: "7px",
+                              cursor: "pointer",
+                            }}
+                            size="20px"
+                            onClick={toggleTheme}
+                          />
+                        </>
+                      </>
+                    ) : (
+                      <>
+                        <BsSun
                           style={{
-                            color: "white",
+                            color: "black",
                             marginTop: "3px",
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="20px"
+                          size="25px"
                           onClick={toggleTheme}
                         />
                       </>
-                    </>
-                  ) : (
-                    <>
-                      <BsFillSunFill
-                        style={{
-                          color: "white",
-                          marginTop: "3px",
-                          marginRight: "7px",
-                          cursor: "pointer",
-                        }}
-                        size="23px"
-                        onClick={toggleTheme}
-                      />
-                    </>
-                  )}
-                </li>
-              </ul>
-            </div>
-          </nav>
+                    )}
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </Head>
   )
 }
-
+const Head = styled.div`
+  #header {
+    background-color: var(--clr-header) !important;
+  }
+`
 const Darkbtn = styled.div`
   .maniBtn {
     margin-left: 10px;

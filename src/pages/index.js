@@ -1,23 +1,9 @@
 import React from "react"
 import Layout from "../components/_App/layout"
 import SEO from "../components/_App/seo"
-import NavbarStyleFour from "../components/_App/NavbarStyleFour"
-import MainBanner from "../components/BigdataAnalytics/MainBanner"
-import MainBannerElias from "../components/Elias/MainBannerElias"
 import MainBannerElias2 from "../components/Elias/MainBannerElias2"
-import Servie1 from "../components/Elias/Service1"
 import Servie2 from "../components/Elias/Servie2"
-import ServiceLight from "../components/Elias/ServiceLight"
 import ServiceLight2 from "../components/Elias/ServiceLight2"
-import WhatWeDo from "../components/BigdataAnalytics/WhatWeDo"
-import DiscoverArea from "../components/BigdataAnalytics/DiscoverArea"
-import Services from "../components/DigitalAgency/OurServices"
-import TeamStyleTwo from "../components/Common/TeamStyleTwo"
-import BigdataFunFacts from "../components/BigdataAnalytics/BigdataFunFacts"
-import Feedback from "../components/BigdataAnalytics/Feedback"
-import IndustriesWeServe from "../components/BigdataAnalytics/IndustriesWeServe"
-import BlogPost from "../components/BigdataAnalytics/BlogPost"
-import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
 import Footer from "../components/_App/Footer"
 import Ourwork from "../components/Elias/Ourwork"
 import image1 from "../assets/images/Elias/im1.jpg"
@@ -132,14 +118,6 @@ const BigdataAnalytics = () => (
                     היעד. השלב של האיפיון הוא אבן היסוד של פיתוח האתר."
     />
     <Ourwork />
-    {/* <WhatWeDo />
-    <DiscoverArea /> */}
-    {/* <Services /> */}
-    {/* <TeamStyleTwo /> */}
-    {/* <BigdataFunFacts /> */}
-    {/* <Feedback /> */}
-    {/* <IndustriesWeServe />
-    <BlogPost /> */}
     {/* <NewsletterStyleTwo /> */}
     {/* <Footer /> */}
   </Layout>

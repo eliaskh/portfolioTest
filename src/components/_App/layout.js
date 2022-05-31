@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import styled from "styled-components"
 
 const Layout = ({ children }) => {
-  const [theme, settheme] = useState("light-theme")
+  const [theme, settheme] = useState("dark-theme")
   const [isDarkoMode, setisDarkoMode] = useState(true)
 
   const toggleTheme = () => {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       {children}
       <NavbarStyleFour toggleTheme={toggleTheme} isDarkoMode={isDarkoMode} />
-      <GoTop scrollStepInPx="100" delayInMs="10.50" />
+      {/* <GoTop scrollStepInPx="100" delayInMs="10.50" /> */}
     </>
   )
 }

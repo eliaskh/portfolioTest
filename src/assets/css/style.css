@@ -92,10 +92,11 @@ Default CSS
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,600|Poppins:400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 body {
-  font-family: "Secular One", sans-serif;
+  font-family: "Fredoka", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -110,12 +111,16 @@ body {
   --clr-font: #000;
   --clr-primary: #ff002b;
   --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  --clr-header: #fff;
+  --logo-background: "../../assets/images/Elias/logo.png";
 }
 .dark-theme {
   --clr-bgc: #191919;
   --clr-font: #fff;
   --clr-primary: #025597;
   --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
+  --clr-header: #191919;
+  --logo-background: "../../assets/images/Elias/Brainstorming-01.png";
 }
 .swiper-container {
   width: 480px;
@@ -184,6 +189,7 @@ h5,
 h6 {
   color: #0e314c;
   font-weight: 500;
+  font-family: "Fredoka", sans-serif;
 }
 
 .text-right {
@@ -616,15 +622,16 @@ Navbar CSS
   background-color: transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-top: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 #header.headroom.is-sticky {
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-  background-color: #ffffff !important;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: var(--clr-primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #header.headroom.navbar-style-two {
@@ -894,7 +901,7 @@ Navbar CSS
 }
 
 .navbar-color-white#header.headroom.is-sticky {
-  background-color: #000000 !important;
+  background-color: var(--clr-header);
 }
 
 /* Navbar toggler */
