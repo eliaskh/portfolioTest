@@ -51,32 +51,43 @@ function Ourwork() {
           }}
         >
           <SwiperSlide>
-            <img src={img1} className="imgSlider" />
-
-            {/* <div className="more">
-              <div className="black">
-                {showInfo ? (
-                  <>
-                    <h1>elias</h1>
-                  </>
-                ) : (
-                  <></>
-                )}
-              </div>
-            </div> */}
-
-            {/* <Button onClick={taggleInfo}>Information</Button> */}
-          </SwiperSlide>
-          <SwiperSlide>
+            <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                אתר להצגת וידאו ב-360 מעלות
+              </h1>
+            </div>
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
+            <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                אפליקצייה להצגת וידאו ב-360
+              </h1>
+            </div>
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
+            <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                פיתוח אפליקציות מציאות מדומה
+              </h1>
+            </div>
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
+            <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                פלטפורמה לסיורים וירטואליים
+              </h1>
+            </div>
+            <img src={img1} className="imgSlider" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                אתר לחיפוש והזמנת חדרי נופש
+              </h1>
+            </div>
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
@@ -110,20 +121,25 @@ const Cover = styled.div`
     background: rgba(0, 0, 0, 0);
   }
   .more {
-    position: absolute;
+    /* position: absolute; */
+    /* bottom: 10px;
+    left: 10px; */
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    padding: 1rem;
   }
   .black {
     position: relative;
-    bottom: 0px;
+    top: 0px;
     right: 0x;
     width: 100%;
     height: 50px;
-    background-color: black;
   }
 
   .more > h1 {
-    font-size: 2rem;
-    color: white;
+    /* font-size: 2rem;
+    color: white; */
   }
   .titleSherotem {
     display: grid;
