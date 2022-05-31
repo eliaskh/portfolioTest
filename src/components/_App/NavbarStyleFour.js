@@ -119,7 +119,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="20px"
+                          size="22px"
                           onClick={toggleTheme}
                         />
                       </div>
@@ -136,7 +136,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                           marginRight: "7px",
                           cursor: "pointer",
                         }}
-                        size="25px"
+                        size="30px"
                         onClick={toggleTheme}
                       />
                     </div>
@@ -186,7 +186,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                               marginRight: "7px",
                               cursor: "pointer",
                             }}
-                            size="20px"
+                            size="22px"
                             onClick={toggleTheme}
                           />
                         </>
@@ -200,7 +200,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="25px"
+                          size="30px"
                           onClick={toggleTheme}
                         />
                       </>

@@ -10,9 +10,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { device } from "../../Style"
 import img1 from "../../assets/images/Elias/1-shfaf.png"
 import img2 from "../../assets/images/Elias/2-shfaf.png"
-import img3 from "../../assets/images/Elias/new5.jpg"
-import img4 from "../../assets/images/Elias/new8.jpg"
-import img5 from "../../assets/images/Elias/mg3n.jpg"
+import img3 from "../../assets/images/Elias/3-shfaf.png"
+import img4 from "../../assets/images/Elias/4-shfaf.png"
+import img5 from "../../assets/images/Elias/5-shfaf.png"
 function Ourwork() {
   const [showInfo, setShowInfo] = useState(true)
   const taggleInfo = () => {
@@ -76,7 +76,7 @@ function Ourwork() {
                 פיתוח אפליקציות מציאות מדומה
               </h1>
             </div> */}
-            <img src={img1} className="imgSlider" />
+            <img src={img3} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
             {/* <div className="more">
@@ -84,7 +84,7 @@ function Ourwork() {
                 פלטפורמה לסיורים וירטואליים
               </h1>
             </div> */}
-            <img src={img1} className="imgSlider" />
+            <img src={img4} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
             {/* <div className="more">
@@ -92,7 +92,7 @@ function Ourwork() {
                 אתר לחיפוש והזמנת חדרי נופש
               </h1>
             </div> */}
-            <img src={img1} className="imgSlider" />
+            <img src={img5} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -149,7 +149,7 @@ const Cover = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 5rem 5rem 0rem 5rem;
   }
   .titleSherotem > h1 {
     font-size: 3rem;
@@ -161,10 +161,16 @@ const Cover = styled.div`
     font-size: 1rem;
     word-wrap: break-word;
     color: white;
-    text-align: right !important;
+    text-align: center !important;
   }
   .imgSlider {
     height: auto !important;
+  }
+  .swiper-rtl .swiper-button-prev {
+    color: white;
+  }
+  .swiper-rtl .swiper-button-next {
+    color: white;
   }
 `
 export default Ourwork

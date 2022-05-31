@@ -165,7 +165,7 @@ const Cover = styled.div`
     .title1 {
       font-size: 2rem;
       text-align: center;
-      opacity: 0.1;
+      opacity: 0.4;
       color: var(--clr-font);
     }
 
@@ -204,7 +204,7 @@ const Cover = styled.div`
     .title1 {
       font-size: 2rem;
       text-align: right !important;
-      opacity: 0.1;
+      opacity: 0.4;
       color: var(--clr-font);
     }
 
@@ -243,7 +243,7 @@ const Cover = styled.div`
     .title1 {
       font-size: 2rem;
       text-align: right !important;
-      opacity: 0.1;
+      opacity: 0.4;
       color: var(--clr-font);
     }
 
