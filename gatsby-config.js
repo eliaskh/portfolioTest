@@ -4,9 +4,9 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: false,
   },
   siteMetadata: {
-    title: `Spet - Gatsby React IT & Business Startup`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@envy_theme`,
+    title: `Software Development Solution`,
+    description: `חברה לבניית אתרים ואפליקציות מובילה בישראל, עם צוות קריאייטיב יצירתי ומנוסה, צוות פיתוח משולב עם יכולות גבוהות בביצוע ומציאת פתרונות לכל צרכי המוצר`,
+    author: `Elias khshaiboun`,
   },
   plugins: [
     `gatsby-plugin-material-ui`,

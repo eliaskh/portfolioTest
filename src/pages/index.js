@@ -12,7 +12,9 @@ import image3 from "../assets/images/Elias/im3.jpg"
 import image4 from "../assets/images/Elias/im4.jpg"
 import image5 from "../assets/images/Elias/im5.jpg"
 import image6 from "../assets/images/Elias/wow.jpg"
-
+import image7 from "../assets/images/Elias/news.jpg"
+import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
+import Newsletter from "../components/Elias/Newsletter"
 const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
@@ -118,8 +120,9 @@ const BigdataAnalytics = () => (
                     היעד. השלב של האיפיון הוא אבן היסוד של פיתוח האתר."
     />
     <Ourwork />
-    {/* <NewsletterStyleTwo /> */}
-    {/* <Footer /> */}
+    {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
+    {/* <NewsletterStyleTwo />
+    <Footer /> */}
   </Layout>
 )
 
