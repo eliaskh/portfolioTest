@@ -4,11 +4,12 @@ import styled from "styled-components"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-import { Navigation, Pagination } from "swiper"
+import "swiper/css/lazy"
+import { Lazy, Navigation, Pagination } from "swiper"
 import { StaticImage } from "gatsby-plugin-image"
 import { device } from "../../Style"
 import img1 from "../../assets/images/Elias/1-shfaf.png"
-import img2 from "../../assets/images/Elias/new4.jpg"
+import img2 from "../../assets/images/Elias/2-shfaf.png"
 import img3 from "../../assets/images/Elias/new5.jpg"
 import img4 from "../../assets/images/Elias/new8.jpg"
 import img5 from "../../assets/images/Elias/mg3n.jpg"
@@ -31,10 +32,13 @@ function Ourwork() {
           dir="rtl"
           slidesPerView={1}
           spaceBetween={10}
-          //   navigation={true}
+          grabCursor={true}
+          lazy={true}
+          // effect={"fade"}
+          navigation={true}
           loop={true}
-          pagination={{ clickable: true }}
-          modules={[Navigation, Pagination]}
+          // pagination={{ clickable: true }}
+          modules={[Lazy, Navigation, Pagination]}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -51,43 +55,43 @@ function Ourwork() {
           }}
         >
           <SwiperSlide>
-            <div className="more">
+            {/* <div className="more">
               <h1 style={{ color: "white", fontSize: "1.5rem" }}>
                 אתר להצגת וידאו ב-360 מעלות
               </h1>
-            </div>
+            </div> */}
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="more">
+            {/* <div className="more">
               <h1 style={{ color: "white", fontSize: "1.5rem" }}>
                 אפליקצייה להצגת וידאו ב-360
               </h1>
-            </div>
-            <img src={img1} className="imgSlider" />
+            </div> */}
+            <img src={img2} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="more">
+            {/* <div className="more">
               <h1 style={{ color: "white", fontSize: "1.5rem" }}>
                 פיתוח אפליקציות מציאות מדומה
               </h1>
-            </div>
+            </div> */}
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="more">
+            {/* <div className="more">
               <h1 style={{ color: "white", fontSize: "1.5rem" }}>
                 פלטפורמה לסיורים וירטואליים
               </h1>
-            </div>
+            </div> */}
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="more">
+            {/* <div className="more">
               <h1 style={{ color: "white", fontSize: "1.5rem" }}>
                 אתר לחיפוש והזמנת חדרי נופש
               </h1>
-            </div>
+            </div> */}
             <img src={img1} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
@@ -160,7 +164,7 @@ const Cover = styled.div`
     text-align: right !important;
   }
   .imgSlider {
-    height: 400px !important;
+    height: auto !important;
   }
 `
 export default Ourwork

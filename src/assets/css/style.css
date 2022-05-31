@@ -112,15 +112,14 @@ body {
   --clr-primary: #ff002b;
   --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   --clr-header: #fff;
-  --logo-background: "../../assets/images/Elias/logo.png";
 }
 .dark-theme {
   --clr-bgc: #191919;
   --clr-font: #fff;
   --clr-primary: #025597;
-  --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #000066 100%);
+  /* --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #3535ff 100%); */
+  --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #2a2a6b 100%);
   --clr-header: #191919;
-  --logo-background: "../../assets/images/Elias/Brainstorming-01.png";
 }
 .swiper-container {
   width: 480px;

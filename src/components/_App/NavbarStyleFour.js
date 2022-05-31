@@ -128,7 +128,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                 ) : (
                   <>
                     <div className="maniBtn">
-                      <BsSun
+                      <BsFillSunFill
                         className={classTwo}
                         style={{
                           color: "black",
@@ -193,7 +193,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                       </>
                     ) : (
                       <>
-                        <BsSun
+                        <BsFillSunFill
                           style={{
                             color: "black",
                             marginTop: "3px",
