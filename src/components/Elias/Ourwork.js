@@ -13,6 +13,8 @@ import img2 from "../../assets/images/Elias/2-shfaf.png"
 import img3 from "../../assets/images/Elias/3-shfaf.png"
 import img4 from "../../assets/images/Elias/4-shfaf.png"
 import img5 from "../../assets/images/Elias/5-shfaf.png"
+import img6 from "../../assets/images/Elias/imageavra.png"
+import img7 from "../../assets/images/Elias/1imageavra.png"
 function Ourwork() {
   const [showInfo, setShowInfo] = useState(true)
   const taggleInfo = () => {
@@ -93,6 +95,22 @@ function Ourwork() {
               </h1>
             </div> */}
             <img src={img5} className="imgSlider" />
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                אתר לחיפוש והזמנת חדרי נופש
+              </h1>
+            </div> */}
+            <img src={img6} className="imgSlider" />
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <div className="more">
+              <h1 style={{ color: "white", fontSize: "1.5rem" }}>
+                אתר לחיפוש והזמנת חדרי נופש
+              </h1>
+            </div> */}
+            <img src={img7} className="imgSlider" />
           </SwiperSlide>
         </Swiper>
       </div>
