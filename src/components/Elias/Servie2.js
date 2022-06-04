@@ -1,15 +1,5 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
-import circle from "../../assets/images/Elias/cri.svg"
-import Brainstorm from "../../assets/images/Elias/new.png"
-import {
-  BsArrowLeft,
-  BsArrowRight,
-  BsArrowDown,
-  BsThreeDotsVertical,
-} from "react-icons/bs"
-
 import { device } from "../../Style"
 import { words } from "../../Style"
 
@@ -50,13 +40,6 @@ function Servie2({
       <div className="wrapper">
         <div className="image1">
           <img src={imageRow} alt="" className="image" />
-          {/* <StaticImage src={`"${image1}"`} className="image" /> */}
-          {/* <StaticImage src={`"${image1}"`} className="image" /> */}
-
-          {/* <GatsbyImage image={image} alt="elias" /> */}
-          {/* <StaticImage
-            src={`../../assets/images/Elias/${imageRow}`}
-          ></StaticImage> */}
         </div>
 
         <div className="text">
@@ -103,11 +86,6 @@ const Cover = styled.div`
   .wrapper {
     display: grid;
     height: 80vh;
-
-    /* padding: 10rem; */
-    /* background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%); */
-    /* background-color: #0093e9;
-    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
     background-image: var(--clr-Gradient);
   }
   .wrapperWhite {
@@ -122,7 +100,11 @@ const Cover = styled.div`
   .image1 {
     justify-self: center;
     align-self: center;
-    /* width: 20rem; */
+    background-image: radial-gradient(
+      circle 610px at 5.2% 51.6%,
+      rgba(5, 8, 114, 1) 0%,
+      rgba(7, 3, 53, 1) 97.5%
+    );
   }
   .arrow {
     justify-self: center;
@@ -159,12 +141,10 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      /* padding: 1rem; */
     }
     .image {
       height: auto;
       width: 100vw;
-      /* border-radius: 10px; */
     }
     .image1 {
       order: 2;
@@ -201,12 +181,10 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
-      /* padding: 6rem; */
     }
     .image {
       height: 80vh;
       width: 100vw;
-      /* border-radius: 10px; */
     }
     .image1 {
       order: 1;
@@ -243,12 +221,10 @@ const Cover = styled.div`
     .wrapper {
       grid-template-columns: 1fr 1fr;
       height: auto;
-      /* padding: 6rem; */
     }
     .image {
       height: 80vh;
       width: 100vw;
-      /* border-radius: 10px; */
     }
     .image1 {
       order: 1;

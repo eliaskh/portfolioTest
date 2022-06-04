@@ -1,12 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import svg1 from "../../assets/images/Elias/rainbow-vortex.svg"
-import circle from "../../assets/images/Elias/cri.svg"
-import Brainstorm from "../../assets/images/Elias/new.png"
-import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs"
 import { device } from "../../Style"
 import { words } from "../../Style"
-import { isMobile } from "react-device-detect"
+
 function ServiceLight2({
   title1,
   title2,

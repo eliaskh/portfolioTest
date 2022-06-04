@@ -7,7 +7,6 @@ import ServiceLight2 from "../components/Elias/ServiceLight2"
 import Footer from "../components/_App/Footer"
 import Ourwork from "../components/Elias/Ourwork"
 import image1 from "../assets/images/Elias/im1.jpg"
-// import image1 from "../assets/images/Elias/ww.png"
 import image2 from "../assets/images/Elias/im2.jpg"
 import image3 from "../assets/images/Elias/im3.jpg"
 import image4 from "../assets/images/Elias/im4.jpg"
@@ -19,7 +18,6 @@ import Newsletter from "../components/Elias/Newsletter"
 const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <NavbarStyleFour /> */}
     <MainBannerElias2 />
     <Servie2
       title1={"בניית אתרים"}
@@ -122,8 +120,8 @@ const BigdataAnalytics = () => (
     />
     <Ourwork />
     {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
-    {/* <NewsletterStyleTwo />
-    <Footer /> */}
+    {/* <NewsletterStyleTwo /> */}
+    <Footer />
   </Layout>
 )
 

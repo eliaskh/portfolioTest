@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import image1 from "../../assets/images/Elias/bg-image-12.jpg"
+// import image1 from "../../assets/images/Elias/computer-program-coding-screen.jpg"
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
 import { Link } from "gatsby"
