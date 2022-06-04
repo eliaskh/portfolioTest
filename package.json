@@ -38,7 +38,7 @@
     "react-slick": "^0.28.1",
     "react-tabs": "^3.2.3",
     "sass": "^1.45.1",
-    "styled-components": "^5.3.5",
+    "styled-components": "^4.4.1",
     "swiper": "^8.1.6",
     "typewriter-effect": "^2.18.2"
   },
