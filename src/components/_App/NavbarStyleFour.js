@@ -7,7 +7,7 @@ import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import logoLight from "../../assets/images/Elias/logo.png"
 import logoDark from "../../assets/images/Elias/logoLight.png"
 import styled from "styled-components"
-
+import AnchorLink from "react-anchor-link-smooth-scroll"
 const query = graphql`
   {
     strapiSiteLogo {
@@ -145,6 +145,17 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
               </Darkbtn>
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
+                  {/* <li className="nav-item">
+                    <Link
+                      to="/#"
+                      activeClassName="active"
+                      onClick={e => e.preventDefault()}
+                      className="nav-link"
+                    >
+                      ראשי
+                    </Link>
+                  </li> */}
+
                   {/* <li className="nav-item">
                   <Link
                     to="/#"

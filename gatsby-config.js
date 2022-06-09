@@ -11,12 +11,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
       },
     },
     {

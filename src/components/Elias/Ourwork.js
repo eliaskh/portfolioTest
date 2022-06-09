@@ -13,70 +13,72 @@ import img4 from "../../assets/images/Elias/4-shfaf.png"
 import img5 from "../../assets/images/Elias/5-shfaf.png"
 import img6 from "../../assets/images/Elias/imageavra.png"
 import img7 from "../../assets/images/Elias/1imageavra.png"
-function Ourwork() {
+function Ourwork({ idSection }) {
   const [showInfo, setShowInfo] = useState(true)
   const taggleInfo = () => {
     setShowInfo(!showInfo)
   }
   return (
     <Cover>
-      <div className="wrapper">
-        <div className="titleSherotem">
-          <h1> פרויקטים נבחרים</h1>
-          <p>
-            חברתנו עוזרת לך לבנות ולהפעיל מערכות ואפליקציות מצליחות, בהתבסס על
-            התקציב והדרישות שלך
-          </p>
+      <section id={idSection}>
+        <div className="wrapper">
+          <div className="titleSherotem">
+            <h1> פרויקטים נבחרים</h1>
+            <p>
+              חברתנו עוזרת לך לבנות ולהפעיל מערכות ואפליקציות מצליחות, בהתבסס על
+              .התקציב והדרישות שלך
+            </p>
+          </div>
+          <Swiper
+            dir="rtl"
+            slidesPerView={1}
+            spaceBetween={10}
+            grabCursor={true}
+            lazy={true}
+            // effect={"fade"}
+            navigation={true}
+            loop={true}
+            // pagination={{ clickable: true }}
+            modules={[Lazy, Navigation, Pagination]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <img src={img1} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img3} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img4} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img5} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img6} className="imgSlider" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img7} className="imgSlider" />
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <Swiper
-          dir="rtl"
-          slidesPerView={1}
-          spaceBetween={10}
-          grabCursor={true}
-          lazy={true}
-          // effect={"fade"}
-          navigation={true}
-          loop={true}
-          // pagination={{ clickable: true }}
-          modules={[Lazy, Navigation, Pagination]}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-        >
-          <SwiperSlide>
-            <img src={img1} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img2} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img3} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img4} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img5} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img6} className="imgSlider" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img7} className="imgSlider" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      </section>
     </Cover>
   )
 }

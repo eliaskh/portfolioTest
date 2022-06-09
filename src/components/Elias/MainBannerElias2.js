@@ -5,7 +5,7 @@ import image1 from "../../assets/images/Elias/bg-image-12.jpg"
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
 import { Link } from "gatsby"
-
+import AnchorLink from "react-anchor-link-smooth-scroll"
 function MainBannerElias2() {
   return (
     <>
@@ -28,18 +28,22 @@ function MainBannerElias2() {
               loop: true,
             }}
           />
+          <div></div>
           <div className="icons1">
-            <Button1>
-              <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                השירותים שלנו
-              </div>
-            </Button1>
-
-            <Button>
-              <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                צור קשר
-              </div>
-            </Button>
+            <AnchorLink href="#things">
+              <Button>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+                  השירותים שלנו
+                </div>
+              </Button>
+            </AnchorLink>
+            <AnchorLink href="#work">
+              <Button1>
+                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+                  העבודות שלנו
+                </div>
+              </Button1>
+            </AnchorLink>
           </div>
         </div>
         {/*  */}

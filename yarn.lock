@@ -11368,6 +11368,11 @@
   "resolved" "https://registry.npmjs.org/react-accessible-accordion/-/react-accessible-accordion-3.3.5.tgz"
   "version" "3.3.5"
 
+"react-anchor-link-smooth-scroll@^1.0.12":
+  "integrity" "sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw=="
+  "resolved" "https://registry.npmjs.org/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz"
+  "version" "1.0.12"
+
 "react-dark-mode-toggle@^0.2.0":
   "integrity" "sha512-YGN6EKU54TaEIQ2G5veB+XVRXSsbyrW9+rop/1Ap06A0z1j6QBVuMIZjhQpwYLKVhSPIxoe7zsWj0cZaEf7cQA=="
   "resolved" "https://registry.npmjs.org/react-dark-mode-toggle/-/react-dark-mode-toggle-0.2.0.tgz"

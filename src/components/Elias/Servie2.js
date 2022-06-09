@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
-
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 function Servie2({
   title1,
   title2,
@@ -13,6 +12,7 @@ function Servie2({
   showTitle,
   number,
   description,
+  idSection,
 }) {
   const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
@@ -24,54 +24,115 @@ function Servie2({
   }
   return (
     <Cover>
-      {showTitle ? (
-        <>
-          <div className="titleSherotem">
-            <h1> השירותים שלנו</h1>
-            <p>
-              אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
-              מהרעיון והניסוח העיקרי של אסטרטגיית המוצר,
-            </p>
+      <section id={idSection}>
+        {showTitle ? (
+          <>
+            <div className="titleSherotem">
+              <h1> השירותים שלנו</h1>
+              <p>
+                אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
+                מהרעיון והניסוח העיקרי של אסטרטגיית המוצר, עיצוב ובניית אב
+                טיפוס, בדיקתו עם משתמשים ולסיום יצירת המוצר המוגמר
+              </p>
+              <Menuinside>
+                <div className="menuInside">
+                  <AnchorLink href="#web">
+                    <h1> בניית אתרים</h1>
+                  </AnchorLink>
+
+                  <AnchorLink href="#ux">
+                    <h1> עיצוב חווית משתמש</h1>
+                  </AnchorLink>
+                  <AnchorLink href="#shop">
+                    <h1> חנויות אונליין</h1>
+                  </AnchorLink>
+                  <AnchorLink href="#design1">
+                    <h1> עיצוב גרפי</h1>
+                  </AnchorLink>
+                  <AnchorLink href="#photography">
+                    <h1> צילום מוצרים</h1>
+                  </AnchorLink>
+                  <AnchorLink href="#kedom">
+                    <h1>קידום ברשתות חברתיות</h1>
+                  </AnchorLink>
+                </div>
+              </Menuinside>
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+        <section id="web">
+          <div className="wrapper">
+            <div className="image1">
+              <img src={imageRow} alt="" className="image" />
+            </div>
+
+            <div className="text">
+              <div>
+                <div className="number">{number}</div>
+
+                <h1 className="title">{title1}</h1>
+
+                <h1 className="title1">{title2}</h1>
+                {showMore ? (
+                  <></>
+                ) : (
+                  <>
+                    <p className="description">{about}</p>
+                  </>
+                )}
+
+                {showMore ? (
+                  <>
+                    <div className="description">
+                      <p style={{ color: "white" }}>{description}</p>
+                    </div>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.lessInfo}</Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
-        </>
-      ) : (
-        <></>
-      )}
-      <div className="wrapper">
-        <div className="image1">
-          <img src={imageRow} alt="" className="image" />
-        </div>
-
-        <div className="text">
-          <div>
-            <div className="number">{number}</div>
-
-            <h1 className="title">{title1}</h1>
-            <h1 className="title1">{title2}</h1>
-            <p className="description">{about}</p>
-
-            {showMore ? (
-              <>
-                <div className="description">
-                  <p style={{ color: "white" }}>{description}</p>
-                </div>
-                <div className="btn1">
-                  <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="btn1">
-                  <Button onClick={handelShowMore}>{words.moreInfo}</Button>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </Cover>
   )
 }
+const Menuinside = styled.div`
+  @media ${device.mobileS} {
+    .menuInside {
+      padding-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: space-around;
+      justify-items: center;
+      gap: 20px;
+    }
+    .menuInside h1 {
+      color: var(--clr-font);
+    }
+  }
+  @media ${device.laptop} {
+    .menuInside {
+      padding-top: 5px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      justify-content: space-around;
+    }
+    .menuInside h1 {
+      color: var(--clr-font);
+    }
+  }
+`
 const Button = styled.button`
   font-size: 1em;
   margin: 1.5rem 0rem;
@@ -80,6 +141,7 @@ const Button = styled.button`
   background-color: var(--clr-primary);
   color: white;
 `
+
 const Cover = styled.div`
   width: 100vw;
 
@@ -132,10 +194,13 @@ const Cover = styled.div`
   }
 
   .titleSherotem > p {
+    max-width: 1000px;
     font-size: 1rem;
     word-wrap: break-word;
     color: var(--clr-font);
-    text-align: right !important;
+    text-align: center !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   @media ${device.mobileS} {
     .wrapper {

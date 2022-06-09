@@ -11,6 +11,7 @@ function ServiceLight2({
   about,
   number,
   description,
+  idSection,
 }) {
   const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
@@ -22,72 +23,95 @@ function ServiceLight2({
   }
   return (
     <Cover>
-      {design == "first" ? (
-        <>
-          <div className="wrapper">
-            <div className="image1">
-              <img src={imageRow} alt="" className="image" />
-            </div>
+      <section id={idSection}>
+        {design == "first" ? (
+          <>
+            <div className="wrapper">
+              <div className="image1">
+                <img src={imageRow} alt="" className="image" />
+              </div>
 
-            <div className="text">
-              <div className="number">{number}</div>
-              <h1 className="title">{title1}</h1>
-              <h1 className="title1">{title2}</h1>
-              <p className="description" style={{ width: "200px!important;" }}>
-                {about}
-              </p>
+              <div className="text">
+                <div className="number">{number}</div>
+                <h1 className="title">{title1}</h1>
+                <h1 className="title1">{title2}</h1>
 
-              {showMore ? (
-                <>
-                  <div className="description">
-                    <p style={{ color: "white" }}>{description}</p>
-                  </div>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.moreInfo}</Button>
-                  </div>
-                </>
-              )}
+                {showMore ? (
+                  <></>
+                ) : (
+                  <>
+                    <p
+                      className="description"
+                      style={{ width: "200px!important;" }}
+                    >
+                      {about}
+                    </p>
+                  </>
+                )}
+                {showMore ? (
+                  <>
+                    <div className="description">
+                      <p style={{ color: "white" }}>{description}</p>
+                    </div>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.lessInfo}</Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="wrapper">
-            <div className="text">
-              <div className="number">{number}</div>
-              <h1 className="title">{title1}</h1>
-              <h1 className="title1">{title2}</h1>
-              <p className="description">{about}</p>
-              {showMore ? (
-                <>
-                  <div className="description">
-                    <p style={{ color: "var(--clr-font)" }}>{description}</p>
-                  </div>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="btn1">
-                    <Button onClick={handelShowMore}>{words.moreInfo}</Button>
-                  </div>
-                </>
-              )}
-            </div>
+          </>
+        ) : (
+          <>
+            <div className="wrapper">
+              <div className="text">
+                <div className="number">{number}</div>
+                <h1 className="title">{title1}</h1>
+                <h1 className="title1">{title2}</h1>
 
-            <div className="image1">
-              <img src={imageRow} alt="" className="image" />
+                {showMore ? (
+                  <></>
+                ) : (
+                  <>
+                    <p
+                      className="description"
+                      style={{ width: "200px!important;" }}
+                    >
+                      {about}
+                    </p>
+                  </>
+                )}
+                {showMore ? (
+                  <>
+                    <div className="description">
+                      <p style={{ color: "var(--clr-font)" }}>{description}</p>
+                    </div>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.lessInfo}</Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
+                    </div>
+                  </>
+                )}
+              </div>
+
+              <div className="image1">
+                <img src={imageRow} alt="" className="image" />
+              </div>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </section>
     </Cover>
   )
 }
