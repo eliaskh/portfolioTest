@@ -69,11 +69,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
         <div className="startp-nav">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <Link
-                to="/bigdata-analytics"
-                onClick={toggleNavbar}
-                className="navbar-brand"
-              >
+              <Link to="/" onClick={toggleNavbar} className="navbar-brand">
                 {isDarkoMode ? (
                   <>
                     <img
