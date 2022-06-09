@@ -40,12 +40,7 @@ function ServiceLight2({
                   <></>
                 ) : (
                   <>
-                    <p
-                      className="description"
-                      style={{ width: "200px!important;" }}
-                    >
-                      {about}
-                    </p>
+                    <p className="description">{about}</p>
                   </>
                 )}
                 {showMore ? (
@@ -79,12 +74,7 @@ function ServiceLight2({
                   <></>
                 ) : (
                   <>
-                    <p
-                      className="description"
-                      style={{ width: "200px!important;" }}
-                    >
-                      {about}
-                    </p>
+                    <p className="description">{about}</p>
                   </>
                 )}
                 {showMore ? (
