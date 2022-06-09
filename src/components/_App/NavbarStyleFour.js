@@ -37,9 +37,9 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
 
   const [menu, setMenu] = React.useState(true)
 
-  const toggleNavbar = () => {
-    setMenu(!menu)
-  }
+  // const toggleNavbar = () => {
+  //   setMenu(!menu)
+  // }
 
   React.useEffect(() => {
     let elementId = document.getElementById("header")
@@ -69,7 +69,7 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
         <div className="startp-nav">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <Link to="/" onClick={toggleNavbar} className="navbar-brand">
+              <Link to="/" className="navbar-brand">
                 {isDarkoMode ? (
                   <>
                     <img
@@ -83,9 +83,23 @@ const NavbarStyleFour = ({ toggleTheme, isDarkoMode }) => {
                     <img src={logoDark} alt="Logo" style={{ height: "35px" }} />
                   </>
                 )}
-
-                {/* <h1 style={{ color: "white" }}>Creativelab</h1> */}
               </Link>
+
+              {/* <Link to="/" onClick={toggleNavbar} className="navbar-brand">
+                {isDarkoMode ? (
+                  <>
+                    <img
+                      src={logoLight}
+                      alt="Logo"
+                      style={{ height: "35px" }}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <img src={logoDark} alt="Logo" style={{ height: "35px" }} />
+                  </>
+                )}
+              </Link> */}
 
               {/* <button
               onClick={toggleNavbar}
