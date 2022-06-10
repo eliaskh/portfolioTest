@@ -23,8 +23,9 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
       setNavBar1(false)
     }
   }
-
-  window.addEventListener("scroll", changeColor)
+  {
+    isBrowser && window.addEventListener("scroll", changeColor)
+  }
 
   return (
     <>
