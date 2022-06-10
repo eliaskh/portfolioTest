@@ -107,6 +107,8 @@ body {
 }
 
 .light-theme {
+  --clr-menu: rgba(255, 255, 255, 0.9);
+  --clr-menu-full: rgba(255, 255, 255, 1);
   --clr-bgc: #fff;
   --clr-font: #000;
   --clr-primary: #ff002b;
@@ -114,6 +116,8 @@ body {
   --clr-header: #fff;
 }
 .dark-theme {
+  --clr-menu: rgba(0, 0, 0, 0.9);
+  --clr-menu-full: rgba(0, 0, 0, 1);
   --clr-bgc: #191919;
   --clr-font: #fff;
   --clr-primary: #025597;
@@ -971,7 +975,7 @@ Navbar CSS
     padding-bottom: 15px;
   }
   #header.headroom {
-    border-bottom: 1px solid #eeeeee;
+    /* border-bottom: 1px solid #eeeeee; */
   }
   #header.headroom.is-sticky {
     border-bottom: none;

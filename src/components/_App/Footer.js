@@ -71,6 +71,7 @@ const Cover = styled.div`
   }
   .container2 > p {
     color: var(--clr-font);
+    text-align:center;
   }
   h2 {
     color: var(--clr-font);

@@ -6,47 +6,48 @@ import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
 import { Link } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-function MainBannerElias2() {
+function MainBannerElias2({ idSection }) {
   return (
     <>
       <Cover>
-        {/*  */}
-        <div className="wrapper">
-          <h1>שירותי פיתוח ועיצוב תוכנה </h1>
+        <section id={idSection}>
+          <div className="wrapper">
+            <h1>שירותי פיתוח ועיצוב תוכנה </h1>
 
-          <Typewriter
-            options={{
-              strings: [
-                "בניית אתרים",
-                "עיצוב חווית משתמש",
-                "פיתוח אפליקציות מובייל",
-                "חנויות אונליין",
-                "עיצוב גרפי",
-                "אנליזה וקידום אתרים",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-          <div></div>
-          <div className="icons1">
-            <AnchorLink href="#things">
-              <Button>
-                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                  השירותים שלנו
-                </div>
-              </Button>
-            </AnchorLink>
-            <AnchorLink href="#work">
-              <Button1>
-                <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                  העבודות שלנו
-                </div>
-              </Button1>
-            </AnchorLink>
+            <Typewriter
+              options={{
+                strings: [
+                  "בניית אתרים",
+                  "עיצוב חווית משתמש",
+                  "פיתוח אפליקציות מובייל",
+                  "חנויות אונליין",
+                  "עיצוב גרפי",
+                  "אנליזה וקידום אתרים",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            <div></div>
+            <div className="icons1">
+              <AnchorLink href="#things">
+                <Button>
+                  <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+                    השירותים שלנו
+                  </div>
+                </Button>
+              </AnchorLink>
+              <AnchorLink href="#work">
+                <Button1>
+                  <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+                    העבודות שלנו
+                  </div>
+                </Button1>
+              </AnchorLink>
+            </div>
           </div>
-        </div>
-        {/*  */}
+          {/*  */}
+        </section>
       </Cover>
     </>
   )

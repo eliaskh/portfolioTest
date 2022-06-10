@@ -12,7 +12,7 @@ import image3 from "../assets/images/Elias/im3.jpg"
 import image4 from "../assets/images/Elias/im4.jpg"
 import image5 from "../assets/images/Elias/im5.jpg"
 import image6 from "../assets/images/Elias/wow.jpg"
-
+import MenuVertical from "../components/Elias/MenuVertical"
 import image7 from "../assets/images/Elias/news.jpg"
 import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
 import Newsletter from "../components/Elias/Newsletter"
@@ -20,8 +20,8 @@ const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
 
-    <MainBannerElias2 />
-
+    <MainBannerElias2 idSection="home" />
+    {/* <MenuVertical /> */}
     <Servie2
       idSection="things"
       title1={"בניית אתרים"}
