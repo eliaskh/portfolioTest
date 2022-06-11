@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    "gatsby-plugin-breakpoints",
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {

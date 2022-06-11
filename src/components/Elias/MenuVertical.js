@@ -7,6 +7,7 @@ import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
 import { device } from "../../Style"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import {
   BrowserView,
   MobileView,
@@ -14,6 +15,7 @@ import {
   isMobile,
 } from "react-device-detect"
 function MenuVertical({ toggleTheme, isDarkoMode }) {
+  const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
 
   const changeColor = () => {
@@ -29,84 +31,167 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
 
   return (
     <>
-      <Cover>
-        <div>
-          <div className={navBar1 ? "containerMenu" : "containerMenu1"}>
-            <div className="logo1">
-              <Link to="/" className="navbar-brand">
-                {isDarkoMode ? (
-                  <>
-                    <img
-                      src={logoLight}
-                      alt="Logo"
-                      style={{ height: "35px" }}
-                    />
-                  </>
-                ) : (
-                  <>
-                    <img src={logoDark} alt="Logo" style={{ height: "35px" }} />
-                  </>
-                )}
-              </Link>
-            </div>
-            <div className="menu1">
-              <div className="itemmenu">
-                <ul>
-                  <AnchorLink href="#home">
-                    <li> ראשי</li>
-                  </AnchorLink>
-                </ul>
+      {breakpoints.sm ? (
+        <>
+          <CoverMobile>
+            <div className="wrapperMobile">
+              <div className="menuItemMobile">
+                <AnchorLink href="#home">
+                  <h1>ראשי</h1>
+                </AnchorLink>
               </div>
-              <div className="itemmenu">
-                <ul>
-                  <AnchorLink href="#things">
-                    <li>שירותים שלנו</li>
-                  </AnchorLink>
-                </ul>
-              </div>
-              <div className="itemmenu">
-                <ul>
-                  <AnchorLink href="#work">
-                    <li>העבודות שלנו</li>
-                  </AnchorLink>
-                </ul>
-              </div>
-            </div>
 
-            <div className="darkandlight">
-              {console.log(isDarkoMode)}
-              {isDarkoMode ? (
-                <div>
-                  <BsMoonFill
-                    // className={classTwo}
-                    style={{
-                      color: "white",
-                      marginTop: "3px",
-                      marginRight: "7px",
-                      cursor: "pointer",
-                    }}
-                    size="22px"
-                    onClick={toggleTheme}
-                  />
-                </div>
-              ) : (
-                <div>
-                  <BsFillSunFill
-                    style={{
-                      color: "black",
-                      marginTop: "3px",
-                      marginRight: "7px",
-                      cursor: "pointer",
-                    }}
-                    size="30px"
-                    onClick={toggleTheme}
-                  />
-                </div>
-              )}
+              <div className="menuItemMobile">
+                <AnchorLink href="#things">
+                  <h1>שירותים שלנו</h1>
+                </AnchorLink>
+              </div>
+
+              <div className="menuItemMobile">
+                <Link to="/" className="navbar-brand">
+                  {isDarkoMode ? (
+                    <>
+                      <img
+                        src={logoLight}
+                        alt="Logo"
+                        style={{ height: "20px" }}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src={logoDark}
+                        alt="Logo"
+                        style={{ height: "20px" }}
+                      />
+                    </>
+                  )}
+                </Link>
+              </div>
+              <div className="menuItemMobile">
+                <AnchorLink href="#work">
+                  <h1>העבודות שלנו</h1>
+                </AnchorLink>
+              </div>
+              <div className="menuItemMobile">
+                {isDarkoMode ? (
+                  <div>
+                    <BsMoonFill
+                      // className={classTwo}
+                      style={{
+                        color: "white",
+                        marginTop: "3px",
+                        marginRight: "7px",
+                        cursor: "pointer",
+                      }}
+                      size="20px"
+                      onClick={toggleTheme}
+                    />
+                  </div>
+                ) : (
+                  <div>
+                    <BsFillSunFill
+                      style={{
+                        color: "black",
+                        marginTop: "3px",
+                        marginRight: "7px",
+                        cursor: "pointer",
+                      }}
+                      size="20px"
+                      onClick={toggleTheme}
+                    />
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        </div>
-      </Cover>
+          </CoverMobile>
+        </>
+      ) : (
+        <>
+          <Cover>
+            <div>
+              <div className={navBar1 ? "containerMenu" : "containerMenu1"}>
+                <div className="logo1">
+                  <Link to="/" className="navbar-brand">
+                    {isDarkoMode ? (
+                      <>
+                        <img
+                          src={logoLight}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <img
+                          src={logoDark}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </>
+                    )}
+                  </Link>
+                </div>
+                <div className="menu1">
+                  <div className="itemmenu">
+                    <ul>
+                      <AnchorLink href="#home">
+                        <li> ראשי</li>
+                      </AnchorLink>
+                    </ul>
+                  </div>
+                  <div className="itemmenu">
+                    <ul>
+                      <AnchorLink href="#things">
+                        <li>שירותים שלנו</li>
+                      </AnchorLink>
+                    </ul>
+                  </div>
+                  <div className="itemmenu">
+                    <ul>
+                      <AnchorLink href="#work">
+                        <li>העבודות שלנו</li>
+                      </AnchorLink>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="darkandlight">
+                  {console.log(isDarkoMode)}
+                  {isDarkoMode ? (
+                    <div>
+                      <BsMoonFill
+                        // className={classTwo}
+                        style={{
+                          color: "white",
+                          marginTop: "3px",
+                          marginRight: "7px",
+                          cursor: "pointer",
+                        }}
+                        size="22px"
+                        onClick={toggleTheme}
+                      />
+                    </div>
+                  ) : (
+                    <div>
+                      <BsFillSunFill
+                        style={{
+                          color: "black",
+                          marginTop: "3px",
+                          marginRight: "7px",
+                          cursor: "pointer",
+                        }}
+                        size="30px"
+                        onClick={toggleTheme}
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </Cover>
+        </>
+      )}
     </>
   )
 }
