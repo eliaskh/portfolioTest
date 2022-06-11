@@ -47,7 +47,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </AnchorLink>
               </div>
 
-              <div className="menuItemMobile">
+              {/* <div className="menuItemMobile">
                 <Link to="/" className="navbar-brand">
                   {isDarkoMode ? (
                     <>
@@ -67,7 +67,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                     </>
                   )}
                 </Link>
-              </div>
+              </div> */}
               <div className="menuItemMobile">
                 <AnchorLink href="#work">
                   <h1>העבודות שלנו</h1>
@@ -266,7 +266,7 @@ const CoverMobile = styled.div`
     width: 100vw;
     height: 60px;
     display: inline-grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20%;
 
     align-items: center;
   }
