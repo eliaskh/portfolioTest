@@ -266,7 +266,7 @@ const CoverMobile = styled.div`
     width: 100vw;
     height: 60px;
     display: inline-grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
 
     align-items: center;
   }
