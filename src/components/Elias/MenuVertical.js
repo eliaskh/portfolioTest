@@ -309,8 +309,8 @@ const CoverMobile = styled.div`
     background-color: var(--clr-menu-full);
     width: 100vw;
     height: 55px;
-    -webkit-box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.44);
-    box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
     justify-items: center;
     align-items: center;
   }
