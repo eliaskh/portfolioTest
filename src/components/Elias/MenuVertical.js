@@ -34,6 +34,66 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
       {breakpoints.sm ? (
         <>
           <CoverMobile>
+            <div className="topbarmobile">
+              <div className="topwrappermobile">
+                <div className="logodarmodemobile">
+                  <div>
+                    {isDarkoMode ? (
+                      <div>
+                        <BsMoonFill
+                          // className={classTwo}
+                          style={{
+                            color: "white",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="25px"
+                          onClick={toggleTheme}
+                        />
+                      </div>
+                    ) : (
+                      <div>
+                        <BsFillSunFill
+                          style={{
+                            color: "black",
+                            marginTop: "3px",
+                            marginRight: "7px",
+                            cursor: "pointer",
+                          }}
+                          size="25px"
+                          onClick={toggleTheme}
+                        />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="logoMobile">
+                  <div>
+                    <Link to="/" className="navbar-brand">
+                      {isDarkoMode ? (
+                        <>
+                          <img
+                            src={logoLight}
+                            alt="Logo"
+                            style={{ height: "30px" }}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <img
+                            src={logoDark}
+                            alt="Logo"
+                            style={{ height: "30px" }}
+                          />
+                        </>
+                      )}
+                    </Link>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
             <div className="wrapperMobile">
               <div className="menuItemMobile">
                 <AnchorLink href="#home">
@@ -47,61 +107,10 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </AnchorLink>
               </div>
 
-              {/* <div className="menuItemMobile">
-                <Link to="/" className="navbar-brand">
-                  {isDarkoMode ? (
-                    <>
-                      <img
-                        src={logoLight}
-                        alt="Logo"
-                        style={{ height: "20px" }}
-                      />
-                    </>
-                  ) : (
-                    <>
-                      <img
-                        src={logoDark}
-                        alt="Logo"
-                        style={{ height: "20px" }}
-                      />
-                    </>
-                  )}
-                </Link>
-              </div> */}
               <div className="menuItemMobile">
                 <AnchorLink href="#work">
                   <h1>העבודות שלנו</h1>
                 </AnchorLink>
-              </div>
-              <div className="menuItemMobile">
-                {isDarkoMode ? (
-                  <div>
-                    <BsMoonFill
-                      // className={classTwo}
-                      style={{
-                        color: "white",
-                        marginTop: "3px",
-                        marginRight: "7px",
-                        cursor: "pointer",
-                      }}
-                      size="20px"
-                      onClick={toggleTheme}
-                    />
-                  </div>
-                ) : (
-                  <div>
-                    <BsFillSunFill
-                      style={{
-                        color: "black",
-                        marginTop: "3px",
-                        marginRight: "7px",
-                        cursor: "pointer",
-                      }}
-                      size="20px"
-                      onClick={toggleTheme}
-                    />
-                  </div>
-                )}
               </div>
             </div>
           </CoverMobile>
@@ -255,6 +264,25 @@ const Cover = styled.div`
 `
 
 const CoverMobile = styled.div`
+  .topwrappermobile {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--clr-menu-full);
+    width: 100vw;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+  }
+  .logodarmodemobile {
+    justify-self: start;
+    padding-right: 10px;
+  }
+  .logoMobile {
+    justify-self: center;
+  }
   .wrapperMobile {
     z-index: 999999999999999;
     -webkit-box-shadow: -4px -6px 9px 1px rgba(0, 0, 0, 0.16);
@@ -266,7 +294,7 @@ const CoverMobile = styled.div`
     width: 100vw;
     height: 60px;
     display: inline-grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
 
     align-items: center;
   }
