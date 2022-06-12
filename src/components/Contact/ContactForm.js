@@ -21,7 +21,7 @@ const ContactForm = () => {
               name="contact"
               method="post"
               data-netlify="true"
-              data-netlify-honeypot="bot-filed"
+              data-netlify-honeypot="bot-field"
             >
               <div className="row">
                 <div className="col-lg-12 col-md-12">
