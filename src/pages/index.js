@@ -16,11 +16,22 @@ import MenuVertical from "../components/Elias/MenuVertical"
 import image7 from "../assets/images/Elias/news.jpg"
 import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
 import Newsletter from "../components/Elias/Newsletter"
+import ReactWhatsapp from "react-whatsapp"
+
 const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
 
     <MainBannerElias2 idSection="home" />
+    <a
+      href="https://wa.me/2348100000000"
+      class="whatsapp_float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa fa-whatsapp whatsapp-icon"></i>
+    </a>
+
     {/* <MenuVertical /> */}
     <Servie2
       idSection="things"

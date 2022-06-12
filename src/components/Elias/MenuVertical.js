@@ -8,6 +8,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
 import { device } from "../../Style"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import { BsWhatsapp } from "react-icons/bs"
 import {
   BrowserView,
   MobileView,
@@ -36,6 +37,59 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
           <CoverMobile>
             <div className="topbarmobile">
               <div className="topwrappermobile">
+                {/* whatand call */}
+
+                <div className="whatandcall">
+                  {isDarkoMode ? (
+                    <>
+                      <a
+                        href="https://wa.me/972528963616"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <BsWhatsapp size="25px" color="white" />
+                      </a>
+                    </>
+                  ) : (
+                    <>
+                      <a
+                        href="https://wa.me/972528963616"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <BsWhatsapp size="25px" color="black" />
+                      </a>
+                    </>
+                  )}
+                </div>
+
+                <div className="logoMobile">
+                  <div>
+                    <Link to="/">
+                      {isDarkoMode ? (
+                        <>
+                          <img
+                            src={logoLight}
+                            alt="Logo"
+                            style={{ height: "30px" }}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <img
+                            src={logoDark}
+                            alt="Logo"
+                            style={{ height: "30px" }}
+                          />
+                        </>
+                      )}
+                    </Link>
+                  </div>
+                  <div></div>
+                </div>
+
+                {/* dark and light mode */}
+
                 <div className="logodarmodemobile">
                   <div>
                     {isDarkoMode ? (
@@ -68,30 +122,6 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                     )}
                   </div>
                 </div>
-                <div className="logoMobile">
-                  <div>
-                    <Link to="/" className="navbar-brand">
-                      {isDarkoMode ? (
-                        <>
-                          <img
-                            src={logoLight}
-                            alt="Logo"
-                            style={{ height: "30px" }}
-                          />
-                        </>
-                      ) : (
-                        <>
-                          <img
-                            src={logoDark}
-                            alt="Logo"
-                            style={{ height: "30px" }}
-                          />
-                        </>
-                      )}
-                    </Link>
-                  </div>
-                  <div></div>
-                </div>
               </div>
             </div>
             <div className="wrapperMobile">
@@ -110,6 +140,12 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
               <div className="menuItemMobile">
                 <AnchorLink href="#work">
                   <h1>העבודות שלנו</h1>
+                </AnchorLink>
+              </div>
+
+              <div className="menuItemMobile">
+                <AnchorLink href="#work">
+                  <h1>צור קשר</h1>
                 </AnchorLink>
               </div>
             </div>
@@ -272,16 +308,22 @@ const CoverMobile = styled.div`
     left: 0px;
     background-color: var(--clr-menu-full);
     width: 100vw;
-    height: 60px;
+    height: 55px;
+    -webkit-box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.44);
     justify-items: center;
     align-items: center;
   }
   .logodarmodemobile {
-    justify-self: start;
-    padding-right: 10px;
+    justify-self: end;
+    padding-left: 20px;
   }
   .logoMobile {
     justify-self: center;
+  }
+  .whatandcall {
+    justify-self: start;
+    padding-right: 20px;
   }
   .wrapperMobile {
     z-index: 999999999999999;
@@ -294,13 +336,16 @@ const CoverMobile = styled.div`
     width: 100vw;
     height: 60px;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     align-items: center;
   }
   .menuItemMobile {
     justify-self: center;
     align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .menuItemMobile h1 {
     color: var(--clr-font);
