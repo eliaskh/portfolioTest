@@ -9,6 +9,7 @@ import Shape2 from "../../assets/images/shape2.svg"
 import styled from "styled-components"
 import logoLight from "../../assets/images/Elias/logo.png"
 import logoDark from "../../assets/images/Elias/logoLight.png"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const query = graphql`
   {
     strapiSiteLogo {
@@ -31,6 +32,7 @@ const query = graphql`
 `
 
 const Footer = () => {
+  const breakpoints = useBreakpoint()
   const data = useStaticQuery(query)
   const {
     strapiSiteLogo: { blackLogo, whiteLogo },
@@ -40,24 +42,35 @@ const Footer = () => {
 
   return (
     <Cover>
-      <footer>
-        <div className="container2">
-          <p>
-            Copyright &copy; {currentYear} CreativeLab All rights reserved by{" "}
-            <a href="https://envytheme.com/" target="_blank" className="title">
-              <h2> CreativeLab</h2>
-            </a>
-          </p>
-        </div>
+      {breakpoints.sm ? (
+        <></>
+      ) : (
+        <>
+          <footer>
+            <div className="container2">
+              <p>
+                Copyright &copy; {currentYear} CreativeLab All rights reserved
+                by{" "}
+                <a
+                  href="https://envytheme.com/"
+                  target="_blank"
+                  className="title"
+                >
+                  <h2> CreativeLab</h2>
+                </a>
+              </p>
+            </div>
 
-        {/* Shape Images */}
-        <div className="shape1">
-          <img src={Shape1} alt="shape" />
-        </div>
-        <div className="shape8 rotateme">
-          <img src={Shape2} alt="shape" />
-        </div>
-      </footer>
+            {/* Shape Images */}
+            <div className="shape1">
+              <img src={Shape1} alt="shape" />
+            </div>
+            <div className="shape8 rotateme">
+              <img src={Shape2} alt="shape" />
+            </div>
+          </footer>
+        </>
+      )}
     </Cover>
   )
 }
@@ -71,7 +84,7 @@ const Cover = styled.div`
   }
   .container2 > p {
     color: var(--clr-font);
-    text-align:center;
+    text-align: center;
   }
   h2 {
     color: var(--clr-font);

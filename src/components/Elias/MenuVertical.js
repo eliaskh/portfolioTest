@@ -102,7 +102,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="25px"
+                          size="22px"
                           onClick={toggleTheme}
                         />
                       </div>
@@ -115,7 +115,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="25px"
+                          size="22px"
                           onClick={toggleTheme}
                         />
                       </div>
@@ -346,9 +346,13 @@ const CoverMobile = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0.5px solid var(--clr-border-menu) !important;
   }
   .menuItemMobile h1 {
     color: var(--clr-font);
+    font-size: 12px;
   }
 `
 export default MenuVertical

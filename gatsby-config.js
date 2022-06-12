@@ -19,6 +19,7 @@ module.exports = {
         // Add any options here
       },
     },
+
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {

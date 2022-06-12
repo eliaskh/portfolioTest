@@ -264,13 +264,17 @@ const CoverMobile = styled.div`
     width: 100vw;
     height: 60px;
     display: inline-grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
 
     align-items: center;
   }
   .menuItemMobile {
     justify-self: center;
     align-self: center;
+    width: 100% !important;
+    height: 100% !important;
+    border: 1px solid white !important;
   }
   .menuItemMobile h1 {
     color: var(--clr-font);

@@ -23,16 +23,6 @@ const BigdataAnalytics = () => (
     <SEO title="Home" />
 
     <MainBannerElias2 idSection="home" />
-    <a
-      href="https://wa.me/2348100000000"
-      class="whatsapp_float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa fa-whatsapp whatsapp-icon"></i>
-    </a>
-
-    {/* <MenuVertical /> */}
     <Servie2
       idSection="things"
       title1={"בניית אתרים"}
