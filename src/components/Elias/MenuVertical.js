@@ -199,6 +199,13 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                       </AnchorLink>
                     </ul>
                   </div>
+                  <div className="itemmenu">
+                    <ul>
+                      <AnchorLink href="#contact">
+                        <li>צור קשר</li>
+                      </AnchorLink>
+                    </ul>
+                  </div>
                 </div>
 
                 <div className="darkandlight">
@@ -287,7 +294,7 @@ const Cover = styled.div`
   }
   .menu1 {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
     justify-content: center;
     justify-items: center;
   }

@@ -12,7 +12,9 @@ import image3 from "../assets/images/Elias/im3.jpg"
 import image4 from "../assets/images/Elias/im4.jpg"
 import image5 from "../assets/images/Elias/im5.jpg"
 import image6 from "../assets/images/Elias/wow.jpg"
+import image8 from "../assets/images/Elias/cont.jpg"
 import Contact from "../components/Contact/ContactForm"
+import ContacForm from "../components/Elias/ContacForm"
 import MenuVertical from "../components/Elias/MenuVertical"
 import image7 from "../assets/images/Elias/news.jpg"
 import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
@@ -107,7 +109,8 @@ const BigdataAnalytics = () => (
     />
 
     <Ourwork idSection="work" />
-    <Contact />
+    <ContacForm idSection="contact" imageRow={image8} design={"first"} />
+    {/* <Contact /> */}
     {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
     {/* <NewsletterStyleTwo /> */}
     <Footer />

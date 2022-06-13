@@ -40,19 +40,19 @@ function Servie2({
                     <h1> בניית אתרים</h1>
                   </AnchorLink>
 
-                  <AnchorLink href="#ux">
+                  <AnchorLink href="#ux" offset="50">
                     <h1> עיצוב חווית משתמש</h1>
                   </AnchorLink>
-                  <AnchorLink href="#shop">
+                  <AnchorLink href="#shop" offset="50">
                     <h1> חנויות אונליין</h1>
                   </AnchorLink>
-                  <AnchorLink href="#design1">
+                  <AnchorLink href="#design1" offset="50">
                     <h1> עיצוב גרפי</h1>
                   </AnchorLink>
-                  <AnchorLink href="#photography">
+                  <AnchorLink href="#photography" offset="50">
                     <h1> צילום מוצרים</h1>
                   </AnchorLink>
-                  <AnchorLink href="#kedom">
+                  <AnchorLink href="#kedom" offset="50">
                     <h1>קידום ברשתות חברתיות</h1>
                   </AnchorLink>
                 </div>
