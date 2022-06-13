@@ -10,7 +10,7 @@ const ContactForm = () => {
           <h2>צור קשר</h2>
         </div>
 
-        <div className="row align-items-center">
+        {/* <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
             <img src={ContactImg} alt="image" />
           </div>
@@ -88,7 +88,20 @@ const ContactForm = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
+
+        <form name="Contact Form" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="Contact Form" />
+          <div>
+            <label>Your Email:</label>
+            <input type="email" name="email" />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea name="message" />
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   )

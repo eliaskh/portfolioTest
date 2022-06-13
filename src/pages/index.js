@@ -107,7 +107,7 @@ const BigdataAnalytics = () => (
     />
 
     <Ourwork idSection="work" />
-    {/* <Contact /> */}
+    <Contact />
     {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
     {/* <NewsletterStyleTwo /> */}
     <Footer />
