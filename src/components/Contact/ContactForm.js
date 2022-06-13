@@ -10,19 +10,14 @@ const ContactForm = () => {
           <h2>צור קשר</h2>
         </div>
 
-        {/* <div className="row align-items-center">
+        <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
             <img src={ContactImg} alt="image" />
           </div>
 
           <div className="col-lg-6 col-md-12">
-            <form
-              id="contactForm"
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
+            <form name="Contact Form" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="Contact Form" />
               <div className="row">
                 <div className="col-lg-12 col-md-12">
                   <div className="form-group">
@@ -38,7 +33,7 @@ const ContactForm = () => {
                 <div className="col-lg-12 col-md-12">
                   <div className="form-group">
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       placeholder="Your email address"
                       className="form-control"
@@ -88,9 +83,9 @@ const ContactForm = () => {
               </div>
             </form>
           </div>
-        </div> */}
+        </div>
 
-        <form name="Contact Form" method="POST" data-netlify="true">
+        {/* <form name="Contact Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="Contact Form" />
           <div>
             <label>Your Email:</label>
@@ -101,7 +96,7 @@ const ContactForm = () => {
             <textarea name="message" />
           </div>
           <button type="submit">Send</button>
-        </form>
+        </form> */}
       </div>
     </div>
   )
