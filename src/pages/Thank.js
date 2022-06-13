@@ -50,12 +50,11 @@ const Cover = styled.div`
     font-size: 2rem;
   }
   .imgMan {
-    background-size: cover;
-    height: 50vh;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
   }
   .imageman {
-    /* width: 100%;
-    height: 100%; */
     /* border: 1px solid black; */
     cursor: pointer;
   }
@@ -63,6 +62,7 @@ const Cover = styled.div`
     /* width: 100%;
     height: 100%; */
     /* border: 1px solid red; */
+    text-align: center;
     padding: 2rem;
   }
   .textwow {

@@ -144,7 +144,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
               </div>
 
               <div className="menuItemMobile">
-                <AnchorLink href="#work">
+                <AnchorLink href="#contact">
                   <h1>צור קשר</h1>
                 </AnchorLink>
               </div>
@@ -320,6 +320,7 @@ const CoverMobile = styled.div`
     box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
     justify-items: center;
     align-items: center;
+    z-index: 9999999999999;
   }
   .logodarmodemobile {
     justify-self: end;
