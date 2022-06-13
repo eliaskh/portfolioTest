@@ -177,6 +177,7 @@ const Cover = styled.div`
       text-align: center;
       opacity: 0.4;
       color: var(--clr-font);
+      padding-bottom: 5px;
     }
 
     .description {
@@ -216,6 +217,7 @@ const Cover = styled.div`
       text-align: right !important;
       opacity: 0.4;
       color: var(--clr-font);
+      padding-bottom: 5px;
     }
 
     .description {
@@ -255,6 +257,7 @@ const Cover = styled.div`
       text-align: right !important;
       opacity: 0.4;
       color: var(--clr-font);
+      padding-bottom: 5px;
     }
 
     .description {

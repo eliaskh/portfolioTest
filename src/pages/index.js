@@ -29,7 +29,7 @@ const BigdataAnalytics = () => (
     <Servie2
       idSection="things"
       title1={"בניית אתרים"}
-      title2={"בניית אתרים"}
+      title2={"Web Development"}
       design={"no"}
       about={
         "לפתח יישומי אינטרנט מותאמים אישית, יעילים ככל האפשר למטרות העסקיות של הלקוח"
@@ -44,7 +44,7 @@ const BigdataAnalytics = () => (
     <ServiceLight2
       idSection="ux"
       title1={"עיצוב חווית משתמש"}
-      title2={"עיצוב חווית משתמש"}
+      title2={"UX/ UI"}
       design={"no"}
       about={
         "בניית דגם אינטראקטיבי ועיצוב ממשק משתמש אטרקטיבי ויזואלי וידידותי למשתמש"
@@ -58,7 +58,7 @@ const BigdataAnalytics = () => (
     <Servie2
       idSection="shop"
       title1={"חנויות אונליין"}
-      title2={"חנויות אונליין"}
+      title2={"Online shops"}
       design={"first"}
       about={"עיצוב ובניית חנויות מקוונות באמצעות הפלטפורמות המובילות בשוק"}
       imageRow={image2}
@@ -73,7 +73,7 @@ const BigdataAnalytics = () => (
     <ServiceLight2
       idSection="design1"
       title1={"עיצוב גרפי"}
-      title2={"עיצוב גרפי"}
+      title2={"Graphic Design"}
       design={"no"}
       about={
         "יצירת כל מיני עיצובים גרפים, כמו פליירים,לוגו, כרטיסי ביקור, ברושור, חוברת, קטלוג ועוד"
@@ -85,7 +85,7 @@ const BigdataAnalytics = () => (
     <Servie2
       idSection="photography"
       title1={"צילום מוצרים"}
-      title2={"צילום מוצרים"}
+      title2={"Photography"}
       design={"first"}
       about={"צילום ברמה מקצועית כל מיני מוצרים, כמו מנות אוכל ועוד"}
       imageRow={image5}
@@ -96,7 +96,7 @@ const BigdataAnalytics = () => (
     <ServiceLight2
       idSection="kedom"
       title1={"וקידום ברשתות חברתיות"}
-      title2={"וקידום ברשתות חברתיות"}
+      title2={"Social Media"}
       design={"no"}
       about={"פרסום בפייסבוק - שיווק וקידום ברשתות חברתיות"}
       imageRow={image6}

@@ -50,7 +50,6 @@ const Footer = () => {
             <div className="container2">
               <p>
                 Copyright &copy; {currentYear} CreativeLab All rights reserved
-                by{" "}
                 <a
                   href="https://envytheme.com/"
                   target="_blank"

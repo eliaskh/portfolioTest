@@ -294,15 +294,18 @@ const Cover = styled.div`
   }
   .menu1 {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
     justify-items: center;
+    gap: 40px;
   }
   .itemmenu {
     justify-self: center;
   }
   .itemmenu li {
     color: var(--clr-font);
+    font-size: 15px;
+    font-weight: bold;
   }
 `
 

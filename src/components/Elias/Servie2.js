@@ -36,7 +36,7 @@ function Servie2({
               </p>
               <Menuinside>
                 <div className="menuInside">
-                  <AnchorLink href="#web">
+                  <AnchorLink href="#web" offset="50">
                     <h1> בניית אתרים</h1>
                   </AnchorLink>
 
@@ -229,6 +229,7 @@ const Cover = styled.div`
       text-align: center;
       opacity: 0.4;
       color: White;
+      padding-bottom: 5px;
     }
 
     .description {
