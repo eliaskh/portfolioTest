@@ -16,7 +16,12 @@ const ContactForm = () => {
           </div>
 
           <div className="col-lg-6 col-md-12">
-            <form name="Contact Form" method="POST" data-netlify="true">
+            <form
+              name="Contact Form"
+              method="POST"
+              data-netlify="true"
+              action="/Thank"
+            >
               <input type="hidden" name="form-name" value="Contact Form" />
               <div className="row">
                 <div className="col-lg-12 col-md-12">
