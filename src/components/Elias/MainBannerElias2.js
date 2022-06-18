@@ -67,7 +67,7 @@ const Cover = styled.div`
     background-color: rgba(0, 0, 0, 0.6);
   }
   .icons1 {
-    padding-top: 150px;
+    padding-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
