@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import image1 from "../../assets/images/Elias/bg-image-12.jpg"
+// import image1 from "../../assets/images/Elias/bg-image-12.jpg"
+import image1 from "../../assets/images/Elias/blue-purple-technology-circuit.jpg"
 // import image1 from "../../assets/images/Elias/computer-program-coding-screen.jpg"
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
@@ -63,7 +64,7 @@ const Cover = styled.div`
     align-content: center;
     height: 100vh;
     width: 100vw !important;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .icons1 {
     padding-top: 150px;
@@ -98,6 +99,7 @@ const Cover = styled.div`
     }
     h1 {
       font-size: 2rem;
+      padding: 3rem;
     }
     .Typewriter {
       font-size: 1rem;
