@@ -73,7 +73,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                           <img
                             src={logoLight}
                             alt="Logo"
-                            style={{ height: "30px" }}
+                            style={{ height: "50px", paddingTop: "7px" }}
                           />
                         </>
                       ) : (
@@ -81,7 +81,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                           <img
                             src={logoDark}
                             alt="Logo"
-                            style={{ height: "30px" }}
+                            style={{ height: "50px", paddingTop: "7px" }}
                           />
                         </>
                       )}
@@ -320,7 +320,7 @@ const CoverMobile = styled.div`
     left: 0px;
     background-color: var(--clr-menu-full);
     width: 100vw;
-    height: 55px;
+    height: 70px;
     -webkit-box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
     justify-items: center;
