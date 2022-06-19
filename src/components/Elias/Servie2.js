@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import svgi from "../../assets/images/Elias/wowo.png"
+import svgi1 from "../../assets/images/Elias/right.svg"
 function Servie2({
   title1,
   title2,
@@ -13,6 +15,7 @@ function Servie2({
   number,
   description,
   idSection,
+  showSvg,
 }) {
   const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
@@ -24,6 +27,14 @@ function Servie2({
   }
   return (
     <Cover>
+      {showSvg ? (
+        <>
+          <img src={svgi} alt="" className="spacer" />
+        </>
+      ) : (
+        <></>
+      )}
+
       <section id={idSection}>
         {showTitle ? (
           <>
@@ -104,6 +115,7 @@ function Servie2({
           </div>
         </section>
       </section>
+      <div className="backgroundSVG"></div>
     </Cover>
   )
 }
@@ -143,6 +155,18 @@ const Button = styled.button`
 `
 
 const Cover = styled.div`
+  .backgroundSVG {
+    background-image: url("../../assets/images/Elias/layered-waves-haikei.svg");
+  }
+  .spacer {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
   width: 100vw;
 
   .wrapper {
@@ -185,12 +209,14 @@ const Cover = styled.div`
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     padding: 5rem;
+
     background-color: var(--clr-bgc);
   }
   .titleSherotem > h1 {
     font-size: 3rem;
     color: var(--clr-font);
     text-align: center;
+    padding-top: 50px;
   }
 
   .titleSherotem > p {

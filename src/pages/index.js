@@ -17,18 +17,16 @@ import image6 from "../assets/images/Elias/wow.jpg"
 import image8 from "../assets/images/Elias/cont.jpg"
 import Contact from "../components/Contact/ContactForm"
 import ContacForm from "../components/Elias/ContacForm"
-import MenuVertical from "../components/Elias/MenuVertical"
-import image7 from "../assets/images/Elias/news.jpg"
-import NewsletterStyleTwo from "../components/Common/NewsletterStyleTwo"
-import Newsletter from "../components/Elias/Newsletter"
-import ReactWhatsapp from "react-whatsapp"
+import styled from "styled-components"
 
 const BigdataAnalytics = () => (
   <Layout>
     <SEO title="Home" />
 
     <MainBannerElias2 idSection="home" />
+    <div className="spacer layer1"></div>
     <Servie2
+      showSvg={true}
       idSection="things"
       title1={"בניית אתרים"}
       title2={"Web Development"}
@@ -58,6 +56,7 @@ const BigdataAnalytics = () => (
 התחושה מחברת בין המשתמש לממשק האתר, מאריכה את זמן הגלישה וההכרות עם המותג ועם כל השירותים אותם אתם מציעים באתר."
     />
     <Servie2
+      showSvg={false}
       idSection="shop"
       title1={"חנויות אונליין"}
       title2={"Online shops"}
@@ -85,6 +84,7 @@ const BigdataAnalytics = () => (
       description="יצירת כל מיני עיצובים גרפים, כמו פליירים,לוגו, כרטיסי ביקור, ברושור, חוברת, קטלוג ועוד"
     />
     <Servie2
+      showSvg={false}
       idSection="photography"
       title1={"צילום מוצרים"}
       title2={"Photography"}

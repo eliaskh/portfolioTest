@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 // import image1 from "../../assets/images/Elias/bg-image-12.jpg"
-import image1 from "../../assets/images/Elias/blue-purple-technology-circuit.jpg"
+// import image1 from "../../assets/images/Elias/blue-purple-technology-circuit.jpg"
+import image1 from "../../assets/images/Elias/useit.svg"
 // import image1 from "../../assets/images/Elias/computer-program-coding-screen.jpg"
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
@@ -48,6 +49,7 @@ function MainBannerElias2({ idSection }) {
             </div>
           </div>
           {/*  */}
+          {/* <div className="spacer layer1"></div> */}
         </section>
       </Cover>
     </>
@@ -56,6 +58,10 @@ function MainBannerElias2({ idSection }) {
 
 const Cover = styled.div`
   background-image: url(${image1});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .wrapper {
     display: grid;
@@ -64,7 +70,7 @@ const Cover = styled.div`
     align-content: center;
     height: 100vh;
     width: 100vw !important;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0);
   }
   .icons1 {
     padding-top: 70px;
@@ -91,6 +97,16 @@ const Cover = styled.div`
   .Typewriter {
     text-align: center;
     color: #ffffffad;
+  }
+  .spacer {
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .layer1 {
+    background-image: url("../../assets/images/Elias/lyred.svg");
   }
   @media ${device.mobileS} {
     .icons1 {
