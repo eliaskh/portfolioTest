@@ -11,7 +11,12 @@ function Mailchimp() {
     e.preventDefault()
     addToMailchimp(email) // listFields are optional if you are only capturing the email address.
     setMessage("thank you for your subscription")
-
+      .then(data => {})
+      .catch(() => {
+        // unnecessary because Mailchimp only ever
+        // returns a 200 status code
+        // see below for how to handle errors
+      })
     setEmail("")
   }
   return (
