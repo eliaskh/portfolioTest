@@ -100,7 +100,7 @@ function Mailchimp2({
               <div className="message1">
                 <h1>{message}</h1>
               </div>
-              <div>
+              <div className="form1">
                 <form onSubmit={handleSubmit} className="text">
                   <input
                     type="text"
@@ -110,7 +110,7 @@ function Mailchimp2({
                   />
 
                   <Button type="submit" value="Submit">
-                    SUBSCRIBE
+                    להירשם
                   </Button>
                 </form>
               </div>
@@ -201,9 +201,14 @@ const Cover = styled.div`
   }
   .sub {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     justify-items: center;
     align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .form1 {
+    align-self: start;
   }
 
   .text {
