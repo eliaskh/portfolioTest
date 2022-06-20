@@ -107,7 +107,7 @@ body {
 }
 
 .light-theme {
-  --clr-menu: rgba(255, 255, 255, 0.9);
+  --clr-menu: rgba(255, 255, 255, 1);
   --clr-menu-full: rgba(255, 255, 255, 1);
   --clr-bgc: #fff;
   --clr-font: #000;
@@ -115,11 +115,11 @@ body {
   --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   --clr-header: #fff;
   --clr-border-menu: rgba(0, 0, 0, 0.1);
-  --bg-image : url(../../assets/images/Elias/useit.svg);
+  --bg-image: url(../../assets/images/Elias/useit.svg);
 }
 .dark-theme {
-  --clr-menu: rgba(0, 0, 0, 0.9);
-  --clr-menu-full: rgba(0, 0, 0, 1);
+  --clr-menu: #191919;
+  --clr-menu-full: #191919;
   --clr-bgc: #191919;
   --clr-font: #fff;
   --clr-primary: #025597;
@@ -127,7 +127,7 @@ body {
   --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #2a2a6b 100%);
   --clr-header: #191919;
   --clr-border-menu: rgba(255, 255, 255, 0.1);
-    --bg-image : url(../../assets/images/Elias/wa.svg);
+  --bg-image: url(../../assets/images/Elias/wa.svg);
 }
 .swiper-container {
   width: 480px;

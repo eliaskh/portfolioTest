@@ -93,15 +93,11 @@ const Cover = styled.div`
 
   @keyframes rotate {
     0% {
-      /* transform: rotate(0deg); */
-      top: 40%;
-
-      opacity: 0.3;
+      transform: rotate(0deg);
+      opacity: 0;
     }
     100% {
-      /* transform: rotate(360deg); */
-      top: 2%;
-
+      transform: rotate(360deg);
       opacity: 1;
     }
   }
@@ -110,7 +106,7 @@ const Cover = styled.div`
     top: 40%;
     transform: translate(0, -100%);
     /*  Rotate  */
-    animation-duration: 3.5s;
+    animation-duration: 2s;
     animation-name: rotate;
     animation-iteration-count: infinite;
   }
