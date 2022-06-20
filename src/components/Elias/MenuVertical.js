@@ -264,7 +264,6 @@ const Cover = styled.div`
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
     color: var(--clr-font);
     border-radius: 5px;
   }
@@ -281,7 +280,6 @@ const Cover = styled.div`
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
     color: var(--clr-font);
     border-radius: 5px;
   }
@@ -303,6 +301,7 @@ const Cover = styled.div`
   }
   .itemmenu {
     justify-self: center;
+    cursor: pointer;
   }
   .itemmenu li {
     color: var(--clr-font);

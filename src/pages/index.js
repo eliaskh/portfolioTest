@@ -17,6 +17,7 @@ import image6 from "../assets/images/Elias/wow.jpg"
 import image8 from "../assets/images/Elias/cont.jpg"
 import Contact from "../components/Contact/ContactForm"
 import ContacForm from "../components/Elias/ContacForm"
+import Mailchimp from "../components/Elias/Mailchimp"
 import styled from "styled-components"
 
 const BigdataAnalytics = () => (
@@ -115,6 +116,7 @@ const BigdataAnalytics = () => (
     {/* <Contact /> */}
     {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
     {/* <NewsletterStyleTwo /> */}
+    <Mailchimp />
     <Footer />
   </Layout>
 )
