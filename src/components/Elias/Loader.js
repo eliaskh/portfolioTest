@@ -38,8 +38,14 @@ function Loader() {
 }
 const Cover = styled.div`
   .allBody {
-    background-color: #240f52;
-    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    background-color: #191919;
+    /* background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #f70000 100%
+    ); */
+
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -87,11 +93,15 @@ const Cover = styled.div`
 
   @keyframes rotate {
     0% {
-      transform: rotate(0deg);
-      opacity: 0;
+      /* transform: rotate(0deg); */
+      top: 40%;
+
+      opacity: 0.3;
     }
     100% {
-      transform: rotate(360deg);
+      /* transform: rotate(360deg); */
+      top: 2%;
+
       opacity: 1;
     }
   }
@@ -100,7 +110,7 @@ const Cover = styled.div`
     top: 40%;
     transform: translate(0, -100%);
     /*  Rotate  */
-    animation-duration: 2s;
+    animation-duration: 3.5s;
     animation-name: rotate;
     animation-iteration-count: infinite;
   }
