@@ -19,7 +19,7 @@ function Loader() {
             <Typewriter
               options={{
                 strings: [
-                  "בניית אתרים",
+                  "CREATIVE LAB",
                   "עיצוב חווית משתמש",
                   "פיתוח אפליקציות מובייל",
                   "חנויות אונליין",
@@ -118,6 +118,7 @@ const Cover = styled.div`
     text-align: center;
     color: white;
     font-size: 2rem;
+    /* font-family: "Bebas Neue", cursive; */
   }
 `
 export default Loader

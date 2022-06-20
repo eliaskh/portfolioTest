@@ -146,7 +146,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
               </div>
 
               <div className="menuItemMobile">
-                <AnchorLink href="#contact">
+                <AnchorLink href="#contact" offset="50">
                   <h1>צור קשר</h1>
                 </AnchorLink>
               </div>
@@ -203,7 +203,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                   </div>
                   <div className="itemmenu">
                     <ul>
-                      <AnchorLink href="#contact">
+                      <AnchorLink href="#contact" offset="50">
                         <li>צור קשר</li>
                       </AnchorLink>
                     </ul>

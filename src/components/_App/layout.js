@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
     if (isLoading) {
       setTimeout(() => {
         setisLoading(false)
-      }, 2000)
+      }, 2200)
     }
   }, [isLoading])
 

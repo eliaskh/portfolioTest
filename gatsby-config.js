@@ -55,6 +55,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://creativelab.us10.list-manage.com/subscribe/post?u=62931e454decc9fa7b536fbe7&amp;id=6f57c47793", // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `https://eliasportfoliotest.herokuapp.com`,
