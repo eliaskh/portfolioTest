@@ -5,6 +5,8 @@ import logoLight from "../../assets/images/Elias/logon.png"
 // import logoDark from "../../assets/images/Elias/logoLight.png"
 import logoDark from "../../assets/images/Elias/logonewdark.png"
 import textLogo from "../../assets/images/Elias/textlogo.png"
+import textLogoBlack from "../../assets/images/Elias/textlogoblack.png"
+import backtotopwhite from "../../assets/images/Elias/backtotopwhite.png"
 import Typewriter from "typewriter-effect"
 import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -21,13 +23,15 @@ import {
 function MenuVertical({ toggleTheme, isDarkoMode }) {
   const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
-
+  const [showBtnTop, setShowBtnTop] = useState(false)
+  const locationScroll = window.scrollY
   const changeColor = () => {
     if (window.scrollY >= 80) {
       setNavBar1(true)
-      // alert(navBar1)
+      setShowBtnTop(true)
     } else {
       setNavBar1(false)
+      setShowBtnTop(false)
     }
   }
   {
@@ -36,6 +40,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
 
   return (
     <>
+      {console.log(locationScroll)}
       {breakpoints.sm ? (
         <>
           <CoverMobile>
@@ -84,7 +89,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                           ) : (
                             <>
                               <img
-                                src={textLogo}
+                                src={textLogoBlack}
                                 alt="Logo"
                                 style={{ height: "auto", paddingTop: "7px" }}
                               />
@@ -180,6 +185,21 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </AnchorLink>
               </div>
             </div>
+            {showBtnTop ? (
+              <>
+                <div className="backtotop">
+                  <AnchorLink href="#home">
+                    <img
+                      src={backtotopwhite}
+                      alt="Logo"
+                      style={{ height: "35px" }}
+                    />
+                  </AnchorLink>
+                </div>
+              </>
+            ) : (
+              <></>
+            )}
           </CoverMobile>
         </>
       ) : (
@@ -272,6 +292,21 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </div>
               </div>
             </div>
+            {showBtnTop ? (
+              <>
+                <div className="backtotop">
+                  <AnchorLink href="#home">
+                    <img
+                      src={backtotopwhite}
+                      alt="Logo"
+                      style={{ height: "35px" }}
+                    />
+                  </AnchorLink>
+                </div>
+              </>
+            ) : (
+              <></>
+            )}
           </Cover>
         </>
       )}
@@ -337,6 +372,11 @@ const Cover = styled.div`
     font-size: 15px;
     font-weight: bold;
   }
+  .backtotop {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+  }
 `
 
 const CoverMobile = styled.div`
@@ -394,6 +434,12 @@ const CoverMobile = styled.div`
   .menuItemMobile h1 {
     color: var(--clr-font);
     font-size: 12px;
+  }
+  .backtotop {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    z-index: 99999999;
   }
 `
 export default MenuVertical
