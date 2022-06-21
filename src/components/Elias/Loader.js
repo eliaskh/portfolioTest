@@ -12,7 +12,7 @@ function Loader() {
     <>
       <Cover>
         {console.log(getRandomInt(2))}
-        <div className={getRandomInt(2) == 1 ? "allBody" : "secondBody"}>
+        <div className="allBody">
           {/* <div className="outer-ring center"></div>
           <div className="inner-ring center"></div> */}
 
@@ -65,7 +65,7 @@ const Cover = styled.div`
     align-items: center;
   }
   .secondBody {
-    background-color: #8bc6ec;
+    background-color: #191919;
     background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 
     height: 100vh;

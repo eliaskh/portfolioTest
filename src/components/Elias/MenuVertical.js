@@ -28,17 +28,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
   const [firstActive, setFirstActive] = useState(true)
   const [scrollPosition, setScrollPosition] = useState(0)
   const locationScroll = window.scrollY
-  // const position = window.scrollTop
-  // const handleScroll = () => {
-  //   setScrollPosition(position)
-  // }
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll, { passive: true })
-  //   console.log("this is the postion" + scrollPosition)
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll)
-  //   }
-  // }, [position])
+
   const changeColor = () => {
     if (window.scrollY >= 80) {
       setNavBar1(true)
@@ -54,7 +44,6 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
 
   return (
     <>
-      {console.log(scrollPosition)}
       {breakpoints.sm ? (
         <>
           <CoverMobile>
@@ -206,7 +195,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                     <div className="backtotop">
                       <AnchorLink href="#home">
                         <img
-                          src={backtotopwhite}
+                          src={backtotopBlack}
                           alt="Logo"
                           style={{ height: "35px" }}
                         />
