@@ -1,20 +1,28 @@
 import React from "react"
 import styled from "styled-components"
 import logoLight from "../../assets/images/Elias/logon.png"
+import logoDark from "../../assets/images/Elias/logonewdark.png"
 import Typewriter from "typewriter-effect"
 function Loader() {
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
+  }
+
   return (
     <>
       <Cover>
-        <div className="allBody">
+        {console.log(getRandomInt(2))}
+        <div className={getRandomInt(2) == 1 ? "allBody" : "secondBody"}>
           {/* <div className="outer-ring center"></div>
           <div className="inner-ring center"></div> */}
+
           <img
             src={logoLight}
             alt="Logo"
             style={{ height: "50px" }}
             className="imageLogo"
           />
+
           <div className="text1">
             <Typewriter
               options={{
@@ -56,7 +64,20 @@ const Cover = styled.div`
     align-content: flex-start;
     align-items: center;
   }
+  .secondBody {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+  }
   .center {
     margin: 0 auto;
   }
@@ -94,11 +115,11 @@ const Cover = styled.div`
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
-      opacity: 0;
+      /* transform: scale(0.2); */
     }
     100% {
       transform: rotate(360deg);
-      opacity: 1;
+      /* transform: scale(1); */
     }
   }
   .imageLogo {

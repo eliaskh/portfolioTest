@@ -7,6 +7,7 @@ import logoDark from "../../assets/images/Elias/logonewdark.png"
 import textLogo from "../../assets/images/Elias/textlogo.png"
 import textLogoBlack from "../../assets/images/Elias/textlogoblack.png"
 import backtotopwhite from "../../assets/images/Elias/backtotopwhite.png"
+import backtotopBlack from "../../assets/images/Elias/backtotopBlack.png"
 import Typewriter from "typewriter-effect"
 import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -24,7 +25,20 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
   const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
   const [showBtnTop, setShowBtnTop] = useState(false)
+  const [firstActive, setFirstActive] = useState(true)
+  const [scrollPosition, setScrollPosition] = useState(0)
   const locationScroll = window.scrollY
+  // const position = window.scrollTop
+  // const handleScroll = () => {
+  //   setScrollPosition(position)
+  // }
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, { passive: true })
+  //   console.log("this is the postion" + scrollPosition)
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll)
+  //   }
+  // }, [position])
   const changeColor = () => {
     if (window.scrollY >= 80) {
       setNavBar1(true)
@@ -40,7 +54,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
 
   return (
     <>
-      {console.log(locationScroll)}
+      {console.log(scrollPosition)}
       {breakpoints.sm ? (
         <>
           <CoverMobile>
@@ -187,15 +201,31 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
             </div>
             {showBtnTop ? (
               <>
-                <div className="backtotop">
-                  <AnchorLink href="#home">
-                    <img
-                      src={backtotopwhite}
-                      alt="Logo"
-                      style={{ height: "35px" }}
-                    />
-                  </AnchorLink>
-                </div>
+                {isDarkoMode ? (
+                  <>
+                    <div className="backtotop">
+                      <AnchorLink href="#home">
+                        <img
+                          src={backtotopwhite}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </AnchorLink>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="backtotop">
+                      <AnchorLink href="#home">
+                        <img
+                          src={backtotopBlack}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </AnchorLink>
+                    </div>
+                  </>
+                )}
               </>
             ) : (
               <></>
@@ -250,6 +280,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                       </AnchorLink>
                     </ul>
                   </div>
+
                   <div className="itemmenu">
                     <ul>
                       <AnchorLink href="#contact" offset="50">
@@ -292,17 +323,34 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </div>
               </div>
             </div>
+
             {showBtnTop ? (
               <>
-                <div className="backtotop">
-                  <AnchorLink href="#home">
-                    <img
-                      src={backtotopwhite}
-                      alt="Logo"
-                      style={{ height: "35px" }}
-                    />
-                  </AnchorLink>
-                </div>
+                {isDarkoMode ? (
+                  <>
+                    <div className="backtotop">
+                      <AnchorLink href="#home">
+                        <img
+                          src={backtotopwhite}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </AnchorLink>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="backtotop">
+                      <AnchorLink href="#home">
+                        <img
+                          src={backtotopBlack}
+                          alt="Logo"
+                          style={{ height: "35px" }}
+                        />
+                      </AnchorLink>
+                    </div>
+                  </>
+                )}
               </>
             ) : (
               <></>
@@ -366,6 +414,11 @@ const Cover = styled.div`
   .itemmenu {
     justify-self: center;
     cursor: pointer;
+  }
+  .activeMenu::after {
+    content: "-";
+    display: flex;
+    justify-content: center;
   }
   .itemmenu li {
     color: var(--clr-font);
