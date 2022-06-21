@@ -4,6 +4,7 @@ import styled from "styled-components"
 import logoLight from "../../assets/images/Elias/logon.png"
 // import logoDark from "../../assets/images/Elias/logoLight.png"
 import logoDark from "../../assets/images/Elias/logonewdark.png"
+import textLogo from "../../assets/images/Elias/textlogo.png"
 import Typewriter from "typewriter-effect"
 import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -24,13 +25,14 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
   const changeColor = () => {
     if (window.scrollY >= 80) {
       setNavBar1(true)
+      // alert(navBar1)
     } else {
       setNavBar1(false)
     }
   }
-  // {
-  // isBrowser && window.addEventListener("scroll", changeColor)
-  // }
+  {
+    window.addEventListener("scroll", changeColor)
+  }
 
   return (
     <>
@@ -67,25 +69,52 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
 
                 <div className="logoMobile">
                   <div>
-                    <Link to="/">
-                      {isDarkoMode ? (
-                        <>
-                          <img
-                            src={logoLight}
-                            alt="Logo"
-                            style={{ height: "50px", paddingTop: "7px" }}
-                          />
-                        </>
-                      ) : (
-                        <>
-                          <img
-                            src={logoDark}
-                            alt="Logo"
-                            style={{ height: "50px", paddingTop: "7px" }}
-                          />
-                        </>
-                      )}
-                    </Link>
+                    {navBar1 ? (
+                      <>
+                        {" "}
+                        <Link to="/">
+                          {isDarkoMode ? (
+                            <>
+                              <img
+                                src={textLogo}
+                                alt="Logo"
+                                style={{ height: "auto", paddingTop: "7px" }}
+                              />
+                            </>
+                          ) : (
+                            <>
+                              <img
+                                src={textLogo}
+                                alt="Logo"
+                                style={{ height: "auto", paddingTop: "7px" }}
+                              />
+                            </>
+                          )}
+                        </Link>
+                      </>
+                    ) : (
+                      <>
+                        <Link to="/">
+                          {isDarkoMode ? (
+                            <>
+                              <img
+                                src={logoLight}
+                                alt="Logo"
+                                style={{ height: "50px", paddingTop: "7px" }}
+                              />
+                            </>
+                          ) : (
+                            <>
+                              <img
+                                src={logoDark}
+                                alt="Logo"
+                                style={{ height: "50px", paddingTop: "7px" }}
+                              />
+                            </>
+                          )}
+                        </Link>
+                      </>
+                    )}
                   </div>
                   <div></div>
                 </div>
