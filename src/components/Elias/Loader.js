@@ -4,14 +4,9 @@ import logoLight from "../../assets/images/Elias/logon.png"
 import logoDark from "../../assets/images/Elias/logonewdark.png"
 import Typewriter from "typewriter-effect"
 function Loader() {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
-  }
-
   return (
     <>
       <Cover>
-        {console.log(getRandomInt(2))}
         <div className="allBody">
           {/* <div className="outer-ring center"></div>
           <div className="inner-ring center"></div> */}
@@ -47,12 +42,6 @@ function Loader() {
 const Cover = styled.div`
   .allBody {
     background-color: #191919;
-    /* background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #f70000 100%
-    ); */
 
     height: 100vh;
     width: 100vw;
