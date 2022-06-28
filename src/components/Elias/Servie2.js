@@ -275,7 +275,7 @@ const Cover = styled.div`
       height: auto;
     }
     .image {
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .image1 {
@@ -315,7 +315,7 @@ const Cover = styled.div`
       height: auto;
     }
     .image {
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .image1 {

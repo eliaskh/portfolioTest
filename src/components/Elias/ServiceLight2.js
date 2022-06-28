@@ -125,7 +125,7 @@ const Cover = styled.div`
   .wrapperWhite {
   }
   .image {
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
   }
   .image1 {
@@ -159,7 +159,7 @@ const Cover = styled.div`
     }
     .image {
       /* order: 1; */
-      height: auto;
+      /* height: auto; */
       width: 100vw;
     }
 
@@ -199,7 +199,7 @@ const Cover = styled.div`
     }
     .image {
       /* order: 2; */
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
 
@@ -239,7 +239,7 @@ const Cover = styled.div`
     }
     .image {
       /* order: 2; */
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .text {

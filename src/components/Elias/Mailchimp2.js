@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
@@ -6,6 +6,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import svgi from "../../assets/images/Elias/wowo.png"
 import svgi1 from "../../assets/images/Elias/right.svg"
 import addToMailchimp from "gatsby-plugin-mailchimp"
+
 function Mailchimp2({
   title1,
   title2,
@@ -22,6 +23,11 @@ function Mailchimp2({
   const [showMore, setShowMore] = useState(false)
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("הירשם כדי לקבל את החדש שלנו")
+  const myContainer = useRef(null)
+  const [allwow, setAllwow] = useState(null)
+  const [css1, setCss1] = useState("wrapper")
+  const [widthscreen, setWidthscreen] = useState(null)
+  const [heightscreen, setHeightscreen] = useState(null)
   const ChangeHandel = event => {
     setEmail(event.target.value)
   }
@@ -42,86 +48,100 @@ function Mailchimp2({
       setShowMore(false)
     } else setShowMore(true)
   }
+
+  useEffect(() => {
+    const AllPage = document.getElementById("allPage")
+    setAllwow(AllPage)
+    console.log(AllPage)
+    setWidthscreen(window.innerWidth)
+    setHeightscreen(window.innerHeight)
+  }, [widthscreen])
+
   return (
     <Cover>
-      {showSvg ? (
-        <>
-          <img src={svgi} alt="" className="spacer" />
-        </>
-      ) : (
-        <></>
-      )}
-
-      <section id={idSection}>
-        {showTitle ? (
+      <div id="allPage" ref={myContainer}>
+        {showSvg ? (
           <>
-            <div className="titleSherotem">
-              <h1> השירותים שלנו</h1>
-              <p>
-                אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
-                מהרעיון והניסוח העיקרי של אסטרטגיית המוצר, עיצוב ובניית אב
-                טיפוס, בדיקתו עם משתמשים ולסיום יצירת המוצר המוגמר
-              </p>
-              <Menuinside>
-                <div className="menuInside">
-                  <AnchorLink href="#web" offset="50">
-                    <h1> בניית אתרים</h1>
-                  </AnchorLink>
-
-                  <AnchorLink href="#ux" offset="50">
-                    <h1> עיצוב חווית משתמש</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#shop" offset="50">
-                    <h1> חנויות אונליין</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#design1" offset="50">
-                    <h1> עיצוב גרפי</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#photography" offset="50">
-                    <h1> צילום מוצרים</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#kedom" offset="50">
-                    <h1>קידום ברשתות חברתיות</h1>
-                  </AnchorLink>
-                </div>
-              </Menuinside>
-            </div>
+            <img src={svgi} alt="" className="spacer" />
           </>
         ) : (
           <></>
         )}
-        <section id="web">
-          <div className="wrapper">
-            <div className="image1">
-              <img src={imageRow} alt="" className="image" />
-            </div>
 
-            <div className="sub">
-              <div className="message1">
-                <h1>{message}</h1>
-              </div>
-              <div className="form1">
-                <form onSubmit={handleSubmit} className="text">
-                  <input
-                    type="text"
-                    name="mail"
-                    value={email}
-                    onChange={ChangeHandel}
-                  />
+        <section id={idSection}>
+          {showTitle ? (
+            <>
+              <div className="titleSherotem">
+                <h1> השירותים שלנו</h1>
+                <p>
+                  אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
+                  מהרעיון והניסוח העיקרי של אסטרטגיית המוצר, עיצוב ובניית אב
+                  טיפוס, בדיקתו עם משתמשים ולסיום יצירת המוצר המוגמר
+                </p>
+                <Menuinside>
+                  <div className="menuInside">
+                    <AnchorLink href="#web" offset="50">
+                      <h1> בניית אתרים</h1>
+                    </AnchorLink>
 
-                  <Button type="submit" value="Submit">
-                    להירשם
-                  </Button>
-                </form>
+                    <AnchorLink href="#ux" offset="50">
+                      <h1> עיצוב חווית משתמש</h1>
+                    </AnchorLink>
+                    <AnchorLink href="#shop" offset="50">
+                      <h1> חנויות אונליין</h1>
+                    </AnchorLink>
+                    <AnchorLink href="#design1" offset="50">
+                      <h1> עיצוב גרפי</h1>
+                    </AnchorLink>
+                    <AnchorLink href="#photography" offset="50">
+                      <h1> צילום מוצרים</h1>
+                    </AnchorLink>
+                    <AnchorLink href="#kedom" offset="50">
+                      <h1>קידום ברשתות חברתיות</h1>
+                    </AnchorLink>
+                  </div>
+                </Menuinside>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
+          <section id="web">
+            <div className={css1}>
+              <div className="image1">
+                <img src={imageRow} alt="" className="image" />
+              </div>
+
+              <div className="sub">
+                <div className="message1">
+                  <h1>{message}</h1>
+                </div>
+                <div className="form1">
+                  <form onSubmit={handleSubmit} className="text">
+                    <input
+                      type="text"
+                      name="mail"
+                      value={email}
+                      onChange={ChangeHandel}
+                      placeholder="כתובת אימל"
+                    />
+
+                    <Button type="submit" value="Submit">
+                      להירשם
+                    </Button>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
-      </section>
-      <div className="backgroundSVG"></div>
+        <div className="backgroundSVG"></div>
+        {console.log(widthscreen)}
+      </div>
     </Cover>
   )
 }
+
 const Menuinside = styled.div`
   @media ${device.mobileS} {
     .menuInside {
@@ -158,6 +178,9 @@ const Button = styled.button`
 `
 
 const Cover = styled.div`
+  input {
+    /* width: 200px !important; */
+  }
   .backgroundSVG {
     background-image: url("../../assets/images/Elias/layered-waves-haikei.svg");
   }
@@ -176,6 +199,9 @@ const Cover = styled.div`
     display: grid;
     height: 80vh;
     background-image: var(--clr-Gradient);
+  }
+  .wrapper1 {
+    display: none;
   }
   .wrapperWhite {
   }
