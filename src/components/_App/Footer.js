@@ -51,7 +51,7 @@ const Footer = () => {
               <p>
                 Copyright &copy; {currentYear} CreativeLab All rights reserved
                 <a
-                  href="https://envytheme.com/"
+                  href="https://www.creativelab.co.il/"
                   target="_blank"
                   className="title"
                 >

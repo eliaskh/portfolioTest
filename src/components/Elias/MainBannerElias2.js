@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 // import image1 from "../../assets/images/Elias/bg-image-12.jpg"
 // import image1 from "../../assets/images/Elias/blue-purple-technology-circuit.jpg"
-import image1 from "../../assets/images/Elias/useit.svg"
+import image1 from "../../assets/images/Elias/astranaut-runs-along-endless-wooden-bridge.jpg"
 
 // import image1 from "../../assets/images/Elias/computer-program-coding-screen.jpg"
 import Typewriter from "typewriter-effect"
@@ -58,11 +58,12 @@ function MainBannerElias2({ idSection }) {
 }
 
 const Cover = styled.div`
-  background-image: url(${image1});
+  /* background-image: url(${image1}); */
   background-position: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: black;
 
   .wrapper {
     display: grid;
@@ -71,7 +72,8 @@ const Cover = styled.div`
     align-content: center;
     height: 100vh;
     width: 100vw !important;
-    background-color: rgba(0, 0, 0, 0);
+    background-image: var(--clr-Gradient);
+    /* background-color: var(--clr-Gradient); */
   }
   .icons1 {
     padding-top: 70px;

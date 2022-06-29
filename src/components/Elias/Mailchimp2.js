@@ -178,9 +178,6 @@ const Button = styled.button`
 `
 
 const Cover = styled.div`
-  input {
-    /* width: 200px !important; */
-  }
   .backgroundSVG {
     background-image: url("../../assets/images/Elias/layered-waves-haikei.svg");
   }
@@ -279,6 +276,9 @@ const Cover = styled.div`
     padding-bottom: 1rem;
   }
   @media ${device.mobileS} {
+    input {
+      width: 200px;
+    }
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
@@ -320,6 +320,9 @@ const Cover = styled.div`
     }
   }
   @media ${device.tablet} {
+    input {
+      width: 300px;
+    }
     .wrapper {
       grid-template-columns: 1fr;
       height: auto;
@@ -360,6 +363,9 @@ const Cover = styled.div`
     }
   }
   @media ${device.laptop} {
+    input {
+      width: 400px;
+    }
     .wrapper {
       grid-template-columns: 1fr 1fr;
       height: auto;

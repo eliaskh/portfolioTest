@@ -136,7 +136,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                         <BsMoonFill
                           // className={classTwo}
                           style={{
-                            color: "white",
+                            color: "#f50256",
                             marginTop: "3px",
                             marginRight: "7px",
                             cursor: "pointer",
@@ -280,13 +280,21 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 </div>
 
                 <div className="darkandlight">
-                  {console.log(isDarkoMode)}
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <h1
+                      style={{
+                        color: "var(--clr-font)",
+                      }}
+                    >
+                      0528963616
+                    </h1>
+                  </div>
                   {isDarkoMode ? (
                     <div>
                       <BsMoonFill
                         // className={classTwo}
                         style={{
-                          color: "white",
+                          color: "#f50256",
                           marginTop: "3px",
                           marginRight: "7px",
                           cursor: "pointer",
@@ -392,6 +400,9 @@ const Cover = styled.div`
   }
   .darkandlight {
     justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
   .menu1 {
     display: grid;
@@ -412,7 +423,7 @@ const Cover = styled.div`
   .itemmenu li {
     color: var(--clr-font);
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   .backtotop {
     position: fixed;

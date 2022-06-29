@@ -30,7 +30,7 @@ const BigdataAnalytics = () => (
     <MainBannerElias2 idSection="home" />
     <div className="spacer layer1"></div>
     <Servie2
-      showSvg={true}
+      showSvg={false}
       idSection="things"
       title1={"בניית אתרים"}
       title2={"Web Development"}
