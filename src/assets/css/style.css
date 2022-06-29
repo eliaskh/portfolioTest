@@ -121,7 +121,7 @@ body {
 .dark-theme {
   --clr-menu: #191919;
   --clr-menu-full: #191919;
-  --clr-bgc: #272727;
+  --clr-bgc:#202020;
   --clr-font: #fff;
   --clr-primary: #025597;
   /* --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #3535ff 100%); */

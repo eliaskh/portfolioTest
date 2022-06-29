@@ -215,11 +215,7 @@ const Cover = styled.div`
   .image1 {
     justify-self: center;
     align-self: center;
-    background-image: radial-gradient(
-      circle 610px at 5.2% 51.6%,
-      rgba(5, 8, 114, 1) 0%,
-      rgba(7, 3, 53, 1) 97.5%
-    );
+    /* background-color: var(--clr-bgc); */
   }
   .arrow {
     justify-self: center;
@@ -288,7 +284,7 @@ const Cover = styled.div`
       height: auto;
     }
     .image {
-      height: auto;
+      /* height: auto; */
       width: 100vw;
     }
     .image1 {
@@ -329,7 +325,7 @@ const Cover = styled.div`
       height: auto;
     }
     .image {
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .image1 {
@@ -369,7 +365,7 @@ const Cover = styled.div`
       height: auto;
     }
     .image {
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .image1 {

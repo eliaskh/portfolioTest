@@ -2,7 +2,10 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import image8 from "../../assets/images/Elias/cont1.png"
 
+import image9 from "../../assets/images/Elias/newsletter.png"
 function ContacForm({
   title1,
   title2,
@@ -15,7 +18,7 @@ function ContacForm({
 }) {
   const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
-
+  const breakpoints = useBreakpoint()
   const handelShowMore = () => {
     if (showMore) {
       setShowMore(false)
@@ -27,9 +30,19 @@ function ContacForm({
         {design == "first" ? (
           <>
             <div className="wrapper">
-              <div className="image1">
-                <img src={imageRow} alt="" className="image" />
-              </div>
+              {breakpoints.sm ? (
+                <>
+                  <div className="image1">
+                    <img src={image9} alt="" className="image" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="image1">
+                    <img src={image8} alt="" className="image" />
+                  </div>
+                </>
+              )}
 
               <div className="formC">
                 <div className="titleSherotem">
@@ -215,7 +228,7 @@ const Cover = styled.div`
   .wrapperWhite {
   }
   .image {
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
   }
   .image1 {
@@ -335,7 +348,7 @@ const Cover = styled.div`
     }
     .image {
       /* order: 2; */
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
 
@@ -389,7 +402,7 @@ const Cover = styled.div`
     }
     .image {
       /* order: 2; */
-      height: 80vh;
+      /* height: 80vh; */
       width: 100vw;
     }
     .text {
