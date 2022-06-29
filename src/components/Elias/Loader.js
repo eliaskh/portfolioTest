@@ -1,39 +1,37 @@
-import React from "react"
+import React, { useState, useRef, useEffect } from "react"
 import styled from "styled-components"
 import logoLight from "../../assets/images/Elias/logon.png"
 import logoDark from "../../assets/images/Elias/logonewdark.png"
 import Typewriter from "typewriter-effect"
+import image3 from "../../assets/images/Elias/uxuiweb.jpg"
+import image4 from "../../assets/images/Elias/graphicdesignerweb.jpg"
+import image5 from "../../assets/images/Elias/photographyweb.jpg"
 function Loader() {
+  const [mathRandom, setmathRandom] = useState("")
+  useEffect(() => {
+    setmathRandom((Math.random() * (1 + 1) + 1).toFixed(0))
+  }, [mathRandom])
+
   return (
     <>
       <Cover>
+        {console.log(mathRandom)}
         <div className="allBody">
-          {/* <div className="outer-ring center"></div>
-          <div className="inner-ring center"></div> */}
-
-          <img
-            src={logoLight}
-            alt="Logo"
-            style={{ height: "50px" }}
-            className="imageLogo"
-          />
-
-          <div className="text1">
-            <Typewriter
-              options={{
-                strings: [
-                  "CREATIVE LAB",
-                  "עיצוב חווית משתמש",
-                  "פיתוח אפליקציות מובייל",
-                  "חנויות אונליין",
-                  "עיצוב גרפי",
-                  "אנליזה וקידום אתרים",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
+          {
+            <div>
+              {console.log(mathRandom)}
+              {(() => {
+                if (mathRandom == 1) {
+                  return <img src={image3} alt="Logo" className="imageLogo" />
+                }
+                if (mathRandom == 2) {
+                  return <img src={image4} alt="Logo" className="imageLogo" />
+                } else {
+                  return <img src={image5} alt="Logo" className="imageLogo" />
+                }
+              })()}
+            </div>
+          }
         </div>
       </Cover>
     </>
@@ -41,7 +39,7 @@ function Loader() {
 }
 const Cover = styled.div`
   .allBody {
-    background-color: #191919;
+    background-color: #1a1a1a;
 
     height: 100vh;
     width: 100vw;
@@ -113,12 +111,11 @@ const Cover = styled.div`
   }
   .imageLogo {
     position: absolute;
-    top: 40%;
-    transform: translate(0, -100%);
+    top: 50%;
+    transform: translate(50%, -50%);
     /*  Rotate  */
-    animation-duration: 2s;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
+
+    width: 600px;
   }
   .text1 {
     position: absolute;
