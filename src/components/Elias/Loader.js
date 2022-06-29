@@ -9,8 +9,8 @@ import image5 from "../../assets/images/Elias/photographyweb.jpg"
 function Loader() {
   const [mathRandom, setmathRandom] = useState("")
   useEffect(() => {
-    setmathRandom((Math.random() * (1 + 1) + 1).toFixed(0))
-  }, [mathRandom])
+    setmathRandom(Math.floor(Math.random() * 3))
+  }, [])
 
   return (
     <>
