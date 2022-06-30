@@ -24,14 +24,16 @@ import Mailchimp2 from "../components/Elias/Mailchimp2"
 import styled from "styled-components"
 import { useInView } from "react-intersection-observer"
 import RightMenu from "../components/Elias/RightMenu"
-
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 function Index() {
   const { ref: myRef, inView: myElementIsVisible } = useInView()
-
+  const breakpoints = useBreakpoint()
   return (
     <Layout>
       <SEO title="Home" />
-      {myElementIsVisible && <RightMenu />}
+
+      {breakpoints.sm ? <></> : <> {myElementIsVisible && <RightMenu />}</>}
+
       <MainBannerElias2 idSection="home" />
       <div className="spacer layer1"></div>
 
