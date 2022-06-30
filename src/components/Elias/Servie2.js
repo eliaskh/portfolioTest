@@ -1,10 +1,11 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import svgi from "../../assets/images/Elias/wowo.png"
 import svgi1 from "../../assets/images/Elias/right.svg"
+import { useInView } from "react-intersection-observer"
 function Servie2({
   title1,
   title2,
@@ -19,12 +20,23 @@ function Servie2({
 }) {
   const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
+  const [showmenu, setshowmenu] = useState(true)
+  const { ref: myRef, inView: myElementIsVisible } = useInView()
 
   const handelShowMore = () => {
     if (showMore) {
       setShowMore(false)
     } else setShowMore(true)
   }
+
+  // useEffect(() => {
+  //   myElementIsVisible === true ? (
+  //     <>{console.log("THE MENY IS SHOWING")}</>
+  //   ) : (
+  //     <></>
+  //   )
+  // }, [])
+
   return (
     <Cover>
       {showSvg ? (
@@ -39,6 +51,11 @@ function Servie2({
         {showTitle ? (
           <>
             <div className="titleSherotem">
+              {/* {myElementIsVisible === true ? (
+                <>{console.log("THE MENY IS SHOWING")}</>
+              ) : (
+                <>{console.log("THE MENY IS NOT SHOWING")}</>
+              )} */}
               <h1> השירותים שלנו</h1>
               <p>
                 אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
@@ -48,9 +65,15 @@ function Servie2({
               <Menuinside>
                 <div className="menuInside">
                   <AnchorLink href="#web" offset="50">
-                    <h1> בניית אתרים</h1>
+                    <h1
+                      className={myElementIsVisible ? "test1 " : "test2"}
+                      ref={myRef}
+                    >
+                      {" "}
+                      בניית אתרים
+                    </h1>
                   </AnchorLink>
-
+                  {console.log(myElementIsVisible ? "yes" : "No")}
                   <AnchorLink href="#ux" offset="50">
                     <h1> עיצוב חווית משתמש</h1>
                   </AnchorLink>
@@ -209,6 +232,20 @@ const Cover = styled.div`
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     padding: 5rem;
+    /* display: none; */
+
+    background-color: var(--clr-bgc);
+  }
+  .titleSherotemHide {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    padding: 5rem;
+    position: fixed;
+    top: 0px;
+    /* display: none; */
+    /* position: fixed;
+    top: 0px; */
 
     background-color: var(--clr-bgc);
   }
@@ -218,7 +255,12 @@ const Cover = styled.div`
     text-align: center;
     padding-top: 50px;
   }
-
+  .test1 {
+    color: red;
+  }
+  .test2 {
+    color: white;
+  }
   .titleSherotem > p {
     max-width: 1000px;
     font-size: 1rem;
