@@ -7,21 +7,15 @@ import ServiceLight2 from "../components/Elias/ServiceLight2"
 import Footer from "../components/_App/Footer"
 import Ourwork from "../components/Elias/Ourwork"
 import image1 from "../assets/images/Elias/bnyatataremweb.jpg"
-// import image1 from "../assets/images/Elias/TST.png"
 import image2 from "../assets/images/Elias/7.jpg"
-// import image3 from "../assets/images/Elias/two-people-collaborating-online.jpg"
 import image3 from "../assets/images/Elias/uxuiweb.jpg"
 import image4 from "../assets/images/Elias/graphicdesignerweb.jpg"
 import image5 from "../assets/images/Elias/photographyweb.jpg"
 import image6 from "../assets/images/Elias/socialmediaweb2.jpg"
 import image8 from "../assets/images/Elias/cont1.png"
-// import image8 from "../assets/images/Elias/cont.jpg"
 import image9 from "../assets/images/Elias/contactnews.png"
-import Contact from "../components/Contact/ContactForm"
 import ContacForm from "../components/Elias/ContacForm"
-import Mailchimp from "../components/Elias/Mailchimp"
 import Mailchimp2 from "../components/Elias/Mailchimp2"
-import styled from "styled-components"
 import { useInView } from "react-intersection-observer"
 import RightMenu from "../components/Elias/RightMenu"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
@@ -35,6 +29,7 @@ function Index() {
       {breakpoints.sm ? <></> : <> {myElementIsVisible && <RightMenu />}</>}
 
       <MainBannerElias2 idSection="home" />
+
       <div className="spacer layer1"></div>
 
       <Servie2

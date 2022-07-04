@@ -1,121 +1,42 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
-import { words } from "../../Style"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import svgi from "../../assets/images/Elias/wowo.png"
-
-function Servie2({
-  title1,
-  title2,
-  design,
-  imageRow,
-  about,
-  showTitle,
-  number,
-  description,
-  idSection,
-  showSvg,
-}) {
-  const style1 = { color: "white", fontSize: "3rem" }
-  const [showMore, setShowMore] = useState(false)
-
-  const handelShowMore = () => {
-    if (showMore) {
-      setShowMore(false)
-    } else setShowMore(true)
-  }
+function Titlesherotem({ idSection }) {
   return (
     <Cover>
-      {showSvg ? (
-        <>
-          <img src={svgi} alt="" className="spacer" />
-        </>
-      ) : (
-        <></>
-      )}
+      <div className="titleSherotem">
+        <h1> השירותים שלנו</h1>
+        <p>
+          אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל מהרעיון
+          והניסוח העיקרי של אסטרטגיית המוצר, עיצוב ובניית אב טיפוס, בדיקתו עם
+          משתמשים ולסיום יצירת המוצר המוגמר
+        </p>
+        <Menuinside>
+          <div className="menuInside">
+            <AnchorLink href="#web" offset="50">
+              <h1> בניית אתרים</h1>
+            </AnchorLink>
 
-      <section id={idSection}>
-        {showTitle ? (
-          <>
-            <div className="titleSherotem">
-              <h1> השירותים שלנו</h1>
-              <p>
-                אנו מציעים מכלול של שירותים בבניה ופיתוח מוצר כערך עסקי – החל
-                מהרעיון והניסוח העיקרי של אסטרטגיית המוצר, עיצוב ובניית אב
-                טיפוס, בדיקתו עם משתמשים ולסיום יצירת המוצר המוגמר
-              </p>
-              <Menuinside>
-                <div className="menuInside">
-                  <AnchorLink href="#web" offset="50">
-                    <h1> בניית אתרים</h1>
-                  </AnchorLink>
-
-                  <AnchorLink href="#ux" offset="50">
-                    <h1> עיצוב חווית משתמש</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#shop" offset="50">
-                    <h1> חנויות אונליין</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#design1" offset="50">
-                    <h1> עיצוב גרפי</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#photography" offset="50">
-                    <h1> צילום מוצרים</h1>
-                  </AnchorLink>
-                  <AnchorLink href="#kedom" offset="50">
-                    <h1>קידום ברשתות חברתיות</h1>
-                  </AnchorLink>
-                </div>
-              </Menuinside>
-            </div>
-          </>
-        ) : (
-          <></>
-        )}
-        <section id="web">
-          <div className="wrapper">
-            <div className="image1">
-              <img src={imageRow} alt="" className="image" />
-            </div>
-
-            <div className="text">
-              <div>
-                <div className="number">{number}</div>
-
-                <h1 className="title">{title1}</h1>
-
-                <h1 className="title1">{title2}</h1>
-                {showMore ? (
-                  <></>
-                ) : (
-                  <>
-                    <p className="description">{about}</p>
-                  </>
-                )}
-
-                {showMore ? (
-                  <>
-                    <div className="description">
-                      <p style={{ color: "white" }}>{description}</p>
-                    </div>
-                    <div className="btn1">
-                      <Button onClick={handelShowMore}>{words.lessInfo}</Button>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="btn1">
-                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
+            <AnchorLink href="#ux" offset="50">
+              <h1> עיצוב חווית משתמש</h1>
+            </AnchorLink>
+            <AnchorLink href="#shop" offset="50">
+              <h1> חנויות אונליין</h1>
+            </AnchorLink>
+            <AnchorLink href="#design1" offset="50">
+              <h1> עיצוב גרפי</h1>
+            </AnchorLink>
+            <AnchorLink href="#photography" offset="50">
+              <h1> צילום מוצרים</h1>
+            </AnchorLink>
+            <AnchorLink href="#kedom" offset="50">
+              <h1>קידום ברשתות חברתיות</h1>
+            </AnchorLink>
           </div>
-        </section>
-      </section>
-      <div className="backgroundSVG"></div>
+        </Menuinside>
+      </div>
+      <section id={idSection}> </section>
     </Cover>
   )
 }
@@ -144,14 +65,6 @@ const Menuinside = styled.div`
       color: var(--clr-font);
     }
   }
-`
-const Button = styled.button`
-  font-size: 1em;
-  margin: 1.5rem 0rem;
-  padding: 1em 5em;
-  border-radius: 50px;
-  background-color: var(--clr-primary);
-  color: white;
 `
 
 const Cover = styled.div`
@@ -350,4 +263,4 @@ const Cover = styled.div`
     }
   }
 `
-export default Servie2
+export default Titlesherotem

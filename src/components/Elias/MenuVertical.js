@@ -1,33 +1,22 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-// import logoLight from "../../assets/images/Elias/logo.png"
 import logoLight from "../../assets/images/Elias/logon.png"
-// import logoDark from "../../assets/images/Elias/logoLight.png"
 import logoDark from "../../assets/images/Elias/logonewdark.png"
 import textLogo from "../../assets/images/Elias/textlogo.png"
 import textLogoBlack from "../../assets/images/Elias/textlogoblack.png"
 import backtotopwhite from "../../assets/images/Elias/backtotopwhite.png"
 import backtotopBlack from "../../assets/images/Elias/backtotopBlack.png"
-import Typewriter from "typewriter-effect"
 import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
-import { device } from "../../Style"
+
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { BsWhatsapp } from "react-icons/bs"
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect"
+
 function MenuVertical({ toggleTheme, isDarkoMode }) {
   const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
   const [showBtnTop, setShowBtnTop] = useState(false)
-  const [firstActive, setFirstActive] = useState(true)
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const locationScroll = window.scrollY
 
   const changeColor = () => {
     if (window.scrollY >= 80) {

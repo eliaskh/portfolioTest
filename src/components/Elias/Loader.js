@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react"
 import styled from "styled-components"
-import logoLight from "../../assets/images/Elias/logon.png"
-import logoDark from "../../assets/images/Elias/logonewdark.png"
-import Typewriter from "typewriter-effect"
+
 import image3 from "../../assets/images/Elias/uxuiweb.jpg"
 import image4 from "../../assets/images/Elias/graphicdesignerweb.jpg"
 import image5 from "../../assets/images/Elias/photographyweb.jpg"
@@ -12,22 +10,6 @@ function Loader() {
   const [startImage, setStartImage] = useState(null)
   useEffect(() => {
     setmathRandom(Math.floor(Math.random() * 3))
-
-    // switch (mathRandom) {
-    //   case 0:
-    //     setStartImage(image3)
-
-    //     break
-    //   case 1:
-    //     setStartImage(image4)
-    //     break
-    //   case 2:
-    //     setStartImage(image5)
-    //     break
-    //   default:
-    //     setStartImage(image3)
-    //     break
-    // }
   }, [])
 
   return (
@@ -148,7 +130,7 @@ const Cover = styled.div`
   }
   .text1 {
     position: absolute;
-    top: 80%;
+    top: 75%;
     transform: translate(50%, -50%);
     color: white;
   }

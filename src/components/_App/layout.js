@@ -8,10 +8,16 @@ import styled from "styled-components"
 import { Divider } from "@material-ui/core"
 import Loader from "../../components/Elias/Loader.js"
 import image1 from "../../assets/images/Elias/useit.svg"
-const Layout = ({ children }) => {
+const Layout = ({
+  children,
+  webElementVisible,
+
+  homeElementVisible,
+}) => {
   const [theme, settheme] = useState("dark-theme")
   const [isDarkoMode, setisDarkoMode] = useState(true)
   const [isLoading, setisLoading] = useState(true)
+  const [what, setWhat] = useState(null)
 
   const toggleTheme = () => {
     if (theme === "light-theme") {
@@ -42,7 +48,13 @@ const Layout = ({ children }) => {
     <>
       {children}
       {/* <NavbarStyleFour toggleTheme={toggleTheme} isDarkoMode={isDarkoMode} /> */}
-      <MenuVertical toggleTheme={toggleTheme} isDarkoMode={isDarkoMode} />
+      <MenuVertical
+        toggleTheme={toggleTheme}
+        isDarkoMode={isDarkoMode}
+        webElementVisible={webElementVisible}
+        homeElementVisible={homeElementVisible}
+      />
+
       {/* <GoTop scrollStepInPx="100" delayInMs="10.50" /> */}
     </>
   )
