@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { device } from "../../Style"
 import { words } from "../../Style"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
-import image8 from "../../assets/images/Elias/cont1.png"
+import image8 from "../../assets/images/Elias/cont2.png"
 
 import image9 from "../../assets/images/Elias/newsletter.png"
 function ContacForm({
