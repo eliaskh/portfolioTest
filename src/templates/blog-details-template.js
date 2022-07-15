@@ -5,7 +5,7 @@ import Layout from "../components/_App/layout"
 import SEO from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
-// import PageBanner from '../components/Common/PageBanner'
+import PageBanner from "../components/Common/PageBanner"
 import BlogSidebar from "../components/Blog/BlogSidebar"
 import * as Icon from "react-feather"
 import { Link } from "gatsby"
