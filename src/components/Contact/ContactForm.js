@@ -1,7 +1,5 @@
 import React from "react"
 
-import ContactImg from "../../assets/images/contact-img.png"
-
 const ContactForm = () => {
   return (
     <div className="contact-area ptb-80">

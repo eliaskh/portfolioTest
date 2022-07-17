@@ -1,13 +1,12 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-
 import image3 from "../../assets/images/Elias/uxuiweb.jpg"
 import image4 from "../../assets/images/Elias/graphicdesignerweb.jpg"
 import image5 from "../../assets/images/Elias/photographyweb.jpg"
 
 function Loader() {
   const [mathRandom, setmathRandom] = useState("")
-  const [startImage, setStartImage] = useState(null)
+
   useEffect(() => {
     setmathRandom(Math.floor(Math.random() * 3))
   }, [])
@@ -15,10 +14,9 @@ function Loader() {
   return (
     <>
       <Cover>
-        {console.log(mathRandom)}
         <div className="allBody">
           <div>
-            {mathRandom == 0 && (
+            {mathRandom === 0 && (
               <>
                 <img src={image3} alt="Logo" className="imageLogo" />
                 <div className="text1">
@@ -26,22 +24,22 @@ function Loader() {
                 </div>
               </>
             )}
-            {mathRandom == 1 && (
+            {mathRandom === 1 && (
               <>
                 <img src={image4} alt="Logo" className="imageLogo" />
                 <div className="text1">
                   <h1> מומחים בעיצוב גרפי </h1>
                 </div>
               </>
-            )}{" "}
-            {mathRandom == 2 && (
+            )}
+            {mathRandom === 2 && (
               <>
                 <img src={image5} alt="Logo" className="imageLogo" />
                 <div className="text1">
                   <h1>אוהבים לצלם</h1>
                 </div>
               </>
-            )}{" "}
+            )}
           </div>
         </div>
       </Cover>

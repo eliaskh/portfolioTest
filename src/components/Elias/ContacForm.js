@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
-import { words } from "../../Style"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import image8 from "../../assets/images/Elias/cont2.png"
 
@@ -16,18 +15,12 @@ function ContacForm({
   description,
   idSection,
 }) {
-  const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
-  const [showMore, setShowMore] = useState(false)
   const breakpoints = useBreakpoint()
-  const handelShowMore = () => {
-    if (showMore) {
-      setShowMore(false)
-    } else setShowMore(true)
-  }
+
   return (
     <Cover>
       <section id={idSection}>
-        {design == "first" ? (
+        {design === "first" ? (
           <>
             <div className="wrapper">
               {breakpoints.sm ? (

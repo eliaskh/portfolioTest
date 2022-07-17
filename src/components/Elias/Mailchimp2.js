@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react"
 import styled from "styled-components"
 import { device } from "../../Style"
-import { words } from "../../Style"
+
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import svgi from "../../assets/images/Elias/wowo.png"
-import svgi1 from "../../assets/images/Elias/right.svg"
+
 import addToMailchimp from "gatsby-plugin-mailchimp"
 
 function Mailchimp2({
@@ -19,15 +19,13 @@ function Mailchimp2({
   idSection,
   showSvg,
 }) {
-  const style1 = { color: "white", fontSize: "3rem" }
-  const [showMore, setShowMore] = useState(false)
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("הירשם כדי לקבל את החדש שלנו")
   const myContainer = useRef(null)
   const [allwow, setAllwow] = useState(null)
   const [css1, setCss1] = useState("wrapper")
   const [widthscreen, setWidthscreen] = useState(null)
-  const [heightscreen, setHeightscreen] = useState(null)
+
   const ChangeHandel = event => {
     setEmail(event.target.value)
   }
@@ -43,18 +41,11 @@ function Mailchimp2({
     //   })
     setEmail("")
   }
-  const handelShowMore = () => {
-    if (showMore) {
-      setShowMore(false)
-    } else setShowMore(true)
-  }
 
   useEffect(() => {
     const AllPage = document.getElementById("allPage")
     setAllwow(AllPage)
     console.log(AllPage)
-    setWidthscreen(window.innerWidth)
-    setHeightscreen(window.innerHeight)
   }, [widthscreen])
 
   return (

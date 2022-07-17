@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import * as Icon from "react-feather"
+
 import { graphql, useStaticQuery } from "gatsby"
-import DarkModeToggle from "react-dark-mode-toggle"
-import { BsFillSunFill, BsMoonFill, BsSun, BsMoon } from "react-icons/bs"
+
+import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
 import logoLight from "../../assets/images/Elias/logo.png"
 import logoDark from "../../assets/images/Elias/logoLight.png"
 import styled from "styled-components"
-import AnchorLink from "react-anchor-link-smooth-scroll"
+
 const query = graphql`
   {
     strapiSiteLogo {

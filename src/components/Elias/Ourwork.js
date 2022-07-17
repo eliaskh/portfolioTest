@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import styled from "styled-components"
 import "swiper/css"
@@ -14,10 +14,6 @@ import img5 from "../../assets/images/Elias/5-shfaf.png"
 import img6 from "../../assets/images/Elias/imageavra.png"
 import img7 from "../../assets/images/Elias/1imageavra.png"
 function Ourwork({ idSection }) {
-  const [showInfo, setShowInfo] = useState(true)
-  const taggleInfo = () => {
-    setShowInfo(!showInfo)
-  }
   return (
     <Cover>
       <section id={idSection}>
@@ -56,25 +52,25 @@ function Ourwork({ idSection }) {
             }}
           >
             <SwiperSlide>
-              <img src={img1} className="imgSlider" />
+              <img src={img1} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} className="imgSlider" />
+              <img src={img2} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img3} className="imgSlider" />
+              <img src={img3} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img4} className="imgSlider" />
+              <img src={img4} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img5} className="imgSlider" />
+              <img src={img5} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img6} className="imgSlider" />
+              <img src={img6} className="imgSlider" alt="our work" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img7} className="imgSlider" />
+              <img src={img7} className="imgSlider" alt="our work" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -82,14 +78,6 @@ function Ourwork({ idSection }) {
     </Cover>
   )
 }
-const Button = styled.button`
-  font-size: 1em;
-  margin: 1.5rem 0rem;
-  padding: 1em 5em;
-  border-radius: 50px;
-  background-color: var(--clr-primary);
-  color: white;
-`
 
 const Cover = styled.div`
   .wrapper {

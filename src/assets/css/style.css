@@ -125,10 +125,21 @@ body {
   --clr-font: #fff;
   --clr-primary: #025597;
   /* --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #3535ff 100%); */
-  --clr-Gradient: linear-gradient(157.16deg, #c90505 0%, #2a2a6b 100%);
+  --clr-Gradient: linear-gradient(
+    35deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(292deg 100% 21%) 19%,
+    hsl(320deg 100% 29%) 39%,
+    hsl(335deg 100% 39%) 60%,
+    hsl(346deg 100% 45%) 80%,
+    hsl(0deg 98% 51%) 100%
+  );
   --clr-header: #191919;
   --clr-border-menu: rgba(255, 255, 255, 0.1);
   --bg-image: url(../../assets/images/Elias/wa.svg);
+
+  /* background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #e92427 100%); */
 }
 .swiper-container {
   width: 480px;

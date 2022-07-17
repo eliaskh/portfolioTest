@@ -17,7 +17,6 @@ function Servie2({
   idSection,
   showSvg,
 }) {
-  const style1 = { color: "white", fontSize: "3rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {

@@ -13,7 +13,6 @@ function ServiceLight2({
   description,
   idSection,
 }) {
-  const style1 = { color: "var(--clr-font)", fontSize: "4rem" }
   const [showMore, setShowMore] = useState(false)
 
   const handelShowMore = () => {
