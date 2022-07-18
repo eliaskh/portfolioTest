@@ -54,6 +54,10 @@ const Footer = () => {
                 >
                   <h2> CreativeLab</h2>
                 </a>
+                <h3 className="whatAbout">
+                  פיתוח אתרים | ניהול אתרים | שיווק דיגטלי | עיצוב גרפי | צילום
+                  מקצועי
+                </h3>
               </p>
             </div>
 
@@ -71,6 +75,10 @@ const Footer = () => {
   )
 }
 const Cover = styled.div`
+  .all {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
   .container2 {
     height: 100px;
     display: flex;
@@ -84,6 +92,9 @@ const Cover = styled.div`
   }
   h2 {
     color: var(--clr-font);
+  }
+  .whatAbout {
+    color: #767676;
   }
 `
 export default Footer

@@ -94,7 +94,7 @@ const Cover = styled.div`
   }
   .Typewriter {
     text-align: center;
-    color: #ffffffad;
+    color: #ffffff;
   }
   .spacer {
     aspect-ratio: 900/300;
