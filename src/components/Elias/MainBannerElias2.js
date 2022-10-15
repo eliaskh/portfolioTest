@@ -30,16 +30,12 @@ function MainBannerElias2({ idSection }) {
             <div className="icons1">
               <AnchorLink href="#things">
                 <Button>
-                  <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                    השירותים שלנו
-                  </div>
+                  <div style={{ fontSize: "20px" }}>השירותים שלנו</div>
                 </Button>
               </AnchorLink>
               <AnchorLink href="#work">
                 <Button1>
-                  <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-                    העבודות שלנו
-                  </div>
+                  <div style={{ fontSize: "20px" }}>העבודות שלנו</div>
                 </Button1>
               </AnchorLink>
             </div>

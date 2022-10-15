@@ -127,8 +127,8 @@ body {
   /* --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #3535ff 100%); */
   --clr-Gradient: linear-gradient(
     15deg,
-    #dc2430,
-    #6438ff
+    #2d02c3,
+    #dc2430
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   --clr-header: #191919;
   --clr-border-menu: rgba(255, 255, 255, 0.1);
