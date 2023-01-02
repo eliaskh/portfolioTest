@@ -96,7 +96,7 @@ function Index() {
           title1={"צילום מוצרים"}
           title2={"Photography"}
           design={"first"}
-          about={"צילום ברמה מקצועית כל מיני מוצרים, כמו מנות אוכל ועוד"}
+          about={"צילום ברמה מקצועית , כמו מנות אוכל ועוד"}
           imageRow={image5}
           showTitle={false}
           number={"5"}
