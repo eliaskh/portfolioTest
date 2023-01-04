@@ -39,7 +39,7 @@ function ContacForm({
 
               <div className="formC">
                 <div className="titleSherotem">
-                  <h1>נשמע לשמוע ממך</h1>
+                  <h1>נשמח לשמוע ממך</h1>
                   <p>מלא את הפרטים ונחזור אליך בהקדם</p>
                 </div>
                 <form
