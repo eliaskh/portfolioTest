@@ -64,37 +64,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `https://eliasportfoliotest.herokuapp.com`,
-        queryLimit: 1000,
-        contentTypes: [
-          "top-features",
-          "our-features",
-          "projects",
-          "blogs",
-          "services",
-        ],
-        singleTypes: [
-          "banner",
-          "why-choose-us",
-          "it-startup-banner",
-          "cloud-hosting-services",
-          "development-service",
-          "team",
-          "our-awesome-team-slider",
-          "fun-facts",
-          "pricing-style-one",
-          "partner",
-          "feedback",
-          "our-features-header",
-          "it-top-features",
-          "our-recent-works-header",
-          "it-startup-banner-2",
-          "our-services-header",
-          "blog-header",
-          "site-logo",
-        ],
-      },
+      options: {}    
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
