@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/_App/layout"
 import SEO from "../components/_App/seo"
+import Footer from "../components/_App/Footer"
 import MainBannerElias2 from "../components/Elias/MainBannerElias2"
 import Servie2 from "../components/Elias/Servie2"
 import ServiceLight2 from "../components/Elias/ServiceLight2"
@@ -119,6 +120,7 @@ function Index() {
       {/* <NewsletterStyleTwo /> */}
       {/* <Mailchimp /> */}
       <Mailchimp2 imageRow={image9} design={"no"} />
+      <Footer />
     </Layout>
   )
 }
