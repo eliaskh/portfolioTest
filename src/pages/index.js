@@ -4,7 +4,6 @@ import SEO from "../components/_App/seo"
 import MainBannerElias2 from "../components/Elias/MainBannerElias2"
 import Servie2 from "../components/Elias/Servie2"
 import ServiceLight2 from "../components/Elias/ServiceLight2"
-import Footer from "../components/_App/Footer"
 import Ourwork from "../components/Elias/Ourwork"
 import image1 from "../assets/images/Elias/bnyatataremweb.jpg"
 import image2 from "../assets/images/Elias/7.jpg"
@@ -73,9 +72,7 @@ function Index() {
           showTitle={false}
           number={"3"}
           description="הקמת חנות וירטואלית היא הדרך למנף מכירות ויכולת להגיע לכל לקוח פוטנציאלי בארץ ובעולם כולו.
-
 אנו משתמשים בטכנולוגיות המתקדמות בעולם כדי לפתח ולעצב את החנות ולתת ללקוח נוחות וביטחון בקניה מקוונת.
-
 החשיבות הגבוהה בביצועים המהירים של האתר שכנראה יכיל מאות של מוצרים היא קריטית בשביל מנועי החיפוש הגדולים, וכן עמידה בקתן נגישות ואבטחת מידע בזמן סליקת האשראי."
         />
         <ServiceLight2
@@ -111,9 +108,7 @@ function Index() {
           imageRow={image6}
           number={"6"}
           description="ניתוח תנועת הגולשים היא הדרך החשובה ביותר להבנה ודיוק כחלק בלתי נפרד בקידום האתר שלכם.
-
 איסוף וניתוח המידע על אופי המבקרים באתר יתן לנו ולכם כלים לקידומו ולשיפור החווית משתמש בזמן המעבר בין הדפים באתר.
-
 בעזרת ניטור וניתוח בזמן אמת נגיע לפילוח שוק אופטימלי שבעזרתו נבנה תהליכים למנועי החיפוש המובילים."
         />
       </div>
@@ -124,9 +119,9 @@ function Index() {
       {/* <NewsletterStyleTwo /> */}
       {/* <Mailchimp /> */}
       <Mailchimp2 imageRow={image9} design={"no"} />
-      <Footer />
     </Layout>
   )
 }
 
 export default Index
+
