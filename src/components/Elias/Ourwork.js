@@ -84,8 +84,8 @@ const Cover = styled.div`
     margin-top: 0rem;
     /* margin-bottom: 5rem; */
     padding-bottom: 5rem;
-    /* background-color: #0093e9; */
-    background-image: var(--clr-Gradient);
+    background-color: var(--clr-baner);
+    /* background-image: var(--clr-Gradient); */
 
     /* background: linear-gradient(157.16deg, #ff0055 0%, #000066 100%); */
   }

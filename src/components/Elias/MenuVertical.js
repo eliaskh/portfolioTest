@@ -9,7 +9,7 @@ import backtotopBlack from "../../assets/images/Elias/backtotopBlack.png"
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
-
+import { BiMoon, BiSun } from "react-icons/bi"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { BsWhatsapp } from "react-icons/bs"
 
@@ -122,10 +122,10 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                   <div>
                     {isDarkoMode ? (
                       <div>
-                        <BsMoonFill
+                        <BiMoon
                           // className={classTwo}
                           style={{
-                            color: "#f50256",
+                            color: `var(--clr-primary)`,
                             marginTop: "3px",
                             marginRight: "7px",
                             cursor: "pointer",
@@ -136,9 +136,9 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                       </div>
                     ) : (
                       <div>
-                        <BsFillSunFill
+                        <BiSun
                           style={{
-                            color: "black",
+                            color: `var(--clr-primary)`,
                             marginTop: "3px",
                             marginRight: "7px",
                             cursor: "pointer",

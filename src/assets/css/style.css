@@ -113,25 +113,30 @@ body {
   --clr-bgc: #fff;
   --clr-font: #000;
   --clr-primary: #ff002b;
-  --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  /* --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
+    --clr-Gradient: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   --clr-header: #fff;
   --clr-border-menu: rgba(0, 0, 0, 0.1);
   --bg-image: url(../../assets/images/Elias/useit.svg);
   --clr-baner: #242a32;
 }
 .dark-theme {
-  --clr-menu: #191919;
-  --clr-menu-full: #191919;
+  --clr-menu: #000000;
+  --clr-menu-full: #000000;
   --clr-bgc: #202020;
   --clr-font: #fff;
   --clr-primary: #29a587;
-
-  /* --clr-Gradient: linear-gradient(157.16deg, #ff0055 0%, #3535ff 100%); */
-  --clr-Gradient: linear-gradient(
+  /* --clr-Gradient: linear-gradient(
     15deg,
     #2d02c3,
     #dc2430
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );  */
+    --clr-Gradient: linear-gradient(
+    15deg,
+    
+  #242a33,
+  #29a587
+  ); 
   --clr-header: #191919;
   --clr-border-menu: rgba(255, 255, 255, 0.1);
   --bg-image: url(../../assets/images/Elias/wa.svg);

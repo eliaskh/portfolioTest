@@ -4,7 +4,10 @@ import image1 from "../../assets/images/Elias/astranaut-runs-along-endless-woode
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import Astro from "../../assets/images/Elias/endless-constellation.svg"
+import Astro from "../../assets/images/Elias/bg1.jpg"
+import { FaFacebook } from "react-icons/fa"
+import { AiFillFacebook, AiFillLinkedin, AiFillMail } from "react-icons/ai"
+
 function MainBannerElias2({ idSection }) {
   return (
     <>
@@ -39,6 +42,12 @@ function MainBannerElias2({ idSection }) {
                   <div style={{ fontSize: "20px" }}>העבודות שלנו</div>
                 </Button1>
               </AnchorLink>
+            </div>
+            <div className="icons2">
+              <AiFillFacebook size={35} color={`var(--clr-primary)`} />
+
+              <AiFillLinkedin size={35} color={`var(--clr-primary)`} />
+              <AiFillMail size={35} color={`var(--clr-primary)`} />
             </div>
           </div>
           {/*  */}
@@ -83,6 +92,17 @@ const Cover = styled.div`
 
     color: #fd4766;
   }
+  .icons2 {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    gap: 50px;
+
+    color: #fd4766;
+  }
   .whoWeAre {
     width: 200px;
     height: 70px;
@@ -115,11 +135,11 @@ const Cover = styled.div`
       gap: 1rem;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       padding: 3rem;
     }
     .Typewriter {
-      font-size: 1rem;
+      font-size: 2rem;
     }
   }
   @media ${device.tablet} {
@@ -128,10 +148,10 @@ const Cover = styled.div`
       gap: 1rem;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 5rem;
     }
     .Typewriter {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   @media ${device.desktop} {
@@ -141,10 +161,10 @@ const Cover = styled.div`
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 6rem;
     }
     .Typewriter {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
 `
