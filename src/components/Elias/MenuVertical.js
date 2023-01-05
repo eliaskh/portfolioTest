@@ -331,7 +331,7 @@ const Cover = styled.div`
     right: 0px;
     top: 0px;
     width: 100vw;
-    height: 80px;
+    height: 100px;
     background-color: var(--clr-menu-full);
     display: grid;
     grid-template-columns: 25% 1fr 25%;

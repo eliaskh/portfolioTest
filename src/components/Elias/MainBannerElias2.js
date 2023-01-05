@@ -20,7 +20,7 @@ function MainBannerElias2({ idSection }) {
               options={{
                 strings: [
                   "בניית אתרים",
-                  "עיצוב חווית משתמש",
+                  "צילום מקצועי",
                   "פיתוח אפליקציות מובייל",
                   "חנויות אונליין",
                   "עיצוב גרפי",
@@ -30,7 +30,7 @@ function MainBannerElias2({ idSection }) {
                 loop: true,
               }}
             />
-            <div></div>
+
             <div className="icons1">
               <AnchorLink href="#things">
                 <Button>
@@ -44,10 +44,10 @@ function MainBannerElias2({ idSection }) {
               </AnchorLink>
             </div>
             <div className="icons2">
-              <AiFillFacebook size={35} color={`var(--clr-primary)`} />
+              <AiFillFacebook size={40} color={`var(--clr-primary)`} />
 
-              <AiFillLinkedin size={35} color={`var(--clr-primary)`} />
-              <AiFillMail size={35} color={`var(--clr-primary)`} />
+              <AiFillLinkedin size={40} color={`var(--clr-primary)`} />
+              <AiFillMail size={40} color={`var(--clr-primary)`} />
             </div>
           </div>
           {/*  */}
@@ -136,11 +136,11 @@ const Cover = styled.div`
   @media ${device.mobileS} {
     .icons1 {
       grid-template-columns: 1fr;
-      gap: 5px;
+      /* gap: 5px; */
     }
     h1 {
       font-size: 3rem;
-      padding: 3rem;
+      padding: 3rem 3rem 1rem 3rem;
     }
     .Typewriter {
       font-size: 2rem;
@@ -149,7 +149,7 @@ const Cover = styled.div`
   @media ${device.tablet} {
     .icons1 {
       grid-template-columns: 1fr 1fr;
-      gap: 5px;
+      /* gap: 5px; */
     }
     h1 {
       font-size: 5rem;
@@ -161,7 +161,7 @@ const Cover = styled.div`
   @media ${device.desktop} {
     .icons1 {
       grid-template-columns: 1fr 1fr;
-      gap: 5px;
+      /* gap: 5px; */
     }
 
     h1 {
