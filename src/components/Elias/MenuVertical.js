@@ -10,9 +10,10 @@ import { BsFillSunFill, BsMoonFill } from "react-icons/bs"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
 import { BiMoon, BiSun } from "react-icons/bi"
+import { HiSun } from "react-icons/hi"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { BsWhatsapp } from "react-icons/bs"
-
+import { device } from "../../Style"
 function MenuVertical({ toggleTheme, isDarkoMode }) {
   const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
@@ -41,77 +42,36 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                 {/* whatand call */}
 
                 <div className="whatandcall">
-                  {isDarkoMode ? (
-                    <>
-                      <a
-                        href="https://wa.me/972528963616"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsWhatsapp size="25px" color="white" />
-                      </a>
-                    </>
-                  ) : (
-                    <>
-                      <a
-                        href="https://wa.me/972528963616"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsWhatsapp size="25px" color="black" />
-                      </a>
-                    </>
-                  )}
+                  <a
+                    href="https://wa.me/972528963616"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button>לפרטים</Button>
+                  </a>
                 </div>
 
                 <div className="logoMobile">
                   <div>
-                    {navBar1 ? (
-                      <>
-                        {" "}
-                        <Link to="/">
-                          {isDarkoMode ? (
-                            <>
-                              <img
-                                src={textLogo}
-                                alt="Logo"
-                                style={{ height: "auto", paddingTop: "7px" }}
-                              />
-                            </>
-                          ) : (
-                            <>
-                              <img
-                                src={textLogoBlack}
-                                alt="Logo"
-                                style={{ height: "auto", paddingTop: "7px" }}
-                              />
-                            </>
-                          )}
-                        </Link>
-                      </>
-                    ) : (
-                      <>
-                        <Link to="/">
-                          {isDarkoMode ? (
-                            <>
-                              <img
-                                src={logoLight}
-                                alt="Logo"
-                                style={{ height: "50px", paddingTop: "7px" }}
-                              />
-                            </>
-                          ) : (
-                            <>
-                              <img
-                                src={logoDark}
-                                alt="Logo"
-                                style={{ height: "50px", paddingTop: "7px" }}
-                              />
-                            </>
-                          )}
-                        </Link>
-                      </>
-                    )}
+                    <Link to="/">
+                      {isDarkoMode ? (
+                        <>
+                          <img
+                            src={logoLight}
+                            alt="Logo"
+                            style={{ height: "50px", paddingTop: "7px" }}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <img
+                            src={logoDark}
+                            alt="Logo"
+                            style={{ height: "50px", paddingTop: "7px" }}
+                          />
+                        </>
+                      )}
+                    </Link>
                   </div>
                   <div></div>
                 </div>
@@ -130,20 +90,20 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="22px"
+                          size="26px"
                           onClick={toggleTheme}
                         />
                       </div>
                     ) : (
                       <div>
-                        <BiSun
+                        <HiSun
                           style={{
                             color: `var(--clr-primary)`,
                             marginTop: "3px",
                             marginRight: "7px",
                             cursor: "pointer",
                           }}
-                          size="22px"
+                          size="30px"
                           onClick={toggleTheme}
                         />
                       </div>
@@ -280,23 +240,23 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                   </div>
                   {isDarkoMode ? (
                     <div>
-                      <BsMoonFill
+                      <BiMoon
                         // className={classTwo}
                         style={{
-                          color: "#f50256",
+                          color: `var(--clr-primary)`,
                           marginTop: "3px",
                           marginRight: "7px",
                           cursor: "pointer",
                         }}
-                        size="22px"
+                        size="26px"
                         onClick={toggleTheme}
                       />
                     </div>
                   ) : (
                     <div>
-                      <BsFillSunFill
+                      <HiSun
                         style={{
-                          color: "black",
+                          color: `var(--clr-primary)`,
                           marginTop: "3px",
                           marginRight: "7px",
                           cursor: "pointer",
@@ -482,6 +442,18 @@ const CoverMobile = styled.div`
     left: 20px;
     bottom: 70px;
     z-index: 99999999;
+  }
+`
+const Button = styled.button`
+  font-size: 1em;
+  margin: 1em;
+  padding: 1em 5em;
+  border-radius: 50px;
+  background-color: var(--clr-primary);
+  color: white;
+
+  @media ${device.mobileS} {
+    padding: 0.5em 2em;
   }
 `
 export default MenuVertical

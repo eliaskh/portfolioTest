@@ -59,6 +59,10 @@ function MainBannerElias2({ idSection }) {
 }
 
 const Cover = styled.div`
+  .Typewriter__cursor {
+    /* background-color: var(--clr-primary); */
+    color: var(--clr-primary);
+  }
   /* background-image: url(${image1}); */
   background-position: center;
   background-repeat: no-repeat;
@@ -83,7 +87,7 @@ const Cover = styled.div`
     /* background-color: var(--clr-Gradient); */
   }
   .icons1 {
-    padding-top: 70px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -132,7 +136,7 @@ const Cover = styled.div`
   @media ${device.mobileS} {
     .icons1 {
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 5px;
     }
     h1 {
       font-size: 3rem;
@@ -145,7 +149,7 @@ const Cover = styled.div`
   @media ${device.tablet} {
     .icons1 {
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      gap: 5px;
     }
     h1 {
       font-size: 5rem;
@@ -157,7 +161,7 @@ const Cover = styled.div`
   @media ${device.desktop} {
     .icons1 {
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 5px;
     }
 
     h1 {
