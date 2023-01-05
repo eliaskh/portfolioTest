@@ -171,7 +171,8 @@ const Cover = styled.div`
   .wrapper {
     display: grid;
     height: 80vh;
-    background-image: var(--clr-Gradient);
+    /* background-image: var(--clr-Gradient); */
+    background-color: var(--clr-baner);
   }
   .wrapperWhite {
   }

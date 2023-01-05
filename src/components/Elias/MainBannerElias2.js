@@ -4,6 +4,7 @@ import image1 from "../../assets/images/Elias/astranaut-runs-along-endless-woode
 import Typewriter from "typewriter-effect"
 import { device } from "../../Style"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import Astro from "../../assets/images/Elias/endless-constellation.svg"
 function MainBannerElias2({ idSection }) {
   return (
     <>
@@ -63,7 +64,13 @@ const Cover = styled.div`
     align-content: center;
     height: 100vh;
     width: 100vw !important;
-    background-image: var(--clr-Gradient);
+    background-image: url(${Astro});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    /* background-color: var(--clr-baner); */
+    /* background-image: var(--clr-Gradient); */
     /* background-color: var(--clr-Gradient); */
   }
   .icons1 {
