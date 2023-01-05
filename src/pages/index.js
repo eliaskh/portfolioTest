@@ -102,7 +102,7 @@ function Index() {
         />
         <ServiceLight2
           idSection="kedom"
-          title1={"וקידום ברשתות חברתיות"}
+          title1={"קידום ברשתות חברתיות"}
           title2={"Social Media"}
           design={"no"}
           about={"פרסום בפייסבוק - שיווק וקידום ברשתות חברתיות"}
@@ -119,11 +119,10 @@ function Index() {
       {/* <Newsletter title1={"subscribe"} title2={"בניית אתרים"} imageRow={image7} /> */}
       {/* <NewsletterStyleTwo /> */}
       {/* <Mailchimp /> */}
-      <Mailchimp2 imageRow={image9} design={"no"} />
+      {/* <Mailchimp2 imageRow={image9} design={"no"} /> */}
       <Footer />
     </Layout>
   )
 }
 
 export default Index
-
