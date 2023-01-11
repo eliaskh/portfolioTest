@@ -120,6 +120,7 @@ body {
   --clr-border-menu: rgba(0, 0, 0, 0.1);
   --bg-image: url(../../assets/images/Elias/useit.svg);
   --clr-baner: #242a32;
+  --clr-btn: #ff002b;
 }
 .dark-theme {
   --clr-menu: #000000;
@@ -136,8 +137,9 @@ body {
   --clr-header: #191919;
   --clr-border-menu: rgba(255, 255, 255, 0.1);
   --bg-image: url(../../assets/images/Elias/wa.svg);
-  --clr-baner: #242a32;
-
+  /* --clr-baner: #242a32; */
+  --clr-baner: #29a587;
+  --clr-btn: #000000;
   /* background-color: #00DBDE;
 background-image: linear-gradient(90deg, #00DBDE 0%, #e92427 100%); */
 }

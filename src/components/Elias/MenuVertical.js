@@ -14,7 +14,9 @@ import { HiSun } from "react-icons/hi"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { BsWhatsapp } from "react-icons/bs"
 import { device } from "../../Style"
+import useLocalStorage from "../../Hooks"
 function MenuVertical({ toggleTheme, isDarkoMode }) {
+  const [themeLocal, setthemeLocal] = useLocalStorage("themeLocal", "light")
   const breakpoints = useBreakpoint()
   const [navBar1, setNavBar1] = useState(false)
   const [showBtnTop, setShowBtnTop] = useState(false)

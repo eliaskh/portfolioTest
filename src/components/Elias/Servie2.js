@@ -18,7 +18,7 @@ function Servie2({
   showSvg,
 }) {
   const [showMore, setShowMore] = useState(false)
-
+  const printableText = description.replace(/(?:\r\n|\r|\n)/g, "<br />")
   const handelShowMore = () => {
     if (showMore) {
       setShowMore(false)
@@ -98,14 +98,17 @@ function Servie2({
                     <div className="description">
                       <p style={{ color: "white" }}>{description}</p>
                     </div>
-                    <div className="btn1">
+                    <div>
                       <Button onClick={handelShowMore}>{words.lessInfo}</Button>
+                      {/* <Button variant="contained">Send</Button> */}
                     </div>
                   </>
                 ) : (
                   <>
-                    <div className="btn1">
-                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
+                    <div>
+                      <Button onClick={handelShowMore} className="btn1">
+                        {words.moreInfo}
+                      </Button>
                     </div>
                   </>
                 )}
@@ -149,11 +152,14 @@ const Button = styled.button`
   margin: 1.5rem 0rem;
   padding: 1em 5em;
   border-radius: 50px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-btn);
   color: white;
 `
 
 const Cover = styled.div`
+  .icon1 {
+    padding: 5px;
+  }
   .backgroundSVG {
     background-image: url("../../assets/images/Elias/layered-waves-haikei.svg");
   }
@@ -177,7 +183,7 @@ const Cover = styled.div`
   .wrapperWhite {
   }
   .number {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -254,8 +260,10 @@ const Cover = styled.div`
       font-size: 2rem;
       text-align: center;
       opacity: 0.8;
-      color: White;
+      color: var(--clr-btn);
       padding-bottom: 5px;
+      opacity: 0.7;
+      padding-bottom: 20px;
     }
 
     .description {
@@ -263,10 +271,19 @@ const Cover = styled.div`
       color: white;
       text-align: center;
       width: 100% !important;
+      white-space: pre-line;
     }
     .btn1 {
       display: flex;
       justify-content: center;
+      white-space: nowrap;
+      background-color: var(--clr-btn);
+    }
+    .btn2 {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      white-space: nowrap;
     }
   }
   @media ${device.tablet} {
@@ -295,7 +312,9 @@ const Cover = styled.div`
       font-size: 2rem;
       text-align: right !important;
       opacity: 0.8;
-      color: White;
+      color: var(--clr-btn);
+      opacity: 0.7;
+      padding-bottom: 20px;
     }
 
     .description {
@@ -303,10 +322,20 @@ const Cover = styled.div`
       color: white;
       text-align: right !important;
       width: 25rem !important;
+      white-space: pre-line;
     }
     .btn1 {
       display: flex;
-      justify-content: start;
+      justify-content: center;
+
+      white-space: nowrap;
+      background-color: var(--clr-btn);
+    }
+    .btn2 {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      white-space: nowrap;
     }
   }
   @media ${device.laptop} {
@@ -335,7 +364,9 @@ const Cover = styled.div`
       font-size: 2rem;
       text-align: right !important;
       opacity: 0.8;
-      color: White;
+      color: var(--clr-btn);
+      opacity: 0.7;
+      padding-bottom: 20px;
     }
 
     .description {
@@ -343,10 +374,19 @@ const Cover = styled.div`
       color: white;
       text-align: right !important;
       width: 25rem !important;
+      white-space: pre-line;
     }
     .btn1 {
       display: flex;
-      justify-content: start;
+      justify-content: center;
+      white-space: nowrap;
+      background-color: var(--clr-btn);
+    }
+    .btn2 {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      white-space: nowrap;
     }
   }
 `

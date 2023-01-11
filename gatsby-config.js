@@ -64,7 +64,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-strapi`,
-      options: {}    
+      options: {},
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -20,6 +20,6 @@ export const device = {
 }
 
 export const words = {
-  moreInfo: "עוד מידע",
-  lessInfo: "תסגור",
+  moreInfo: "למידע נוסף",
+  lessInfo: "סגור",
 }
