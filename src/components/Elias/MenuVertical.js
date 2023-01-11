@@ -408,7 +408,7 @@ const CoverMobile = styled.div`
   }
   .whatandcall {
     justify-self: start;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
   .wrapperMobile {
     z-index: 999999999999999;

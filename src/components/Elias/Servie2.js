@@ -98,17 +98,15 @@ function Servie2({
                     <div className="description">
                       <p style={{ color: "white" }}>{description}</p>
                     </div>
-                    <div>
+                    <div className="btn1">
                       <Button onClick={handelShowMore}>{words.lessInfo}</Button>
                       {/* <Button variant="contained">Send</Button> */}
                     </div>
                   </>
                 ) : (
                   <>
-                    <div>
-                      <Button onClick={handelShowMore} className="btn1">
-                        {words.moreInfo}
-                      </Button>
+                    <div className="btn1">
+                      <Button onClick={handelShowMore}>{words.moreInfo}</Button>
                     </div>
                   </>
                 )}
@@ -276,8 +274,6 @@ const Cover = styled.div`
     .btn1 {
       display: flex;
       justify-content: center;
-      white-space: nowrap;
-      background-color: var(--clr-btn);
     }
     .btn2 {
       display: grid;
@@ -327,9 +323,6 @@ const Cover = styled.div`
     .btn1 {
       display: flex;
       justify-content: center;
-
-      white-space: nowrap;
-      background-color: var(--clr-btn);
     }
     .btn2 {
       display: grid;
@@ -379,8 +372,6 @@ const Cover = styled.div`
     .btn1 {
       display: flex;
       justify-content: center;
-      white-space: nowrap;
-      background-color: var(--clr-btn);
     }
     .btn2 {
       display: grid;
