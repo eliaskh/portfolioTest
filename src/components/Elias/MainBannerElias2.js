@@ -44,10 +44,30 @@ function MainBannerElias2({ idSection }) {
               </AnchorLink>
             </div>
             <div className="icons2">
-              <AiFillFacebook size={40} color={`var(--clr-primary)`} />
+              <AiFillFacebook
+                size={40}
+                color={`var(--clr-primary)`}
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/profile.php?id=100082592277877",
+                    "_blank"
+                  )
+                }
+              />
 
-              <AiFillLinkedin size={40} color={`var(--clr-primary)`} />
-              <AiFillMail size={40} color={`var(--clr-primary)`} />
+              <AiFillLinkedin
+                size={40}
+                color={`var(--clr-primary)`}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/elias-khshaiboun-914676a8/",
+                    "_blank"
+                  )
+                }
+              />
+              <AnchorLink href="#contact">
+                <AiFillMail size={40} color={`var(--clr-primary)`} />
+              </AnchorLink>
             </div>
           </div>
           {/*  */}
@@ -104,7 +124,7 @@ const Cover = styled.div`
     align-content: center;
     justify-self: center;
     gap: 50px;
-
+    cursor: pointer;
     color: #fd4766;
   }
   .whoWeAre {

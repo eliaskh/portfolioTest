@@ -107,7 +107,12 @@ function ContacForm({
                     </div>
 
                     <div className="btnForm">
-                      <Button type="submit">שלח</Button>
+                      {/* <Button type="submit">שלח</Button> */}
+                      <Button>
+                        <div style={{ fontSize: "20px" }} type="submit">
+                          שלח
+                        </div>
+                      </Button>
                     </div>
                   </div>
                 </form>
@@ -188,6 +193,9 @@ function ContacForm({
                       </button>
                     </div>
                   </div>
+                  <Button>
+                    <div style={{ fontSize: "20px" }}>השירותים שלנו</div>
+                  </Button>
                 </form>
               </div>
 

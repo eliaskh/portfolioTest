@@ -67,7 +67,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                       ) : (
                         <>
                           <img
-                            src={logoDark}
+                            src={logoLight}
                             alt="Logo"
                             style={{ height: "50px", paddingTop: "7px" }}
                           />
@@ -190,7 +190,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                     ) : (
                       <>
                         <img
-                          src={logoDark}
+                          src={logoLight}
                           alt="Logo"
                           style={{ height: "35px" }}
                         />
@@ -234,7 +234,7 @@ function MenuVertical({ toggleTheme, isDarkoMode }) {
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <h1
                       style={{
-                        color: "var(--clr-font)",
+                        color: "var(--clr-font-menu)",
                       }}
                     >
                       0528963616
@@ -323,8 +323,7 @@ const Cover = styled.div`
     grid-template-columns: 25% 1fr 25%;
     justify-content: center;
     align-items: center;
-
-    color: var(--clr-font);
+    color: var(--clr-font-menu);
     border-radius: 5px;
   }
   .containerMenu1 {
@@ -339,8 +338,7 @@ const Cover = styled.div`
     grid-template-columns: 25% 1fr 25%;
     justify-content: center;
     align-items: center;
-
-    color: var(--clr-font);
+    color: var(--clr-font-menu);
     border-radius: 5px;
   }
   .containerMenu:hover {
@@ -372,7 +370,7 @@ const Cover = styled.div`
     justify-content: center;
   }
   .itemmenu li {
-    color: var(--clr-font);
+    color: var(--clr-font-menu);
     font-size: 15px;
     /* font-weight: bold; */
   }
@@ -390,7 +388,7 @@ const CoverMobile = styled.div`
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: var(--clr-menu-full);
+    background-color: var(--clr-menu-mobile);
     width: 100vw;
     height: 70px;
     -webkit-box-shadow: 0px 12px 14px -7px rgba(0, 0, 0, 0.15);
