@@ -107,7 +107,7 @@ const Cover = styled.div`
     /* background-color: var(--clr-Gradient); */
   }
   .icons1 {
-    padding-top: 20px;
+    padding-top: 21px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
